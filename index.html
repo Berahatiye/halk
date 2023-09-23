@@ -8,41 +8,29 @@
 <body>
 
     <div class="op">
-    <p class="kap">HALKLARIN SÖZLÜĞÜ <br><span>Sürgün Kırım İdam İşkence Katliam Pogrom İdam Hicret Tecrit</span></p>
+    <p class="kap">HALKLARIN SÖZLÜĞÜ <br><span>Sürgün Kırım İşkence Hicret Katliam Pogrom İdam Tecrit</span></p>
     </div>
 
     <p class="pak"><i>HALKLARDAN SİMALAR</i></p>
 
     <figure class="snip0015">
-      <img src="https://www.ermenihaber.am/news_images/56/166201_1/10.jpg" alt="sample38"/>
+      <img src="https://admin.agos.com.tr/upload/haber/gomidas_manset550_1507.jpg" alt="sample38"/>
       <figcaption>
-        <h2><span>MÜZİK</span></h2>
-        <p>Gomidas Vartabed</p>
-        <p>Սողոմոն Գեորգ Սողոմոնեան</p>
-        <a href="#"></a>
+        <h3><span>MÜZİK</span></h3>
+        <p>Gomidas Vartabed Սողոմոն Գեորգ Սողոմոնեան</p>
+        <div class="button">⠀Սեղմեք այստեղ⠀</div>
+        <span></span>
       </figcaption>			
     </figure>
 
 
     <figure class="snip0015">
-      <img src="https://www.ermenihaber.am/news_images/56/166201_1/10.jpg" alt="sample38"/>
+      <img src="https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2021/02/28/598891-1662650442.jpg?itok=RAAZqbrV" alt="sample38"/>
       <figcaption>
-        <h2><span>MÜZİK</span></h2>
-        <p>Gomidas Vartabed</p>
-        <p>Սողոմոն Գեորգ Սողոմոնեան</p>
-        <a href="#"></a>
-      </figcaption>			
-    </figure>
-
-
-
-    <figure class="snip0015">
-      <img src="https://www.ermenihaber.am/news_images/56/166201_1/10.jpg" alt="sample38"/>
-      <figcaption>
-        <h2><span>MÜZİK</span></h2>
-        <p>Gomidas Vartabed</p>
-        <p>Սողոմոն Գեորգ Սողոմոնեան</p>
-        <a href="#"></a>
+        <h3><span>Edebiyat</span></h3>
+        <p>Kemal Sadık Gökçeli  Yaşar Kemal </p>
+        <div class="button">⠀Li vir bikirtînin⠀</div>
+        <span></span>
       </figcaption>			
     </figure>
 
@@ -51,7 +39,19 @@
     <figure class="snip0015">
       <img src="https://www.ermenihaber.am/news_images/56/166201_1/10.jpg" alt="sample38"/>
       <figcaption>
-        <h2><span>MÜZİK</span></h2>
+        <h3><span>MÜZİK</span></h3>
+        <p>Gomidas Vartabed</p>
+        <p>Սողոմոն Գեորգ Սողոմոնեան</p>
+        <a href="#"></a>
+      </figcaption>			
+    </figure>
+
+
+
+    <figure class="snip0015">
+      <img src="https://www.ermenihaber.am/news_images/56/166201_1/10.jpg" alt="sample38"/>
+      <figcaption>
+        <h3><span>MÜZİK</span></h3>
         <p>Gomidas Vartabed</p>
         <p>Սողոմոն Գեորգ Սողոմոնեան</p>
         <a href="#"></a>
@@ -119,12 +119,14 @@ figure.snip0015 {
   color: #fff;
   position: relative;
   overflow: hidden;
-  margin-top: 25%;
+  margin-top: 35%;
   max-width: 200px;
   max-height: 200px;
   width: 100%;
   background: #000000;
   text-align: center;
+  border-radius: 10px;
+  margin-inline: 8px;
 }
 figure.snip0015 * {
   -webkit-box-sizing: border-box;
@@ -135,12 +137,13 @@ figure.snip0015 img {
   width: 100%;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
+  border-radius: 10px;
 }
 figure.snip0015 figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 1em 3em;
+  padding: 1em 1em;
   width: 100%;
   height: 100%;
 }
@@ -150,8 +153,8 @@ figure.snip0015 figcaption::before {
   right: 30px;
   bottom: 50%;
   left: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   content: '';
   opacity: 0;
   background-color: #ffffff;
@@ -160,19 +163,19 @@ figure.snip0015 figcaption::before {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-figure.snip0015 h2,
+figure.snip0015 h3,
 figure.snip0015 p {
-  margin: 0 0 5px;
+  margin: 0 0 30px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
 }
 
 figure.snip0015 p{
-  font-size: 14px;
+  font-size: 15px;
 }
 
-figure.snip0015 h2 {
+figure.snip0015 h3 {
   word-spacing: -0.15em;
   font-weight: 300;
   text-transform: uppercase;
@@ -181,15 +184,15 @@ figure.snip0015 h2 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-figure.snip0015 h2 span {
-  font-weight: 800;
+figure.snip0015 h3 span {
+  font-weight: 600;
 }
 figure.snip0015 p {
   font-weight: 200	;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-figure.snip0015 a {
+figure.snip0015 span {
   left: 0;
   right: 0;
   top: 0;
@@ -200,7 +203,7 @@ figure.snip0015 a {
 figure.snip0015:hover img {
   opacity: 0.35;
 }
-figure.snip0015:hover figcaption h2 {
+figure.snip0015:hover figcaption h3 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
@@ -221,6 +224,23 @@ figure.snip0015:hover figcaption::before {
   transition-delay: 0s;
 }
 
+.button{
+  display: none;
+}
+
+figure.snip0015:hover .button{
+  display: inline-block;
+  bottom: 19px;
+  position: relative;
+  font-size: 18px;
+  font-family: sans-serif;
+  border: 1px solid;
+  border-color: #f5f5f7;
+  border-radius: 1rem;
+  background-color: transparent;
+  margin-inline: auto;
+  text-align: center;
+}
 
 .pak{
   text-align: center;
@@ -232,6 +252,7 @@ figure.snip0015:hover figcaption::before {
   color: #f5f5f7;
   font-weight: 600;
   text-decoration: overline;
+  margin-top: 15%;
 }
 
 
