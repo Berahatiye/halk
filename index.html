@@ -4,63 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
 
-    <div class="op">
-    <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span> <br> <span class="ppl">Ve Daha Niceleri...</span></p>
+    <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span></p>
+
+<div class="form">
+  <div class="music-player">
+    <div class="album-cover">
+        <img src="https://dillerinkulturu.files.wordpress.com/2022/12/historischesmuseum-saar-sb-23-manuela-meyer-1.jpg" alt="Album Cover">
     </div>
+    <div class="song-details">
+        <h2>Song Title</h2>
+        <p>Artist Name</p>
+    </div>
+    <div class="controls">
+        <button id="play"><i class="fas fa-play"></i></button>
+        <button id="pause"><i class="fas fa-pause"></i></button>
+    </div>
+    <div id="time-display">0:00 / 0:00</div>
+</div>
 
-    <p class="pak"><i>HALKLARDAN BAZI SİMALAR</i></p>
-
-    <figure class="snip0015">
-      <img src="https://admin.agos.com.tr/upload/haber/gomidas_manset550_1507.jpg" alt="sample38"/>
-      <figcaption>
-        <h3><span>MÜZİK</span></h3>
-        <p>Gomidas Vartabed Սողոմոն Գեորգ Սողոմոնեան</p>
-        <div class="button">⠀Սեղմեք այստեղ⠀</div>
-        <span></span>
-      </figcaption>			
-    </figure>
-
-
-    <figure class="snip0015">
-      <img src="https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2021/02/28/598891-1662650442.jpg?itok=RAAZqbrV" alt="sample38"/>
-      <figcaption>
-        <h3><span>Edebiyat</span></h3>
-        <p>Kemal Sadık Gökçeli  Yaşar Kemal </p>
-        <div class="button">⠀Li vir bikirtînin⠀</div>
-        <span></span>
-      </figcaption>			
-    </figure>
-
-
-
-    <figure class="snip0015">
-      <img src="https://www.matematiksel.org/wp-content/uploads/2021/07/Ioanna-Kucuradi.jpg?ezimgfmt=rs:382x428/rscb226/ngcb226/notWebP" alt="sample38"/>
-      <figcaption>
-        <h3><span>FELSEFE</span></h3>
-        <p>İoanna Kuçuradi Ιωάννα Κουτσουράδη</p>
-        <div class="button">⠀Κάντε κλικ ΕΔΩ⠀</div>
-      </figcaption>			
-    </figure>
-
-
-
-    <figure class="snip0015">
-      <img src="https://admin.biyografya.com/_docs/photos/d73b6756232573fa3d84335b943c8912.jpg" alt="sample38"/>
-      <figcaption>
-        <h3><span>LİSAN</span></h3>
-        <p>Sevan Bedros Nişanian</p>
-        <div class="button">⠀Սեղմեք այստեղ⠀</div>
-      </figcaption>			
-    </figure>
-
+<audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
+</div>
+   
 
 
     <style>
 
 @media only screen and (min-width: 480px){
+
+.form{
+  margin-top: 10%;
+}
 
 body {
   display: flex;
@@ -69,6 +46,8 @@ body {
   background-image: linear-gradient(#023020, #000000);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 .sla {
   text-decoration: none;
@@ -76,12 +55,13 @@ body {
   font-size: 20px;
   letter-spacing: 0;
   text-transform: none;
+  font-weight: 200;
 }
 
 .kap {
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
   background: linear-gradient(90deg, #023020, #fff, #023020);
@@ -107,164 +87,89 @@ body {
   }
 }
 
-.ppl{
-  font-size: 24px;
-}
 
-figure.snip0015 {
-  font-family: 'Raleway', Arial, sans-serif;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  margin-top: 35%;
-  max-width: 200px;
-  width: 100%;
-  text-align: center;
-  border-radius: 10px;
-  margin-inline: 8px;
-  box-shadow: 0px 0px 5px 0px #f5f5f7;
-  -webkit-user-select: none; 
-  -ms-user-select: none;
-  user-select: none;
-}
-figure.snip0015 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-figure.snip0015 img {
-  opacity: 1;
-  width: 100%;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-  border-radius: 10px;
-}
-figure.snip0015 figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1em;
-  width: 100%;
-  height: 100%;
-}
-figure.snip0015 figcaption::before {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  bottom: 50%;
-  left: 30px;
-  border-top: 2px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-  content: '';
-  opacity: 0;
-  background-color: #ffffff;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-figure.snip0015 h3,
-figure.snip0015 p {
-  margin: 0 0 30px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
-}
 
-figure.snip0015 p{
-  font-size: 15px;
-}
 
-figure.snip0015 h3 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  text-transform: uppercase;
-  -webkit-transform: translate3d(0%, 50%, 0);
-  transform: translate3d(0%, 50%, 0);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-figure.snip0015 h3 span {
-  font-weight: 600;
-}
-figure.snip0015 p {
-  font-weight: 200	;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-figure.snip0015 span {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  color: #ffffff;
-}
-figure.snip0015:hover img {
-  opacity: 0.35;
-}
-figure.snip0015:hover figcaption h3 {
-  opacity: 1;
-  -webkit-transform: translate3d(0%, 0%, 0);
-  transform: translate3d(0%, 0%, 0);
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-figure.snip0015:hover figcaption p {
-  opacity: 0.9;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-figure.snip0015:hover figcaption::before {
-  background: rgba(255, 255, 255, 0);
-  top: 10px;
-  bottom: 10px;
-  opacity: 1;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
 
-.button{
-  display: none;
-}
 
-figure.snip0015:hover .button{
-  display: inline-block;
-  bottom: 19px;
-  position: relative;
-  font-size: 18px;
-  font-family: sans-serif;
-  border: 1px solid;
-  border-color: #f5f5f7;
-  border-radius: 1rem;
-  background-color: transparent;
-  margin-inline: auto;
-  text-align: center;
-  z-index: 999;
-}
 
-figure.snip0015:hover .button:hover{
-  background-color: #f5f5f7;
-  color: #000000;
-  transition: 0.4s;
-}
+.music-player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
 
-.pak{
-  text-align: center;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  font-size: 35px;
-  font-family: monospace;
-  color: #f5f5f7;
-  font-weight: 600;
-  text-decoration: overline;
-  margin-top: 15%;
+        .album-cover img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .controls button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .controls button#play {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .controls button#pause {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+
+        #time-display {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #f5f5f7;
+        }
+
+        .song-details{
+          color: #f5f5f7;
+        }
 }
 
 
-}
     </style>
 
+<script>
+  const audioPlayer = document.getElementById('audio-player');
+  const playButton = document.getElementById('play');
+  const pauseButton = document.getElementById('pause');
+  const timeDisplay = document.getElementById('time-display');
+
+  playButton.addEventListener('click', () => {
+      audioPlayer.play();
+      playButton.style.display = 'none';
+      pauseButton.style.display = 'inline';
+  });
+
+  pauseButton.addEventListener('click', () => {
+      audioPlayer.pause();
+      pauseButton.style.display = 'none';
+      playButton.style.display = 'inline';
+  });
+
+  audioPlayer.addEventListener('timeupdate', () => {
+      const currentTime = formatTime(audioPlayer.currentTime);
+      const duration = formatTime(audioPlayer.duration);
+      timeDisplay.textContent = `${currentTime} / ${duration}`;
+  });
+
+  function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      const seconds = Math.floor(time % 60);
+      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  }
+</script>
 
 </body>
 </html>
