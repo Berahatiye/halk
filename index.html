@@ -8,221 +8,272 @@
 </head>
 <body>
 
-    <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span></p>
+<p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span></p>
 
-    <div class="form">
-      <div class="music-player">
-          <div class="album-cover">
-              <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-          </div>
-          <div class="song-details">
-              <h2>Song Title</h2>
-              <p>Artist Name</p>
-          </div>
-          <div class="controls">
-              <button id="play"><i class="fas fa-play"></i></button>
-              <button id="pause"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
-          </div>
-          <div id="time-display">0:00 / 0:00</div>
+<div class="form">
+  <div class="music-player">
+      <div class="album-cover">
+          <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
       </div>
-      
-      <div class="lyrics-container" style="display: none; margin-inline: center;">
-          <h3 style="color: #F5F5DC;">Lyrics</h3>
-          <div id="lyrics-language-selector" style="justify-content: center;">
-              Language:
-              <select id="language-select" style="font-size: 19px; font-family: sans-serif; color: #023020; background-color: #F5F5DC;">
-                  <option value="kurdish">KÜRTÇE</option>
-                  <option value="turkish">TÜRKÇE</option>
-              </select>
-          </div>
-          <pre id="lyrics" style=" width: fit-content; margin-inline: auto; text-align: center; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;">Şarkılara ait bütün sözler burada görülür.</pre>
+      <div class="song-details">
+          <h2>Song Title</h2>
+          <p>Artist Name</p>
       </div>
-      
-      <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
+      <div class="controls">
+          <button id="play"><i class="fas fa-play"></i></button>
+          <button id="pause"><i class="fas fa-pause"></i></button>
+          <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
+      </div>
+      <div id="time-display">0:00 / 0:00</div>
   </div>
-   
+  
+  <div class="lyrics-container" style="display: none; text-align: center;">
+      <h3 style="color: #F5F5DC;">Lyrics</h3>
+      <div id="lyrics-language-selector" style="justify-content: center;">
+          Language:
+          <select id="language-select" style="font-size: 19px; font-family: sans-serif; color: #023020; background-color: #F5F5DC;">
+              <option value="kurdish">KÜRTÇE</option>
+              <option value="turkish">TÜRKÇE</option>
+          </select>
+      </div>
+      <div id="lyrics" style="width: max-content; margin: 15px auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+  </div>
+  
+  <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
+</div>
 
-
-
-
-    <style>
-
+<style>
 @media only screen and (min-width: 480px){
-
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(#023020, #000000);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-.sla {
-  text-decoration: none;
-  color: inherit;
-  font-size: 20px;
-  letter-spacing: 0;
-  text-transform: none;
-  font-weight: 500;
-}
-
-.kap {
-  font-weight: 600;
-  text-align: center;
-  font-size: 30px;
-  font-family: Hack, sans-serif;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #023020, #fff, #023020);
-  letter-spacing: 5px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: shine 9s linear infinite;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-
-
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#023020, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
   }
-  100% {
-    background-position-x: 500%;
+  .sla {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 500;
+  }
+
+  .kap {
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #023020, #fff, #023020);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 9s linear infinite;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  .form {
+    margin-top: 12%;
+  }
+
+  .music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .album-cover img {
+    max-width: 200px;
+    border-radius: 15px;
+  }
+
+  .controls button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .controls button#play {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+  }
+
+  .controls button#pause {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+  }
+
+  .controls button#toggle-lyrics {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 15px;
+  }
+
+  #time-display {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+  }
+
+  .song-details {
+    color: #f5f5f7;
+  }
+
+  .lyrics-container {
+    text-align: center;
+  }
+
+  #lyrics {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
   }
 }
-
-
-
-.form {
-        margin-top: 12%;
-    }
-
-    .music-player {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-    }
-
-    .album-cover img {
-        max-width: 200px;
-        border-radius: 15px;
-    }
-
-    .controls button {
-        font-size: 18px;
-        padding: 10px 20px;
-        margin: 10px;
-        cursor: pointer;
-    }
-
-    .controls button#play {
-        background-color: #023020;
-        color: white;
-        border-style: solid;
-        border-color: #f5f5f7;
-        border-radius: 15px;
-    }
-
-    .controls button#pause {
-        background-color: #8B0000;
-        color: white;
-        border-radius: 15px;
-        border-style: solid;
-        border-color: #f5f5f7;
-    }
-
-    .controls button#toggle-lyrics {
-        background-color: #F5F5DC;
-        color: #023020;
-        border: none;
-        border-radius: 15px;
-    }
-
-    #time-display {
-        font-size: 21px;
-        margin-top: 10px;
-        color: #f5f5f7;
-    }
-
-    .song-details {
-        color: #f5f5f7;
-    }
-
-    .lyrics-container {
-        text-align: center;
-    }
-
-    #lyrics {
-        max-height: 200px;
-        overflow-y: scroll;
-        color: #f5f5f7;
-    }
-}
-
-    </style>
+</style>
 
 <script>
-    const audioPlayer = document.getElementById('audio-player');
-    const playButton = document.getElementById('play');
-    const pauseButton = document.getElementById('pause');
-    const timeDisplay = document.getElementById('time-display');
-    const lyricsContainer = document.querySelector('.lyrics-container');
-    const toggleLyricsButton = document.getElementById('toggle-lyrics');
-    const lyricsLanguageSelector = document.getElementById('language-select');
-    const lyricsText = document.getElementById('lyrics');
+const audioPlayer = document.getElementById('audio-player');
+const playButton = document.getElementById('play');
+const pauseButton = document.getElementById('pause');
+const timeDisplay = document.getElementById('time-display');
+const lyricsContainer = document.querySelector('.lyrics-container');
+const toggleLyricsButton = document.getElementById('toggle-lyrics');
+const lyricsLanguageSelector = document.getElementById('language-select');
+const lyricsText = document.getElementById('lyrics');
 
-    playButton.addEventListener('click', () => {
-        audioPlayer.play();
-        playButton.style.display = 'none';
-        pauseButton.style.display = 'inline';
-    });
+// Define lyrics for both languages with specific times
+const lyricsData = {
+    kurdish: [
+        { startTime: 0, endTime: 5, text: 'Kurdish Lyrics 1' },
+        { startTime: 5, endTime: 10, text: 'Kurdish Lyrics 2' },
+        { startTime: 10, endTime: 15, text: 'Kurdish Lyrics 3' },
+        { startTime: 15, endTime: 20, text: 'Kurdish Lyrics 4' },
+        { startTime: 20, endTime: 25, text: 'Kurdish Lyrics 5' },
+        { startTime: 25, endTime: 30, text: 'Kurdish Lyrics 6' },
+        { startTime: 30, endTime: 35, text: 'Kurdish Lyrics 7' },
+    ],
+    turkish: [
+        { startTime: 0, endTime: 5, text: 'Turkish Lyrics 1' },
+        { startTime: 5, endTime: 10, text: 'Turkish Lyrics 2' },
+        { startTime: 10, endTime: 15, text: 'Turkish Lyrics 3' },
+        { startTime: 15, endTime: 20, text: 'Turkish Lyrics 4' },
+        { startTime: 20, endTime: 25, text: 'Turkish Lyrics 5' },
+        { startTime: 25, endTime: 30, text: 'Turkish Lyrics 6' },
+        { startTime: 30, endTime: 35, text: 'Turkish Lyrics 7' },
+    ],
+};
 
-    pauseButton.addEventListener('click', () => {
-        audioPlayer.pause();
-        pauseButton.style.display = 'none';
-        playButton.style.display = 'inline';
-    });
+let currentLyricIndex = -1;
 
-    toggleLyricsButton.addEventListener('click', () => {
-        if (lyricsContainer.style.display === 'none') {
-            lyricsContainer.style.display = 'block';
-        } else {
-            lyricsContainer.style.display = 'none';
-        }
-    });
+playButton.addEventListener('click', () => {
+    audioPlayer.play();
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'inline';
+});
 
-    lyricsLanguageSelector.addEventListener('change', () => {
-        // Replace with your lyrics for Kurdish and Turkish.
-        const selectedLanguage = lyricsLanguageSelector.value;
-        if (selectedLanguage === 'kurdish') {
-            lyricsText.textContent = `Kurdish lyrics go here.`;
-        } else if (selectedLanguage === 'turkish') {
-            lyricsText.textContent = `Turkish lyrics go here.`;
-        }
-    });
+pauseButton.addEventListener('click', () => {
+    audioPlayer.pause();
+    pauseButton.style.display = 'none';
+    playButton.style.display = 'inline';
+});
 
-    audioPlayer.addEventListener('timeupdate', () => {
-        const currentTime = formatTime(audioPlayer.currentTime);
-        const duration = formatTime(audioPlayer.duration);
-        timeDisplay.textContent = `${currentTime} / ${duration}`;
-    });
-
-    function formatTime(time) {
-        const minutes = Math.floor(time / 60);
-        const seconds = Math.floor(time % 60);
-        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+toggleLyricsButton.addEventListener('click', () => {
+    if (lyricsContainer.style.display === 'none') {
+        lyricsContainer.style.display = 'block';
+        displayLyric(0);
+    } else {
+        lyricsContainer.style.display = 'none';
     }
+});
+
+lyricsLanguageSelector.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector.value;
+    displayLyric(0, selectedLanguage);
+});
+
+audioPlayer.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer.currentTime;
+    const selectedLanguage = lyricsLanguageSelector.value;
+    const lyrics = lyricsData[selectedLanguage];
+
+    for (let i = 0; i < lyrics.length; i++) {
+        const lyric = lyrics[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex) {
+                displayLyric(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+    // If no matching lyric is found, display an empty line.
+    displayLyric(-1, selectedLanguage);
+
+    // Update the time display
+    timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer.duration)}`;
+});
+
+function displayLyric(index, language) {
+    const lyrics = lyricsData[language];
+    if (index >= 0 && index < lyrics.length) {
+        lyricsText.textContent = lyrics[index].text;
+        currentLyricIndex = index;
+        lyricsText.style.color = '#FF5722'; // Change text color when a lyric starts
+    } else {
+        lyricsText.textContent = '';
+        currentLyricIndex = -1;
+        lyricsText.style.color = 'white'; // Change text color to default when no lyric is displayed
+    }
+}
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+audioPlayer.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer.currentTime;
+    const duration = audioPlayer.duration;
+    timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
 </script>
 
 </body>
