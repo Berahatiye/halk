@@ -10,24 +10,37 @@
 
     <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span></p>
 
-<div class="form">
-  <div class="music-player">
-    <div class="album-cover">
-        <img src="https://dillerinkulturu.files.wordpress.com/2022/12/historischesmuseum-saar-sb-23-manuela-meyer-1.jpg" alt="Album Cover">
-    </div>
-    <div class="song-details">
-        <h2>Song Title</h2>
-        <p>Artist Name</p>
-    </div>
-    <div class="controls">
-        <button id="play"><i class="fas fa-play"></i></button>
-        <button id="pause"><i class="fas fa-pause"></i></button>
-    </div>
-    <div id="time-display">0:00 / 0:00</div>
-</div>
-
-<audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
-</div>
+    <div class="form">
+      <div class="music-player">
+          <div class="album-cover">
+              <img src="https://dillerinkulturu.files.wordpress.com/2022/12/historischesmuseum-saar-sb-23-manuela-meyer-1.jpg" alt="Album Cover">
+          </div>
+          <div class="song-details">
+              <h2>Song Title</h2>
+              <p>Artist Name</p>
+          </div>
+          <div class="controls">
+              <button id="play"><i class="fas fa-play"></i></button>
+              <button id="pause"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics"><i class="fas fa-music"></i> Lyrics</button>
+          </div>
+          <div id="time-display">0:00 / 0:00</div>
+      </div>
+      
+      <div class="lyrics-container" style="display: none;">
+          <h3>Lyrics</h3>
+          <div id="lyrics-language-selector">
+              Language:
+              <select id="language-select">
+                  <option value="kurdish">Kurdish</option>
+                  <option value="turkish">Turkish</option>
+              </select>
+          </div>
+          <pre id="lyrics" style="background-color: white; width: fit-content; margin-inline: auto; text-align: center; color: black;">This is where the lyrics will be displayed.</pre>
+      </div>
+      
+      <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
+  </div>
    
 
 
@@ -35,9 +48,6 @@
 
 @media only screen and (min-width: 480px){
 
-.form{
-  margin-top: 10%;
-}
 
 body {
   display: flex;
@@ -71,12 +81,14 @@ body {
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 5s linear infinite;
+  animation: shine 7s linear infinite;
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
 }
+
+
 
 @keyframes shine {
   0% {
@@ -93,82 +105,125 @@ body {
 
 
 
-.music-player {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
+.form {
+        margin-top: 10%;
+    }
 
-        .album-cover img {
-            max-width: 200px;
-            border-radius: 50%;
-        }
+    .music-player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
 
-        .controls button {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-        }
+    .album-cover img {
+        max-width: 200px;
+        border-radius: 50%;
+    }
 
-        .controls button#play {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 15px;
-        }
+    .controls button {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
 
-        .controls button#pause {
-            background-color: #FF5722;
-            color: white;
-            border: none;
-            border-radius: 15px;
-        }
+    .controls button#play {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 15px;
+    }
 
-        #time-display {
-            font-size: 16px;
-            margin-top: 10px;
-            color: #f5f5f7;
-        }
+    .controls button#pause {
+        background-color: #FF5722;
+        color: white;
+        border: none;
+        border-radius: 15px;
+    }
 
-        .song-details{
-          color: #f5f5f7;
-        }
+    .controls button#toggle-lyrics {
+        background-color: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 15px;
+    }
+
+    #time-display {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #f5f5f7;
+    }
+
+    .song-details {
+        color: #f5f5f7;
+    }
+
+    .lyrics-container {
+        text-align: center;
+    }
+
+    #lyrics {
+        max-height: 200px;
+        overflow-y: scroll;
+        color: #f5f5f7;
+    }
 }
 
 
     </style>
 
 <script>
-  const audioPlayer = document.getElementById('audio-player');
-  const playButton = document.getElementById('play');
-  const pauseButton = document.getElementById('pause');
-  const timeDisplay = document.getElementById('time-display');
+    const audioPlayer = document.getElementById('audio-player');
+    const playButton = document.getElementById('play');
+    const pauseButton = document.getElementById('pause');
+    const timeDisplay = document.getElementById('time-display');
+    const lyricsContainer = document.querySelector('.lyrics-container');
+    const toggleLyricsButton = document.getElementById('toggle-lyrics');
+    const lyricsLanguageSelector = document.getElementById('language-select');
+    const lyricsText = document.getElementById('lyrics');
 
-  playButton.addEventListener('click', () => {
-      audioPlayer.play();
-      playButton.style.display = 'none';
-      pauseButton.style.display = 'inline';
-  });
+    playButton.addEventListener('click', () => {
+        audioPlayer.play();
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline';
+    });
 
-  pauseButton.addEventListener('click', () => {
-      audioPlayer.pause();
-      pauseButton.style.display = 'none';
-      playButton.style.display = 'inline';
-  });
+    pauseButton.addEventListener('click', () => {
+        audioPlayer.pause();
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'inline';
+    });
 
-  audioPlayer.addEventListener('timeupdate', () => {
-      const currentTime = formatTime(audioPlayer.currentTime);
-      const duration = formatTime(audioPlayer.duration);
-      timeDisplay.textContent = `${currentTime} / ${duration}`;
-  });
+    toggleLyricsButton.addEventListener('click', () => {
+        if (lyricsContainer.style.display === 'none') {
+            lyricsContainer.style.display = 'block';
+        } else {
+            lyricsContainer.style.display = 'none';
+        }
+    });
 
-  function formatTime(time) {
-      const minutes = Math.floor(time / 60);
-      const seconds = Math.floor(time % 60);
-      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-  }
+    lyricsLanguageSelector.addEventListener('change', () => {
+        // Replace with your lyrics for Kurdish and Turkish.
+        const selectedLanguage = lyricsLanguageSelector.value;
+        if (selectedLanguage === 'kurdish') {
+            lyricsText.textContent = `Kurdish lyrics go here.`;
+        } else if (selectedLanguage === 'turkish') {
+            lyricsText.textContent = `Turkish lyrics go here.`;
+        }
+    });
+
+    audioPlayer.addEventListener('timeupdate', () => {
+        const currentTime = formatTime(audioPlayer.currentTime);
+        const duration = formatTime(audioPlayer.duration);
+        timeDisplay.textContent = `${currentTime} / ${duration}`;
+    });
+
+    function formatTime(time) {
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.floor(time % 60);
+        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
 </script>
 
 </body>
