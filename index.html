@@ -13,7 +13,7 @@
     <div class="form">
       <div class="music-player">
           <div class="album-cover">
-              <img src="https://dillerinkulturu.files.wordpress.com/2022/12/historischesmuseum-saar-sb-23-manuela-meyer-1.jpg" alt="Album Cover">
+              <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
           </div>
           <div class="song-details">
               <h2>Song Title</h2>
@@ -22,26 +22,28 @@
           <div class="controls">
               <button id="play"><i class="fas fa-play"></i></button>
               <button id="pause"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics"><i class="fas fa-music"></i> Lyrics</button>
+              <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
           </div>
           <div id="time-display">0:00 / 0:00</div>
       </div>
       
-      <div class="lyrics-container" style="display: none;">
-          <h3>Lyrics</h3>
-          <div id="lyrics-language-selector">
+      <div class="lyrics-container" style="display: none; margin-inline: center;">
+          <h3 style="color: #F5F5DC;">Lyrics</h3>
+          <div id="lyrics-language-selector" style="justify-content: center;">
               Language:
-              <select id="language-select">
-                  <option value="kurdish">Kurdish</option>
-                  <option value="turkish">Turkish</option>
+              <select id="language-select" style="font-size: 19px; font-family: sans-serif; color: #023020; background-color: #F5F5DC;">
+                  <option value="kurdish">KÜRTÇE</option>
+                  <option value="turkish">TÜRKÇE</option>
               </select>
           </div>
-          <pre id="lyrics" style="background-color: white; width: fit-content; margin-inline: auto; text-align: center; color: black;">This is where the lyrics will be displayed.</pre>
+          <pre id="lyrics" style=" width: fit-content; margin-inline: auto; text-align: center; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;">Şarkılara ait bütün sözler burada görülür.</pre>
       </div>
       
       <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
   </div>
    
+
+
 
 
     <style>
@@ -65,7 +67,7 @@ body {
   font-size: 20px;
   letter-spacing: 0;
   text-transform: none;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .kap {
@@ -81,7 +83,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 7s linear infinite;
+  animation: shine 9s linear infinite;
   position: absolute;
   width: 100%;
   left: 0;
@@ -101,12 +103,8 @@ body {
 
 
 
-
-
-
-
 .form {
-        margin-top: 10%;
+        margin-top: 12%;
     }
 
     .music-player {
@@ -118,7 +116,7 @@ body {
 
     .album-cover img {
         max-width: 200px;
-        border-radius: 50%;
+        border-radius: 15px;
     }
 
     .controls button {
@@ -129,28 +127,30 @@ body {
     }
 
     .controls button#play {
-        background-color: #4CAF50;
+        background-color: #023020;
         color: white;
-        border: none;
+        border-style: solid;
+        border-color: #f5f5f7;
         border-radius: 15px;
     }
 
     .controls button#pause {
-        background-color: #FF5722;
+        background-color: #8B0000;
         color: white;
-        border: none;
         border-radius: 15px;
+        border-style: solid;
+        border-color: #f5f5f7;
     }
 
     .controls button#toggle-lyrics {
-        background-color: #2196F3;
-        color: white;
+        background-color: #F5F5DC;
+        color: #023020;
         border: none;
         border-radius: 15px;
     }
 
     #time-display {
-        font-size: 16px;
+        font-size: 21px;
         margin-top: 10px;
         color: #f5f5f7;
     }
@@ -169,7 +169,6 @@ body {
         color: #f5f5f7;
     }
 }
-
 
     </style>
 
