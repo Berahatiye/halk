@@ -12,6 +12,7 @@
 
 <div class="form">
   <div class="music-player">
+      <!-- Your existing player components... -->
       <div class="album-cover">
           <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
       </div>
@@ -26,19 +27,26 @@
       </div>
       <div id="time-display">0:00 / 0:00</div>
   </div>
-  
+
+  <div class="seek-bar-container">
+      <div class="seek-bar">
+          <div class="seek-bar-fill"></div>
+          <div class="seek-bar-thumb"></div>
+      </div>
+  </div>
+
   <div class="lyrics-container" style="display: none; text-align: center;">
       <h3 style="color: #F5F5DC;">Lyrics</h3>
       <div id="lyrics-language-selector" style="justify-content: center;">
           Language:
-          <select id="language-select" style="font-size: 19px; font-family: sans-serif; color: #023020; background-color: #F5F5DC;">
+          <select id="language-select">
               <option value="kurdish">KÜRTÇE</option>
               <option value="turkish">TÜRKÇE</option>
           </select>
       </div>
-      <div id="lyrics" style="width: max-content; margin: 15px auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+      <div id="lyrics" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
   </div>
-  
+
   <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/01_Badmutinire_1.mp3"></audio>
 </div>
 
@@ -157,122 +165,239 @@
     overflow-y: none;
     color: #f5f5f7;
   }
+
+
+  #language-select{
+    font-size: 19px; 
+    font-family: sans-serif; 
+    color: #023020; 
+    background-color: #F5F5DC;
+    margin-right: 75px;
+  }
+
+
+
+
+
+  .seek-bar-container {
+            width: 55%;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .seek-bar {
+            flex-grow: 1;
+            background-color: #f5f5f7;
+            height: 16px;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+            border-color: transparent;
+        }
+
+        .seek-bar-fill {
+            background-color: #750550;
+            height: 100%;
+            border-radius: 20px;
+            width: 0;
+        }
+
+        .seek-bar-thumb {
+            width: 12px;
+            height: 12px;
+            background-color: #750550;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #toggle-lyrics{
+          transition: 0.1s;
+        }
+
+        #toggle-lyrics:focus{
+           transform: scale(1);
+        }
+
+        #toggle-lyrics:active{
+          transform: scale(0.9)
+        }       
+
+        
+        .controls button#pause{
+          transition: 0.1s;
+        }
+
+        .controls button#pause:focus{
+           transform: scale(1);
+        }
+
+        .controls button#pause:active{
+          transform: scale(0.9)
+        } 
+
+
+        .controls button#play{
+          transition: 0.1s;
+        }
+
+        .controls button#play:focus{
+           transform: scale(1);
+        }
+
+        .controls button#play:active{
+          transform: scale(0.9)
+        } 
 }
 </style>
 
 <script>
-const audioPlayer = document.getElementById('audio-player');
-const playButton = document.getElementById('play');
-const pauseButton = document.getElementById('pause');
-const timeDisplay = document.getElementById('time-display');
-const lyricsContainer = document.querySelector('.lyrics-container');
-const toggleLyricsButton = document.getElementById('toggle-lyrics');
-const lyricsLanguageSelector = document.getElementById('language-select');
-const lyricsText = document.getElementById('lyrics');
+    const audioPlayer = document.getElementById('audio-player');
+    const playButton = document.getElementById('play');
+    const pauseButton = document.getElementById('pause');
+    const timeDisplay = document.getElementById('time-display');
+    const lyricsContainer = document.querySelector('.lyrics-container');
+    const toggleLyricsButton = document.getElementById('toggle-lyrics');
+    const lyricsLanguageSelector = document.getElementById('language-select');
+    const lyricsText = document.getElementById('lyrics');
 
-// Define lyrics for both languages with specific times
-const lyricsData = {
-    kurdish: [
-        { startTime: 0, endTime: 5, text: 'Kurdish Lyrics 1' },
-        { startTime: 5, endTime: 10, text: 'Kurdish Lyrics 2' },
-        { startTime: 10, endTime: 15, text: 'Kurdish Lyrics 3' },
-        { startTime: 15, endTime: 20, text: 'Kurdish Lyrics 4' },
-        { startTime: 20, endTime: 25, text: 'Kurdish Lyrics 5' },
-        { startTime: 25, endTime: 30, text: 'Kurdish Lyrics 6' },
-        { startTime: 30, endTime: 35, text: 'Kurdish Lyrics 7' },
-    ],
-    turkish: [
-        { startTime: 0, endTime: 5, text: 'Turkish Lyrics 1' },
-        { startTime: 5, endTime: 10, text: 'Turkish Lyrics 2' },
-        { startTime: 10, endTime: 15, text: 'Turkish Lyrics 3' },
-        { startTime: 15, endTime: 20, text: 'Turkish Lyrics 4' },
-        { startTime: 20, endTime: 25, text: 'Turkish Lyrics 5' },
-        { startTime: 25, endTime: 30, text: 'Turkish Lyrics 6' },
-        { startTime: 30, endTime: 35, text: 'Turkish Lyrics 7' },
-    ],
-};
+    // Define lyrics for both languages with specific times
+    const lyricsData = {
+        kurdish: [
+            { startTime: 0, endTime: 5, text: 'Kurdish Lyrics 1' },
+            { startTime: 5, endTime: 10, text: 'Kurdish Lyrics 2' },
+            { startTime: 10, endTime: 15, text: 'Kurdish Lyrics 3' },
+            { startTime: 15, endTime: 20, text: 'Kurdish Lyrics 4' },
+            { startTime: 20, endTime: 25, text: 'Kurdish Lyrics 5' },
+            { startTime: 25, endTime: 30, text: 'Kurdish Lyrics 6' },
+            { startTime: 30, endTime: 35, text: 'Kurdish Lyrics 7' },
+        ],
+        turkish: [
+            { startTime: 0, endTime: 5, text: 'Turkish Lyrics 1' },
+            { startTime: 5, endTime: 10, text: 'Turkish Lyrics 2' },
+            { startTime: 10, endTime: 15, text: 'Turkish Lyrics 3' },
+            { startTime: 15, endTime: 20, text: 'Turkish Lyrics 4' },
+            { startTime: 20, endTime: 25, text: 'Turkish Lyrics 5' },
+            { startTime: 25, endTime: 30, text: 'Turkish Lyrics 6' },
+            { startTime: 30, endTime: 35, text: 'Turkish Lyrics 7' },
+        ],
+    };
 
-let currentLyricIndex = -1;
+    let currentLyricIndex = -1;
 
-playButton.addEventListener('click', () => {
-    audioPlayer.play();
-    playButton.style.display = 'none';
-    pauseButton.style.display = 'inline';
-});
+    playButton.addEventListener('click', () => {
+        audioPlayer.play();
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline';
+    });
 
-pauseButton.addEventListener('click', () => {
-    audioPlayer.pause();
-    pauseButton.style.display = 'none';
-    playButton.style.display = 'inline';
-});
+    pauseButton.addEventListener('click', () => {
+        audioPlayer.pause();
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'inline';
+    });
 
-toggleLyricsButton.addEventListener('click', () => {
-    if (lyricsContainer.style.display === 'none') {
-        lyricsContainer.style.display = 'block';
-        displayLyric(0);
-    } else {
-        lyricsContainer.style.display = 'none';
-    }
-});
+    toggleLyricsButton.addEventListener('click', () => {
+        if (lyricsContainer.style.display === 'none') {
+            lyricsContainer.style.display = 'block';
+            displayLyric(0);
+        } else {
+            lyricsContainer.style.display = 'none';
+        }
+    });
 
-lyricsLanguageSelector.addEventListener('change', () => {
-    const selectedLanguage = lyricsLanguageSelector.value;
-    displayLyric(0, selectedLanguage);
-});
+    lyricsLanguageSelector.addEventListener('change', () => {
+        const selectedLanguage = lyricsLanguageSelector.value;
+        displayLyric(0, selectedLanguage);
+    });
 
-audioPlayer.addEventListener('timeupdate', () => {
-    const currentTime = audioPlayer.currentTime;
-    const selectedLanguage = lyricsLanguageSelector.value;
-    const lyrics = lyricsData[selectedLanguage];
+    audioPlayer.addEventListener('timeupdate', () => {
+        const currentTime = audioPlayer.currentTime;
+        const selectedLanguage = lyricsLanguageSelector.value;
+        const lyrics = lyricsData[selectedLanguage];
 
-    for (let i = 0; i < lyrics.length; i++) {
-        const lyric = lyrics[i];
-        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
-            if (i !== currentLyricIndex) {
-                displayLyric(i, selectedLanguage);
+        for (let i = 0; i < lyrics.length; i++) {
+            const lyric = lyrics[i];
+            if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+                if (i !== currentLyricIndex) {
+                    displayLyric(i, selectedLanguage);
+                }
+                return;
             }
-            return;
+        }
+
+        // If no matching lyric is found, display an empty line.
+        displayLyric(-1, selectedLanguage);
+
+        // Update the time display
+        timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer.duration)}`;
+    });
+
+    function displayLyric(index, language) {
+        const lyrics = lyricsData[language];
+        if (index >= 0 && index < lyrics.length) {
+            lyricsText.textContent = lyrics[index].text;
+            currentLyricIndex = index;
+            lyricsText.style.color = '#FF5722'; // Change text color when a lyric starts
+        } else {
+            lyricsText.textContent = '';
+            currentLyricIndex = -1;
+            lyricsText.style.color = 'white'; // Change text color to default when no lyric is displayed
         }
     }
 
-    // If no matching lyric is found, display an empty line.
-    displayLyric(-1, selectedLanguage);
-
-    // Update the time display
-    timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer.duration)}`;
-});
-
-function displayLyric(index, language) {
-    const lyrics = lyricsData[language];
-    if (index >= 0 && index < lyrics.length) {
-        lyricsText.textContent = lyrics[index].text;
-        currentLyricIndex = index;
-        lyricsText.style.color = '#FF5722'; // Change text color when a lyric starts
-    } else {
-        lyricsText.textContent = '';
-        currentLyricIndex = -1;
-        lyricsText.style.color = 'white'; // Change text color to default when no lyric is displayed
+    function formatTime(time) {
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.floor(time % 60);
+        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
-}
 
-function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}
+    // Add seek bar functionality
+    const seekBar = document.querySelector('.seek-bar');
+    const seekBarFill = document.querySelector('.seek-bar-fill');
+    const seekBarThumb = document.querySelector('.seek-bar-thumb');
 
+    seekBar.addEventListener('click', (e) => {
+        const clickX = e.clientX - seekBar.getBoundingClientRect().left;
+        const seekBarWidth = seekBar.clientWidth;
+        const seekTime = (clickX / seekBarWidth) * audioPlayer.duration;
 
-audioPlayer.addEventListener('timeupdate', () => {
-    const currentTime = audioPlayer.currentTime;
-    const duration = audioPlayer.duration;
-    timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-});
+        audioPlayer.currentTime = seekTime;
+    });
 
-function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}
+    audioPlayer.addEventListener('timeupdate', () => {
+        const currentTime = audioPlayer.currentTime;
+        const duration = audioPlayer.duration;
+        const progress = (currentTime / duration) * 100;
+
+        seekBarFill.style.width = progress + '%';
+        seekBarThumb.style.left = progress + '%';
+
+        // Update the time display
+        timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+    });
+
+    seekBarThumb.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    });
+
+    function onMouseMove(e) {
+        const clickX = e.clientX - seekBar.getBoundingClientRect().left;
+        const seekBarWidth = seekBar.clientWidth;
+        const seekTime = (clickX / seekBarWidth) * audioPlayer.duration;
+
+        audioPlayer.currentTime = seekTime;
+    }
+
+    function onMouseUp() {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    }
 
 </script>
 
