@@ -36,7 +36,6 @@
   </div>
 
   <div class="lyrics-container" style="display: none; text-align: center;">
-      <h3 style="color: #F5F5DC;">Lyrics</h3>
       <div id="lyrics-language-selector" style="justify-content: center;">
           <select id="language-select">
               <option value="ermenice">հայերեն</option>
@@ -188,25 +187,25 @@
 
         .seek-bar {
             flex-grow: 1;
-            background-color: #f5f5f7;
-            height: 16px;
-            border-radius: 20px;
+            background-color: #f5f5f733;
+            height: 5px;
+            border-radius: 5px;
             position: relative;
             cursor: pointer;
             border-color: transparent;
         }
 
         .seek-bar-fill {
-            background-color: #750550;
+            background-color: #f5f5f7;
             height: 100%;
-            border-radius: 20px;
+            border-radius: 5px;
             width: 0;
         }
 
         .seek-bar-thumb {
-            width: 12px;
-            height: 12px;
-            background-color: #750550;
+            width: 15px;
+            height: 15px;
+            background-color: #f5f5f7;
             border-radius: 50%;
             position: absolute;
             top: 50%;
@@ -306,22 +305,23 @@
         ],
         turkce: [
             { startTime: 0, endTime: 18, text: '♪' },
-            { startTime: 18, endTime: 29, text: 'Siroon aghchig im suhrdisi soonn es toon, soonn es toon' },
-            { startTime: 29, endTime: 41, text: 'Mechkit parag boyit akhkig imn es toon, imn es toon' },
-            { startTime: 41, endTime: 47, text: 'Siranoosh, Siranoosh, yeraz kimi buhyduhnoos' },
-            { startTime: 47, endTime: 59, text: 'Ayskan dari hamperetsi shad anoosh, shad anoosh' },
+            { startTime: 18, endTime: 29, text: 'Ey sevgili; canımsın, canımsın' },
+            { startTime: 29, endTime: 41, text: 'Benimsin, benimsin.' },
+            { startTime: 41, endTime: 47, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
+            { startTime: 47, endTime: 59, text: 'Yıllardır sabrettim, tatlım' },
             { startTime: 59, endTime: 70.5, text: '♪' },
-            { startTime: 70.5, endTime: 82, text: 'Boyiti lav yerguhntser e, door indzi, door indzi' },
-            { startTime: 82, endTime: 93.5, text: 'Mechkit lav parguhtsire, door indzi, door indzi' },
-            { startTime: 93.5, endTime: 99.5, text: 'Siranoosh, Siranoosh, yeraz kimi buhyduhnoos' },
-            { startTime: 99.5, endTime: 111.5, text: 'Dzideruht lav khoshortsirin, shad anoosh, shad anoosh' },
+            { startTime: 70.5, endTime: 82, text: 'Çok büyümüşsün, benimle ol' },
+            { startTime: 82, endTime: 93.5, text: 'Belin incelmiş, benimle ol' },
+            { startTime: 93.5, endTime: 99.5, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
+            { startTime: 99.5, endTime: 111.5, text: 'Gülsün yüzün, tatlım' },
             { startTime: 111.5, endTime: 167, text: '♪...' },
-            { startTime: 167, endTime: 179, text: 'Hadi' },
-            { startTime: 179, endTime: 190, text: 'Kollarından düşer şerbet, şeker' },
-            { startTime: 190, endTime: 196, text: 'Şirinim, Şirinim, tıpkı bir güzel rüyam' },
+            { startTime: 167, endTime: 179, text: 'Sevişelim tatlım, gülüm' },
+            { startTime: 179, endTime: 190, text: 'Kollarından damlar şerbet, şeker' },
+            { startTime: 190, endTime: 196, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
             { startTime: 196, endTime: 208, text: 'Baharında açan bir gülsün, tatlım' },
-            { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, tıpkı bir güzel rüyam' },
+            { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
             { startTime: 214, endTime: 227, text: 'Baharında açan bir gülsün, tatlım' },
+            { startTime: 227, endTime: 231, text: 'Ermenice aslından çeviren: Berat Can TURSUN' },
         ],
     };
 
@@ -381,9 +381,14 @@
             lyricsText.textContent = lyrics[index].text;
             currentLyricIndex = index;
             lyricsText.style.color = '#f5f5f7'; // Change text color when a lyric starts
-            lyricsText.style.fontSize = '21px';
+            lyricsText.style.fontSize = '20px';
             lyricsText.style.fontWeight = '400';
             lyricsText.style.marginTop = '20px';
+            lyricsText.style.width = '250px';
+            lyricsText.style.textAlign = 'center';
+            lyricsText.style.backgroundColor = '#02302080';
+            lyricsText.style.borderBottomLeftRadius = '10px';
+            lyricsText.style.borderTopRightRadius = '10px';
         } else {
             lyricsText.textContent = '';
             currentLyricIndex = -1;
