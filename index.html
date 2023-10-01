@@ -200,6 +200,7 @@
             height: 100%;
             border-radius: 5px;
             width: 0;
+            transition: 0.1s;
         }
 
         .seek-bar-thumb {
@@ -211,6 +212,16 @@
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
+        }
+
+        .seek-bar-thumb:focus{
+          transform: scale(1.1);
+          transition: 0.1s;
+        }
+
+        .seek-bar-thumb:active{
+          transform: scale(1);
+          transition: 0.1s;
         }
 
         #toggle-lyrics{
@@ -308,21 +319,21 @@
         turkce: [
             { startTime: 0, endTime: 18, text: '♪' },
             { startTime: 18, endTime: 29, text: 'Ey sevgili kız; canımsın, canımsın' },
-            { startTime: 29, endTime: 41, text: 'İnce belin ve boyunla tatlımsın' },
-            { startTime: 41, endTime: 47, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
-            { startTime: 47, endTime: 59, text: 'Yıllardır beklediğim canımsın' },
+            { startTime: 29, endTime: 41, text: 'İnce belin ve boyunla tatlımsın, tatlımsın' },
+            { startTime: 41, endTime: 47, text: 'Şirinim, Şirinim, hayatımın rengi' },
+            { startTime: 47, endTime: 59, text: 'Yıllardır beklediğim canımsın, canımsın' },
             { startTime: 59, endTime: 70.5, text: '♪' },
             { startTime: 70.5, endTime: 82, text: 'Çok büyümüşsün, canım seni ister' },
             { startTime: 82, endTime: 93.5, text: 'Belin incelmiş, canım seni ister' },
-            { startTime: 93.5, endTime: 99.5, text: 'Şirinim, Şirinim, rüyalarımın rengi' },
+            { startTime: 93.5, endTime: 99.5, text: 'Şirinim, Şirinim, hayatımın rengi' },
             { startTime: 99.5, endTime: 111.5, text: 'Gülsün o tatlı yüzün' },
             { startTime: 111.5, endTime: 167, text: '♪...' },
             { startTime: 167, endTime: 179, text: 'Sevişelim tatlım, gülüm' },
             { startTime: 179, endTime: 190, text: 'Kollarından damlar şerbet, şeker' },
             { startTime: 190, endTime: 196, text: 'Şirinim, Şirinim, hayatımın rengi' },
-            { startTime: 196, endTime: 208, text: 'Baharında açan bir gülsün, tatlım' },
+            { startTime: 196, endTime: 208, text: 'Baharında açan bir gülsün tatlım, tatlım' },
             { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, hayatımın rengi' },
-            { startTime: 214, endTime: 227, text: 'Baharında açan bir gülsün, tatlım' },
+            { startTime: 214, endTime: 227, text: 'Baharında açan bir gülsün tatlım, tatlım' },
             { startTime: 227, endTime: 231, text: 'Ermenice aslından çeviren: Berat Can TURSUN' },
         ],
     };
