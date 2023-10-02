@@ -101,6 +101,246 @@
 
   .form {
     margin-top: 12%;
+    display: block;
+    background-image: linear-gradient(#CDA685, #44341D);
+    border-radius: 15px;
+    max-width: 250px;
+  }
+
+  .music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .album-cover img {
+    max-width: 200px;
+    border-radius: 15px;
+  }
+
+  .controls button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .controls button#play {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+  }
+
+  .controls button#pause {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+  }
+
+  .controls button#toggle-lyrics {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 15px;
+  }
+
+  #time-display {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+  }
+
+  .song-details {
+    color: #f5f5f7;
+  }
+
+  .lyrics-container {
+    text-align: center;
+  }
+
+  #lyrics {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+  }
+
+
+  #language-select{
+    font-size: 19px; 
+    font-family: sans-serif; 
+    color: #023020; 
+    background-color: #F5F5DC;
+    margin-inline: auto;
+  }
+
+
+
+
+
+  .seek-bar-container {
+            width: 200px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .seek-bar {
+            flex-grow: 1;
+            background-color: #f5f5f733;
+            height: 5px;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            border-color: transparent;
+        }
+
+        .seek-bar-fill {
+            background-color: #f5f5f7;
+            height: 100%;
+            border-radius: 5px;
+            width: 0;
+            transition: 0.1s;
+        }
+
+        .seek-bar-thumb {
+            width: 13px;
+            height: 13px;
+            background-color: #f5f5f7;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .seek-bar-thumb:focus{
+          transform: scale(1.1);
+          transition: 0.1s;
+        }
+
+        .seek-bar-thumb:active{
+          transform: scale(1);
+          transition: 0.1s;
+        }
+
+        #toggle-lyrics{
+          transition: 0.1s;
+        }
+
+        #toggle-lyrics:focus{
+           transform: scale(1);
+        }
+
+        #toggle-lyrics:active{
+          transform: scale(0.9)
+        }       
+
+        
+        .controls button#pause{
+          transition: 0.1s;
+        }
+
+        .controls button#pause:focus{
+           transform: scale(1);
+        }
+
+        .controls button#pause:active{
+          transform: scale(0.9)
+        } 
+
+
+        .controls button#play{
+          transition: 0.1s;
+        }
+
+        .controls button#play:focus{
+           transform: scale(1);
+        }
+
+        .controls button#play:active{
+          transform: scale(0.9)
+        } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#023020, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .sla {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 500;
+  }
+
+  
+  .kap {
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #023020, #fff, #023020);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 10s linear infinite;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  .form {
+    margin-top: 50%;
+    display: block;
+    background-image: linear-gradient(#CDA685, #44341D);
+    border-radius: 15px;
+    max-width: 250px;
   }
 
   .music-player {
@@ -318,7 +558,7 @@
         ],
         turkce: [
             { startTime: 0, endTime: 18, text: '♪' },
-            { startTime: 18, endTime: 29, text: 'Ey sevgili kız; canımsın, canımsın' },
+            { startTime: 18, endTime: 29, text: 'Ey şirin kız; canımsın, canımsın' },
             { startTime: 29, endTime: 41, text: 'İnce belin ve boyunla tatlımsın, tatlımsın' },
             { startTime: 41, endTime: 47, text: 'Şirinim, Şirinim, hayatımın rengi' },
             { startTime: 47, endTime: 59, text: 'Yıllardır beklediğim canımsın, canımsın' },
@@ -394,14 +634,13 @@
             lyricsText.textContent = lyrics[index].text;
             currentLyricIndex = index;
             lyricsText.style.color = '#f5f5f7'; // Change text color when a lyric starts
-            lyricsText.style.fontSize = '20px';
+            lyricsText.style.fontSize = '21px';
             lyricsText.style.fontWeight = '400';
             lyricsText.style.marginTop = '20px';
             lyricsText.style.width = '250px';
             lyricsText.style.textAlign = 'center';
-            lyricsText.style.backgroundColor = '#02302080';
-            lyricsText.style.borderBottomLeftRadius = '10px';
-            lyricsText.style.borderTopRightRadius = '10px';
+            lyricsText.style.backgroundColor = '#023020';
+            lyricsText.style.borderRadius = '15px';
         } else {
             lyricsText.textContent = '';
             currentLyricIndex = -1;
