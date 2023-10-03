@@ -20,11 +20,6 @@
           <h2>Siranuş</h2>
           <p>Onnik Dinkjian</p>
       </div>
-      <div class="controls">
-          <button id="play"><i class="fas fa-play"></i></button>
-          <button id="pause"><i class="fas fa-pause"></i></button>
-          <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
-      </div>
       <div id="time-display">0:00 / 0:00</div>
   </div>
 
@@ -33,6 +28,12 @@
           <div class="seek-bar-fill"></div>
           <div class="seek-bar-thumb"></div>
       </div>
+  </div>
+
+  <div class="controls">
+    <button id="play"><i class="fas fa-play"></i></button>
+    <button id="pause"><i class="fas fa-pause"></i></button>
+    <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
   </div>
 
   <div class="lyrics-container" style="display: none; text-align: center;">
@@ -105,7 +106,7 @@
     display: block;
     background-image: linear-gradient(#CDA685, #44341D);
     border-radius: 15px;
-    max-width: 250px;
+    width: 250px;
   }
 
   .music-player {
@@ -174,12 +175,25 @@
   #language-select{
     font-size: 20px; 
     font-family: sans-serif; 
-    color: #023020; 
-    background-color: #F5F5DC;
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
     margin-inline: auto;
     font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    transition: 0.2s;
   }
 
+  #language-select:focus{
+    border-color:  #023020;
+  }
+  
+
+  #language-select:focus:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
 
 
 
@@ -277,6 +291,8 @@
 
 
 
+
+
 @media only screen and (max-width: 480px){
   body {
     display: flex;
@@ -301,7 +317,7 @@
   .kap {
     font-weight: 600;
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
     font-family: Hack, sans-serif;
     text-transform: uppercase;
     background: linear-gradient(90deg, #023020, #fff, #023020);
@@ -328,7 +344,7 @@
   }
 
   .form {
-    margin-top: 50%;
+    margin-top: 55%;
     display: block;
     background-image: linear-gradient(#CDA685, #44341D);
     border-radius: 15px;
@@ -629,7 +645,7 @@
             lyricsText.style.fontSize = '21px';
             lyricsText.style.fontWeight = '400';
             lyricsText.style.marginTop = '20px';
-            lyricsText.style.width = '250px';
+            lyricsText.style.width = '242px';
             lyricsText.style.textAlign = 'center';
             lyricsText.style.borderRadius = '15px';
         } else {
@@ -688,6 +704,12 @@
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
     }
+
+
+
+
+
+
 
 </script>
 
