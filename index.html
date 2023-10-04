@@ -11,6 +11,7 @@
 <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">Zaza ܣܘܪܝܝܐ հայեր ܟܲܠܕܵܝܹ̈ܐ Lazepe Kurd  عَرَبِيٌّ ქართველები یَزِیدِیَانْ / Êzidîtî Nesturî יְהוּדִים Rum Alevi Адыгэхэр Համշենցիներ</span></p>
 
 <div class="form">
+  <button class="close-button" id="close-form"><i class="fas fa-times"></i></button>
   <div class="music-player">
       <!-- Your existing player components... -->
       <div class="album-cover">
@@ -53,6 +54,48 @@
 
 <style>
 @media only screen and (min-width: 480px){
+
+/* Position the close button */
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style the close button icon */
+.close-button i {
+  width: 23px;
+  height: 28px;
+}
+
+
+.close-button:hover{
+  background-color: #023020;
+  border-radius: 50%;
+  transition: all 0.15s ease-in 0s !important;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   body {
     display: flex;
     justify-content: center;
@@ -85,7 +128,7 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 9s linear infinite;
+    animation: shine 14s linear infinite;
     position: absolute;
     width: 100%;
     left: 0;
@@ -102,6 +145,7 @@
   }
 
   .form {
+    position: relative;
     margin-top: 15%;
     display: block;
     background-image: linear-gradient(#CDA685, #44341D);
@@ -119,6 +163,7 @@
   .album-cover img {
     max-width: 200px;
     border-radius: 15px;
+    margin-top: 10px;
   }
 
   .controls button {
@@ -194,6 +239,7 @@
     box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
     outline: none;
   }
+
 
 
 
@@ -513,7 +559,27 @@
 </style>
 
 <script>
-  
+  // JavaScript to close the form
+const closeFormButton = document.getElementById('close-form');
+closeFormButton.addEventListener('click', () => {
+  const form = document.querySelector('.form');
+  form.style.display = 'none';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
     const audioPlayer = document.getElementById('audio-player');
     const playButton = document.getElementById('play');
