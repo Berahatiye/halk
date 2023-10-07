@@ -863,7 +863,7 @@
         }
 
         .controls button#pause:active{
-          transform: scale(0.9)
+          transform: scale(0.9);
         } 
 
 
@@ -1053,7 +1053,7 @@
             { startTime: 70.5, endTime: 82, text: 'Պոյիդի լաւ երկնցիր է, տուր ընծի, տուր ընծի' },
             { startTime: 82, endTime: 93.5, text: 'Մէջքիդի լաւ բարակցիր է, տուր ընծի, տուր ընծի ' },
             { startTime: 93.5, endTime: 99.5, text: 'Սիրանուշ, Սիրանուշ, երազ քիմի պըյտընուս' },
-            { startTime: 99.5, endTime: 111.5, text: 'Ծիծերդ լաւ խոշորցիր ին, շատ անուշ, շատ անուշ ' },
+            { startTime: 99.5, endTime: 111.5, text: 'Ծիծերդ լաւ խոշորցիր ին, շատ անուշ, շատ անուշ' },
             { startTime: 111.5, endTime: 167, text: '♪...' },
             { startTime: 167, endTime: 179, text: 'Պառկէնք, սիրէնք, հուտիդ առնէնք, վարդն անուշ, վարդն անուշ' },
             { startTime: 179, endTime: 190, text: 'Մէջքիդ գրկէնք, շաքար շարպաթ, շատ անուշ, շատ անուշ' },
@@ -1083,18 +1083,18 @@
         ],
         turkce: [
             { startTime: 0, endTime: 18, text: '♪' },
-            { startTime: 18, endTime: 29, text: 'Ey şirin kız; canımsın, canımsın' },
-            { startTime: 29, endTime: 41, text: 'İnce belin ve boyunla tatlımsın, tatlımsın' },
+            { startTime: 18, endTime: 29, text: 'Ey sevimli kız; benimsin, benimsin' },
+            { startTime: 29, endTime: 41, text: 'İnce belin ve boyunla benimsin, benimsin' },
             { startTime: 41, endTime: 47, text: 'Şirinim, Şirinim, hayatımın rengi' },
             { startTime: 47, endTime: 59, text: 'Yıllardır beklediğim canımsın, canımsın' },
             { startTime: 59, endTime: 70.5, text: '♪' },
-            { startTime: 70.5, endTime: 82, text: 'Çok büyümüşsün, canım seni ister' },
-            { startTime: 82, endTime: 93.5, text: 'Belin incelmiş, canım seni ister' },
+            { startTime: 70.5, endTime: 82, text: 'Çok büyümüşsün güzelim, güzelim' },
+            { startTime: 82, endTime: 93.5, text: 'Belin incelmiş güzelim, güzelim' },
             { startTime: 93.5, endTime: 99.5, text: 'Şirinim, Şirinim, hayatımın rengi' },
-            { startTime: 99.5, endTime: 111.5, text: 'Gülsün o tatlı yüzün' },
+            { startTime: 99.5, endTime: 111.5, text: 'Gülsün yüzün canım, canım' },
             { startTime: 111.5, endTime: 167, text: '♪...' },
             { startTime: 167, endTime: 179, text: 'Sevişelim tatlım, gülüm' },
-            { startTime: 179, endTime: 190, text: 'Kollarından damlar şerbet, şeker' },
+            { startTime: 179, endTime: 190, text: 'Kollarından şeker, şerbet damlar tatlım, tatlım' },
             { startTime: 190, endTime: 196, text: 'Şirinim, Şirinim, hayatımın rengi' },
             { startTime: 196, endTime: 208, text: 'Baharında açan bir gülsün tatlım, tatlım' },
             { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, hayatımın rengi' },
@@ -1159,12 +1159,13 @@
             lyricsText.textContent = lyrics[index].text;
             currentLyricIndex = index;
             lyricsText.style.color = '#f5f5f7'; // Change text color when a lyric starts
-            lyricsText.style.fontSize = '21px';
-            lyricsText.style.fontWeight = '400';
+            lyricsText.style.fontSize = '20px';
+            lyricsText.style.fontWeight = '500';
             lyricsText.style.marginTop = '20px';
             lyricsText.style.width = '242px';
             lyricsText.style.textAlign = 'center';
             lyricsText.style.borderRadius = '15px';
+            lyricsText.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
         } else {
             lyricsText.textContent = '';
             currentLyricIndex = -1;
