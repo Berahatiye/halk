@@ -118,46 +118,45 @@
         </div>                  
         </li>
         <li>
-          <div class="form">
-            <div class="music-player">
-                <!-- Your existing player components... -->
-                <div class="album-cover">
-                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                </div>
-                <div class="song-details">
-                    <h2>Siranuş</h2>
-                    <p>Onnik Dinkjian</p>
-                </div>
-                <div id="time-display">0:00 / 0:00</div>
-            </div>
-          
-            <div class="seek-bar-container">
-                <div class="seek-bar">
-                    <div class="seek-bar-fill"></div>
-                    <div class="seek-bar-thumb"></div>
-                </div>
-            </div>
-          
-            <div class="controls">
-              <button id="play"><i class="fas fa-play"></i></button>
-              <button id="pause"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector" style="justify-content: center;">
-                    <select id="language-select">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice">հայերեն</option>
-                        <option value="latinermeni">հայերեն (Latinize)</option>
-                        <option value="turkce">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-          
-            <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
-          </div>          
+<div class="form">
+    <div class="music-player-3">
+        <div class="album-cover-3">
+            <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+        </div>
+        <div class="song-details-3">
+            <h2>Şeg Mazerov Er</h2>
+            <p>Onnik Dinkjian</p>
+        </div>
+        <div id="time-display-3">0:00 / 0:00</div>
+    </div>
+
+    <div class="seek-bar-container-3">
+        <div class="seek-bar-3">
+            <div class="seek-bar-fill-3"></div>
+            <div class="seek-bar-thumb-3"></div>
+        </div>
+    </div>
+
+    <div class="controls-3">
+        <button id="play-3"><i class="fas fa-play"></i></button>
+        <button id="pause-3"><i class="fas fa-pause"></i></button>
+        <button id="toggle-lyrics-3"><i class="fas fa-music"></i> Sözler</button>
+    </div>
+
+    <div class="lyrics-container-3" style="display: none; text-align: center;">
+        <div id="lyrics-language-selector-3" style="justify-content: center;">
+            <select id="language-select-3">
+                <option value disabled selected>Dil Seç.</option>
+                <option value="ermenice3">հայերեն</option>
+                <option value="latinermeni3">հայերեն (Latinize)</option>
+                <option value="turkce3">Türkçe</option>
+            </select>
+        </div>
+        <div id="lyrics-3" style="width: max-content; margin: 0 auto; color: #333; font-size: 18px; font-weight: 500;"></div>
+    </div>
+
+    <audio id="audio-player-3" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/12_Sheg_Mazerov_Er.mp3"></audio>
+</div>         
         </li>
         <li>
           <div class="form">
@@ -293,7 +292,7 @@
 .custom-nav-dot-12 {
   position: absolute;
   cursor: pointer;
-  margin-left: -7.5px;
+  margin-inline: auto;
   bottom: -22.5px;
   width: 15px;
   height: 15px;
@@ -376,11 +375,11 @@
   transform: scale(0.9);
 }
 .custom-left-arrow-12 {
-  left: 5px;
+  left: 0;
   border-radius: 5px;
 }
 .custom-right-arrow-12 {
-  right: 5px;
+  right: 0;
   border-radius: 5px;
 }
 #custom-slide56:checked ~ .custom-left-arrow-12[for=custom-slide60], #custom-slide56:checked ~ .custom-right-arrow-12[for=custom-slide57] {
@@ -655,14 +654,6 @@
         } 
 
 
-
-
-
-
-
-
-
-
         
 
 
@@ -679,6 +670,7 @@
 .album-cover-2 img {
     max-width: 200px;
     border-radius: 15px;
+    margin-top: 10px;
 }
 
 .controls-2 button {
@@ -844,6 +836,181 @@
 
 
 
+
+
+
+
+
+
+
+.music-player-3 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-3 img {
+    max-width: 200px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.controls-3 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-3 button#play-3 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-3 button#pause-3 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-3 button#toggle-lyrics-3 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 15px;
+}
+
+#time-display-3 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+}
+
+.song-details-3 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-3 {
+    text-align: center;
+}
+
+#lyrics-3 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-3{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-3:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-3:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-3 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-3 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-3 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-3 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seek-bar-thumb-3:focus {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-3:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+#toggle-lyrics-3 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-3:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-3:active {
+    transform: scale(0.9);
+}
+
+.controls-3 button#pause-3 {
+    transition: 0.1s;
+}
+
+.controls-3 button#pause-3:focus {
+    transform: scale(1);
+}
+
+.controls-3 button#pause-3:active {
+    transform: scale(0.9);
+}
+
+.controls-3 button#play-3 {
+    transition: 0.1s;
+}
+
+.controls-3 button#play-3:focus {
+    transform: scale(1);
+}
+
+.controls-3 button#play-3:active {
+    transform: scale(0.9);
+}
 
         
 }
@@ -931,6 +1098,7 @@
   .album-cover img {
     max-width: 200px;
     border-radius: 15px;
+    margin-top: 10px;
   }
 
   .controls button {
@@ -985,11 +1153,27 @@
 
 
   #language-select{
-    font-size: 19px; 
+    font-size: 20px; 
     font-family: sans-serif; 
-    color: #023020; 
-    background-color: #F5F5DC;
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
     margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
   }
 
 
@@ -1030,16 +1214,6 @@
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
-        }
-
-        .seek-bar-thumb:focus{
-          transform: scale(1.1);
-          transition: 0.1s;
-        }
-
-        .seek-bar-thumb:active{
-          transform: scale(1);
-          transition: 0.1s;
         }
 
         #toggle-lyrics{
@@ -1123,7 +1297,7 @@
 .custom-nav-dot-12 {
   position: absolute;
   cursor: pointer;
-  margin-left: -7.5px;
+  margin-inline: auto;
   bottom: -22.5px;
   width: 15px;
   height: 15px;
@@ -1206,11 +1380,11 @@
   transform: scale(0.9);
 }
 .custom-left-arrow-12 {
-  left: 5px;
+  left: 0;
   border-radius: 5px;
 }
 .custom-right-arrow-12 {
-  right: 5px;
+  right: 0;
   border-radius: 5px;
 }
 #custom-slide56:checked ~ .custom-left-arrow-12[for=custom-slide60], #custom-slide56:checked ~ .custom-right-arrow-12[for=custom-slide57] {
@@ -1240,24 +1414,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CSS styles for the second music player (you can reuse or modify existing styles) */
 
 .music-player-2 {
@@ -1270,6 +1426,7 @@
 .album-cover-2 img {
     max-width: 200px;
     border-radius: 15px;
+    margin-top: 10px;
 }
 
 .controls-2 button {
@@ -1382,16 +1539,6 @@
     cursor: pointer;
 }
 
-.seek-bar-thumb-2:focus {
-    transform: scale(1.1);
-    transition: 0.1s;
-}
-
-.seek-bar-thumb-2:active {
-    transform: scale(1);
-    transition: 0.1s;
-}
-
 #toggle-lyrics-2 {
     transition: 0.1s;
 }
@@ -1428,6 +1575,191 @@
     transform: scale(0.9);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.music-player-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-3 img {
+    max-width: 200px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.controls-3 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-3 button#play-3 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-3 button#pause-3 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-3 button#toggle-lyrics-3 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 15px;
+}
+
+#time-display-3 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+}
+
+.song-details-3 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-3 {
+    text-align: center;
+}
+
+#lyrics-3 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-3{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-3:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-3:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-3 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-3 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-3 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-3 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#toggle-lyrics-3 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-3:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-3:active {
+    transform: scale(0.9);
+}
+
+.controls-3 button#pause-3 {
+    transition: 0.1s;
+}
+
+.controls-3 button#pause-3:focus {
+    transform: scale(1);
+}
+
+.controls-3 button#pause-3:active {
+    transform: scale(0.9);
+}
+
+.controls-3 button#play-3 {
+    transition: 0.1s;
+}
+
+.controls-3 button#play-3:focus {
+    transform: scale(1);
+}
+
+.controls-3 button#play-3:active {
+    transform: scale(0.9);
+}
 }
 </style>
 
@@ -1701,7 +2033,7 @@ const lyricsData2 = {
             { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
     ],   
     turkce2: [
-    { startTime: 0, endTime: 34, text: '♪' },
+            { startTime: 0, endTime: 34, text: '♪' },
             { startTime: 34, endTime: 36.4, text: 'Cumartesi duş günüdür' },
             { startTime: 36.4, endTime: 38.7, text: 'Terliğim ve havlum elimdedir' },
             { startTime: 38.7, endTime: 41.3, text: 'Musluktan sıcak vurur' },
@@ -1852,6 +2184,169 @@ function formatTime(time) {
 
 
 
+
+
+
+
+
+
+const audioPlayer3 = document.getElementById('audio-player-3');
+const playButton3 = document.getElementById('play-3');
+const pauseButton3 = document.getElementById('pause-3');
+const timeDisplay3 = document.getElementById('time-display-3');
+const lyricsContainer3 = document.querySelector('.lyrics-container-3');
+const toggleLyricsButton3 = document.getElementById('toggle-lyrics-3');
+const lyricsLanguageSelector3 = document.getElementById('language-select-3');
+const lyricsText3 = document.getElementById('lyrics-3');
+
+// Define lyrics for the third player with specific times
+const lyricsData3 = {
+    ermenice3: [
+        // Define lyrics for the third player in English...
+    ],
+    latinermeni3: [
+    { startTime: 0, endTime: 34, text: '♪' },
+            { startTime: 34, endTime: 36.4, text: 'Yar m’ooneyi ink shad pari,' },
+            { startTime: 36.4, endTime: 38.7, text: 'dzanotatsa antsyal dari ' },
+            { startTime: 38.7, endTime: 41.3, text: 'An al arin tserkes darin,' },
+            { startTime: 41.3, endTime: 43.5, text: 'akh yaruhs, sheg mazerov er' },
+            { startTime: 43.5, endTime: 48.5, text: 'akh yaruhs, sheg mazerov er' },
+            { startTime: 48.5, endTime: 58.29, text: '♪' },
+            { startTime: 58.29, endTime: 60.37, text: 'Guh kuhse nants guh kuhse' },
+            { startTime: 60.37, endTime: 63, text: 'Marminuhs yara guhne' },
+            { startTime: 63, endTime: 65.5, text: 'Guhllam buhssoon puhruhkhtoon' },
+            { startTime: 65.5, endTime: 68, text: 'Erisuhs garmir tuhtoom' },
+            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 72.8, endTime: 153.1, text: '♪...' },
+            { startTime: 153.1, endTime: 155.5, text: 'Achkis esten enten e' },
+            { startTime: 155.5, endTime: 158, text: 'Mamis achkis guh kotse' },
+            { startTime: 158, endTime: 160.5, text: 'Guhse duhghas hon miya' },
+            { startTime: 160.5, endTime: 163, text: 'Achkit kotse amot e' },
+            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 167.7, endTime: 177.2, text: '♪' },
+            { startTime: 177.2, endTime: 179.6, text: 'Kinam goozis hos ganis' },
+            { startTime: 179.6, endTime: 182.4, text: 'Juhnjuhghoognire nayis' },
+            { startTime: 182.4, endTime: 184.7, text: 'Hostsen sona paghnikuh' },
+            { startTime: 184.7, endTime: 187, text: 'Muhnni kas baboot hide' },
+            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+    ],
+    turkce3: [
+        // Define lyrics for the third player in French...
+    ],
+};
+
+let currentLyricIndex3 = -1;
+
+playButton3.addEventListener('click', () => {
+    audioPlayer3.play();
+    playButton3.style.display = 'none';
+    pauseButton3.style.display = 'inline';
+});
+
+pauseButton3.addEventListener('click', () => {
+    audioPlayer3.pause();
+    pauseButton3.style.display = 'none';
+    playButton3.style.display = 'inline';
+});
+
+toggleLyricsButton3.addEventListener('click', () => {
+    if (lyricsContainer3.style.display === 'none') {
+        lyricsContainer3.style.display = 'block';
+        displayLyric3(0);
+    } else {
+        lyricsContainer3.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector3.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector3.value;
+    displayLyric3(0, selectedLanguage);
+});
+
+audioPlayer3.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer3.currentTime;
+    const selectedLanguage = lyricsLanguageSelector3.value;
+    const lyrics3 = lyricsData3[selectedLanguage];
+
+    for (let i = 0; i < lyrics3.length; i++) {
+        const lyric = lyrics3[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex3) {
+                displayLyric3(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+    // If no matching lyric is found, display an empty line.
+    displayLyric3(-1, selectedLanguage);
+
+    // Update the time display
+    timeDisplay3.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer3.duration)}`;
+});
+
+function displayLyric3(index, language) {
+    const lyrics3 = lyricsData3[language];
+    if (index >= 0 && index < lyrics3.length) {
+        lyricsText3.textContent = lyrics3[index].text;
+        currentLyricIndex3 = index;
+        lyricsText3.style.color = '#333'; // Change text color when a lyric starts
+    } else {
+        lyricsText3.textContent = '';
+        currentLyricIndex3 = -1;
+    }
+}
+
+// Add seek bar functionality for the third player
+const seekBar3 = document.querySelector('.seek-bar-3');
+const seekBarFill3 = document.querySelector('.seek-bar-fill-3');
+const seekBarThumb3 = document.querySelector('.seek-bar-thumb-3');
+
+seekBar3.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBar3.getBoundingClientRect().left;
+    const seekBarWidth = seekBar3.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer3.duration;
+
+    audioPlayer3.currentTime = seekTime;
+});
+
+audioPlayer3.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer3.currentTime;
+    const duration = audioPlayer3.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFill3.style.width = progress + '%';
+    seekBarThumb3.style.left = progress + '%';
+
+    // Update the time display
+    timeDisplay3.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumb3.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove3);
+    document.addEventListener('mouseup', onMouseUp3);
+});
+
+function onMouseMove3(e) {
+    const clickX = e.clientX - seekBar3.getBoundingClientRect().left;
+    const seekBarWidth = seekBar3.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer3.duration;
+
+    audioPlayer3.currentTime = seekTime;
+}
+
+function onMouseUp3() {
+    document.removeEventListener('mousemove', onMouseMove3);
+    document.removeEventListener('mouseup', onMouseUp3);
+}
+
+// Add formatTime function (same as the previous players)
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
 
 
 </script>
