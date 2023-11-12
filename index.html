@@ -424,7 +424,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#023020, #000000);
+    background-image: linear-gradient(#023020, #191414);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
@@ -1731,6 +1731,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+        
 }
 
 #toggle-lyrics-3 {
@@ -1837,10 +1838,10 @@
             { startTime: 167.4, endTime: 179, text: 'Sevişelim tatlım, gülüm' },
             { startTime: 179, endTime: 190, text: 'Kollarından şeker, şerbet damlar tatlım, tatlım' },
             { startTime: 190, endTime: 196, text: 'Şirinim, Şirinim, hayatımın rengi' },
-            { startTime: 196, endTime: 208, text: 'Baharında açan bir gülsün tatlım, tatlım' },
+            { startTime: 196, endTime: 208, text: 'Baharında açmış bir gülsün tatlım, tatlım' },
             { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, hayatımın rengi' },
-            { startTime: 214, endTime: 227, text: 'Baharında açan bir gülsün tatlım, tatlım' },
-            { startTime: 227, endTime: 231, text: '.' },
+            { startTime: 214, endTime: 227, text: 'Baharında açmış bir gülsün tatlım, tatlım' },
+            { startTime: 227, endTime: 231, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
         ],
     };
 
@@ -1893,6 +1894,7 @@
         // Update the time display
         timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer.duration)}`;
     });
+
 
     function displayLyric(index, language) {
         const lyrics = lyricsData[language];
@@ -2046,26 +2048,26 @@ const lyricsData2 = {
             { startTime: 36.4, endTime: 38.7, text: 'Takunyam ve havlum elimdedir' },
             { startTime: 38.7, endTime: 41.3, text: 'Musluktan buhar vurur' },
             { startTime: 41.3, endTime: 43.5, text: 'Annem eldivenini sürter' },
-            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo bu hamamdır' },
+            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
             { startTime: 48.5, endTime: 58.29, text: '♪' },
             { startTime: 58.29, endTime: 60.37, text: 'Annem beni ovar' },
             { startTime: 60.37, endTime: 63, text: 'Vücudumu çiğner' },
             { startTime: 63, endTime: 65.5, text: 'Olurum gıcır gıcır' },
             { startTime: 65.5, endTime: 68, text: 'Yüzümden de görülür' },
-            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo bu hamamdır' },
+            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
             { startTime: 72.8, endTime: 153.1, text: '♪...' },
             { startTime: 153.1, endTime: 155.5, text: 'Gözlerim etrafta dolanır' },
             { startTime: 155.5, endTime: 158, text: 'Annem onları durdurur' },
             { startTime: 158, endTime: 160.5, text: 'Kapamamı ister' },
             { startTime: 160.5, endTime: 163, text: 'Yakar seni der' },
-            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo bu hamamdır' },
+            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
             { startTime: 167.7, endTime: 177.2, text: '♪' },
             { startTime: 177.2, endTime: 179.6, text: 'Bilirim burada olmak istiyorsun' },
             { startTime: 179.6, endTime: 182.4, text: 'Buradan minik serçelere bakarsın' },
             { startTime: 182.4, endTime: 184.7, text: 'Artık bu hamama gelirsin' },
             { startTime: 184.7, endTime: 187, text: 'Olsun yanında da baban' },
-            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo bu hamamdır' },
-            { startTime: 203, endTime: 210, text: '.' },
+            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
+            { startTime: 203, endTime: 210, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
     ],
 };
 
@@ -2207,39 +2209,54 @@ const toggleLyricsButton3 = document.getElementById('toggle-lyrics-3');
 const lyricsLanguageSelector3 = document.getElementById('language-select-3');
 const lyricsText3 = document.getElementById('lyrics-3');
 
-// Define lyrics for the third player with specific times
 const lyricsData3 = {
     ermenice3: [
         // Define lyrics for the third player in English...
     ],
     latinermeni3: [
-    { startTime: 0, endTime: 34, text: '♪' },
-            { startTime: 34, endTime: 36.4, text: 'Yar m’ooneyi ink shad pari,' },
-            { startTime: 36.4, endTime: 38.7, text: 'dzanotatsa antsyal dari ' },
-            { startTime: 38.7, endTime: 41.3, text: 'An al arin tserkes darin,' },
-            { startTime: 41.3, endTime: 43.5, text: 'akh yaruhs, sheg mazerov er' },
-            { startTime: 43.5, endTime: 48.5, text: 'akh yaruhs, sheg mazerov er' },
-            { startTime: 48.5, endTime: 58.29, text: '♪' },
-            { startTime: 58.29, endTime: 60.37, text: 'Guh kuhse nants guh kuhse' },
-            { startTime: 60.37, endTime: 63, text: 'Marminuhs yara guhne' },
-            { startTime: 63, endTime: 65.5, text: 'Guhllam buhssoon puhruhkhtoon' },
-            { startTime: 65.5, endTime: 68, text: 'Erisuhs garmir tuhtoom' },
-            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-            { startTime: 72.8, endTime: 153.1, text: '♪...' },
-            { startTime: 153.1, endTime: 155.5, text: 'Achkis esten enten e' },
-            { startTime: 155.5, endTime: 158, text: 'Mamis achkis guh kotse' },
-            { startTime: 158, endTime: 160.5, text: 'Guhse duhghas hon miya' },
-            { startTime: 160.5, endTime: 163, text: 'Achkit kotse amot e' },
-            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-            { startTime: 167.7, endTime: 177.2, text: '♪' },
-            { startTime: 177.2, endTime: 179.6, text: 'Kinam goozis hos ganis' },
-            { startTime: 179.6, endTime: 182.4, text: 'Juhnjuhghoognire nayis' },
-            { startTime: 182.4, endTime: 184.7, text: 'Hostsen sona paghnikuh' },
-            { startTime: 184.7, endTime: 187, text: 'Muhnni kas baboot hide' },
-            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 0, endTime: 44.85, text: '♪' },
+            { startTime: 44.85, endTime: 48.4, text: 'Yar m’ooneyi ink shad pari,' },
+            { startTime: 48.4, endTime: 52.1, text: 'dzanotatsa antsyal dari' },
+            { startTime: 52.1, endTime: 55.2, text: 'Yar m’ooneyi ink shad pari,' },
+            { startTime: 55.2, endTime: 59.1, text: 'dzanotatsa antsyal dari' },
+            { startTime: 59.1, endTime: 62, text: 'An al arin tserkes darin,' },
+            { startTime: 62, endTime: 67, text: 'akh yaruhs, sheg mazerov er' },
+            { startTime: 67, endTime: 74, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 74, endTime: 77.18, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 77.18, endTime: 81, text: 'shad shad hamov er' },
+            { startTime: 81, endTime: 87.9, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 87.9, endTime: 91.5, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 91.5, endTime: 94.9, text: 'shad shad hamov er' },
+            { startTime: 94.9, endTime: 112.4, text: '♪' },
+            { startTime: 112.4, endTime: 115.9, text: 'Darinerov uhsbasetsi,' },
+            { startTime: 115.96, endTime: 118.96, text: 'hazar nazov tserk tsuhketsi' },
+            { startTime: 118.96, endTime: 122.5, text: 'Darinerov uhsbasetsi,' },
+            { startTime: 122.5, endTime: 125.9, text: 'hazar nazov tserk tsuhketsi' },
+            { startTime: 125.9, endTime: 129.6, text: 'Suhrdis dzaghiguh puhrtsootsi,' },
+            { startTime: 129.6, endTime: 134.5, text: 'akh yaruhs, sheg mazerov er' },
+            { startTime: 134.5, endTime: 141.5, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 141.5, endTime: 144.9, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 144.9, endTime: 148.4, text: 'shad shad hamov er' },
+            { startTime: 148.4, endTime: 155.33, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 155.33, endTime: 158.6, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 158.6, endTime: 162.2, text: 'shad shad hamov er' },
+            { startTime: 162.2, endTime: 193.4, text: '♪' },
+            { startTime: 193.4, endTime: 197.36, text: 'Mayruh hangardz mitkuh pokhets,' },
+            { startTime: 197.36, endTime: 200.5, text: 'baranotsen almas gakhets' },
+            { startTime: 200.5, endTime: 203.9, text: 'Mayruh hangardz mitkuh pokhets,' },
+            { startTime: 203.9, endTime: 207.5, text: 'baranotsen almas gakhets' },
+            { startTime: 207.5, endTime: 210, text: 'Oorishi tıramov dzakhets,' },
+            { startTime: 210, endTime: 215.8, text: 'akh yaruhs, sheg mazerov er' },
+            { startTime: 215.8, endTime: 222.6, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 222.6, endTime: 226.3, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 226.3, endTime: 229.8, text: 'shad shad hamov er' },
+            { startTime: 229.8, endTime: 236.7, text: 'Garmuhrdoon ayderuh posignerov er' },
+            { startTime: 236.7, endTime: 239.8, text: 'Shuhrtoonkneren hampooyr m’ari,' },
+            { startTime: 239.8, endTime: 243, text: 'shad shad hamov er' },
+            { startTime: 243, endTime: 249, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
     ],
     turkce3: [
-        // Define lyrics for the third player in French...
+        
     ],
 };
 
@@ -2298,7 +2315,14 @@ function displayLyric3(index, language) {
     if (index >= 0 && index < lyrics3.length) {
         lyricsText3.textContent = lyrics3[index].text;
         currentLyricIndex3 = index;
-        lyricsText3.style.color = '#333'; // Change text color when a lyric starts
+        lyricsText3.style.color = '#f5f5f7';
+        lyricsText3.style.fontSize = '20px';
+        lyricsText3.style.fontWeight = '500';
+        lyricsText3.style.marginTop = '20px';
+        lyricsText3.style.width = '242px';
+        lyricsText3.style.textAlign = 'center';
+        lyricsText3.style.borderRadius = '15px';
+        lyricsText3.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
     } else {
         lyricsText3.textContent = '';
         currentLyricIndex3 = -1;
