@@ -271,18 +271,24 @@
 .baba{
   background-color: transparent;
   border-style: solid;
-  border-color: #f5f5f7;
-  border-width: 1px;
+  border-top-color: transparent;
+  border-bottom-color: #f5f5f7;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-width: 2px;
   position: relative;
   margin-inline: auto;
-  width: 100%;
+  width: fit-content;
   height: auto;
-  border-radius: 980px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 
 .ogul{
-  max-width: 480px;
+  width: 100%;
   display: flex;
   background-color: transparent;
   text-align: center;
@@ -558,19 +564,20 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 18s linear infinite;
+    animation: shine 12s linear infinite;
     position: relative;
     width: 100%;
     left: 0;
     margin-top: 30px;
+    margin-inline: auto;
   }
 
   @keyframes shine {
     0% {
-      background-position-x: -500%;
+      background-position-x: -442%;
     }
     100% {
-      background-position-x: 500%;
+      background-position-x: 442%;
     }
   }
 
@@ -1135,7 +1142,143 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 480px){
+  .baba{
+  background-color: transparent;
+  border-style: solid;
+  border-top-color: transparent;
+  border-bottom-color: #f5f5f7;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-width: 2px;
+  position: relative;
+  margin-inline: auto;
+  width: fit-content;
+  height: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
+.ogul{
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.ogul span{
+  font-size: 18px;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+  font-weight: 500;
+  margin-inline: 1px;
+  color: #f5f5f7;
+}
+
+.bos{
+    grid-column: 3 / 4;
+    width: 2px;
+    background-color: rgb(102, 102, 102);
+    margin-top: 0.45rem;
+    margin-bottom: 0.4rem;
+    border-radius: 1px;
+}
+
+
+.bir:hover{
+  background-color: #008080;
+  transition: 0.2s ease;
+    -moz-transition: 0.2s ease; /* Firefox 4 */
+    -webkit-transition: 0.2s ease; /* Safari and Chrome */
+    -o-transition: 0.2s ease; /* Opera */
+    -ms-transition: 0.2s ease; /* Explorer 10 */
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.bir{
+  width: 60px;
+}
+
+.uc:hover{
+  background-color: #8B0000;
+  transition: 0.2s ease;
+    -moz-transition: 0.2s ease; /* Firefox 4 */
+    -webkit-transition: 0.2s ease; /* Safari and Chrome */
+    -o-transition: 0.2s ease; /* Opera */
+    -ms-transition: 0.2s ease; /* Explorer 10 */
+    text-align: center;
+    border-radius: 50%;
+}
+
+.uc{
+   width: 20px;
+   height: 20px;
+}
+
+.hak:hover{
+  background-color: #702963;
+  transition: 0.2s ease;
+    -moz-transition: 0.2s ease; /* Firefox 4 */
+    -webkit-transition: 0.2s ease; /* Safari and Chrome */
+    -o-transition: 0.2s ease; /* Opera */
+    -ms-transition: 0.2s ease; /* Explorer 10 */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hak{
+  width: 86px;
+}
+
+.iki:hover{
+  background-color: #8B8000;
+  transition: 0.2s ease;
+    -moz-transition: 0.2s ease; /* Firefox 4 */
+    -webkit-transition: 0.2s ease; /* Safari and Chrome */
+    -o-transition: 0.2s ease; /* Opera */
+    -ms-transition: 0.2s ease; /* Explorer 10 */
+    border-radius: 5px;
+    text-align: center;  
+}
+
+.iki{
+  width: 74px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   html {
     justify-content: center;
     align-items: center;
@@ -1944,7 +2087,7 @@
             { startTime: 196, endTime: 208, text: 'Baharında açmış bir gülsün tatlım, tatlım' },
             { startTime: 208, endTime: 214, text: 'Şirinim, Şirinim, hayatımın rengi' },
             { startTime: 214, endTime: 227, text: 'Baharında açmış bir gülsün tatlım, tatlım' },
-            { startTime: 227, endTime: 231, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
+            { startTime: 227, endTime: 231, text: 'Ermenice aslından çeviren: Can Kurmamiyan' },
         ],
     };
 
@@ -2171,7 +2314,7 @@ const lyricsData2 = {
             { startTime: 182.4, endTime: 184.7, text: 'Artık bu hamama gelirsin' },
             { startTime: 184.7, endTime: 187, text: 'Olsun yanında da baban' },
             { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
-            { startTime: 203, endTime: 210, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
+            { startTime: 203, endTime: 210, text: 'Ermenice aslından çeviren: Can Kurmamiyan' },
     ],
 };
 
@@ -2401,8 +2544,8 @@ const lyricsData3 = {
             { startTime: 1, endTime: 44.85, text: '♪="Müzik ve Beste Hovsep Shamlian’a aittir."' },
             { startTime: 44.85, endTime: 48.4, text: 'Bir aşkım var, çok güzeldi,' },
             { startTime: 48.4, endTime: 52.1, text: 'bir sene önceydi' },
-            { startTime: 52.1, endTime: 55.2, text: 'Aldılar benden yar’imi,' },
-            { startTime: 55.2, endTime: 59.1, text: 'Ah yar’im, kızıl saçlı' },
+            { startTime: 52.1, endTime: 55.2, text: 'Bir aşkım var, çok güzeldi,' },
+            { startTime: 55.2, endTime: 59.1, text: 'bir sene önceydi' },
             { startTime: 59.1, endTime: 62, text: 'Aldılar benden yarimi,' },
             { startTime: 62, endTime: 67, text: 'Ah yar’im, kızıl saçlı' },
             { startTime: 67, endTime: 74, text: 'Pembe yanağı gamzeli' },
@@ -2412,7 +2555,7 @@ const lyricsData3 = {
             { startTime: 87.9, endTime: 91.5, text: 'Bir öpücük verdi,' },
             { startTime: 91.5, endTime: 94.9, text: 'bir rahmet gibi' },
             { startTime: 94.9, endTime: 112.4, text: '♪' },
-            { startTime: 112.4, endTime: 115.96, text: 'Beklediğim yıllar gitti,' },
+            { startTime: 112.4, endTime: 115.96, text: 'Beklediğim yıllar geçti,' },
             { startTime: 115.96, endTime: 118.96, text: 'bir bir denedim yar’i görmeyi' },
             { startTime: 118.96, endTime: 122.5, text: 'Beklediğim yıllar gitti,' },
             { startTime: 122.5, endTime: 125.9, text: 'bir bir denedim yar’i görmeyi' },
@@ -2427,7 +2570,7 @@ const lyricsData3 = {
             { startTime: 162.2, endTime: 193.4, text: '♪' },
             { startTime: 193.4, endTime: 196.9, text: 'Annesi çeldirdi aklını,' },
             { startTime: 196.9, endTime: 200.5, text: 'taktı boynuna bir gerdanlık elmaslı' },
-            { startTime: 200.5, endTime: 203.9, text: 'Sattı başkasına kızını,' },
+            { startTime: 200.5, endTime: 203.9, text: 'Annesi çeldirdi aklını,' },
             { startTime: 203.9, endTime: 207.5, text: 'taktı boynuna bir gerdanlık elmaslı' },
             { startTime: 207.5, endTime: 210.2, text: 'Sattı başkasına kızını,' },
             { startTime: 210.2, endTime: 215.8, text: 'ah yar’im, kızıl saçlı' },
@@ -2437,7 +2580,7 @@ const lyricsData3 = {
             { startTime: 229.4, endTime: 236.5, text: 'Pembe yanağı gamzeli' },
             { startTime: 236.5, endTime: 239.8, text: 'Bir öpücük verdi,' },
             { startTime: 239.8, endTime: 244.5, text: 'bir rahmet gibi' },
-            { startTime: 244.5, endTime: 249, text: 'Ermenice aslından çeviren: Can Kurmemiyan' },
+            { startTime: 245, endTime: 249, text: 'Ermenice aslından çeviren: Can Kurmamiyan' },
     ],
 };
 
