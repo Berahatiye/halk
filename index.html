@@ -322,7 +322,7 @@
                 </div>
                 <div class="song-details-5">
                     <h2>Diyarbekir Peşrevi</h2>
-                    <p>Onnik Dinkjiandfgdg</p>
+                    <p>Onnik Dinkjian</p>
                 </div>
                 <div id="time-display-5">0:00 / 0:00</div>
             </div>
@@ -344,15 +344,15 @@
                 <div id="lyrics-language-selector-5" style="justify-content: center;">
                     <select id="language-select-5">
                         <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice">հայերեն</option>
-                        <option value="latinermeni">հայերեն (Latinize)</option>
-                        <option value="turkce">Türkçe</option>
+                        <option value="ermenice5">հայերեն</option>
+                        <option value="latinermeni5">հայերեն (Latinize)</option>
+                        <option value="turkce5">Türkçe</option>
                     </select>
                 </div>
                 <div id="lyrics-5" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
             </div>
           
-            <audio id="audio-player-5" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+            <audio id="audio-player-5" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/08_Diyarbak%C4%B1r_Peshrevi.mp3"></audio>
           </div>
           
         </li>
@@ -389,15 +389,15 @@
                   <div id="lyrics-language-selector-6" style="justify-content: center;">
                       <select id="language-select-6">
                           <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice">հայերեն</option>
-                          <option value="latinermeni">հայերեն (Latinize)</option>
-                          <option value="turkce">Türkçe</option>
+                          <option value="ermenice6">հայերեն</option>
+                          <option value="latinermeni6">հայերեն (Latinize)</option>
+                          <option value="turkce6">Türkçe</option>
                       </select>
                   </div>
                   <div id="lyrics-6" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
             
-              <audio id="audio-player-6" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+              <audio id="audio-player-6" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/02_Diyarbekiri_Hokin.mp3"></audio>
             </div>
             
           </li>
@@ -1801,7 +1801,360 @@
 .controls-4 button#play-4:active {
     transform: scale(0.9);
 }
+
+
+
+
+.music-player-5 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-5 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-5 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-5 button#play-5 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-5 button#pause-5 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-5 button#toggle-lyrics-5 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-5 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-5 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-5 {
+    text-align: center;
+}
+
+#lyrics-5 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-5{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-5:active{
+    border-color:  #023020;
+    outline: none;
+  }
   
+
+  #language-select-5:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-5 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-5 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-5 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-5 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seek-bar-thumb-5:focus {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-5:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+#toggle-lyrics-5 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-5:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-5:active {
+    transform: scale(0.9);
+}
+
+.controls-5 button#pause-5 {
+    transition: 0.1s;
+}
+
+.controls-5 button#pause-5:focus {
+    transform: scale(1);
+}
+
+.controls-5 button#pause-5:active {
+    transform: scale(0.9);
+}
+
+.controls-5 button#play-5 {
+    transition: 0.1s;
+}
+
+.controls-5 button#play-5:focus {
+    transform: scale(1);
+}
+
+.controls-5 button#play-5:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+.music-player-6 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-6 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-6 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-6 button#play-6 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-6 button#pause-6 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-6 button#toggle-lyrics-6 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-6 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-6 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-6 {
+    text-align: center;
+}
+
+#lyrics-6 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-6{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-6:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-6:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-6 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-6 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-6 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-6 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seek-bar-thumb-6:focus {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-6:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+#toggle-lyrics-6 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-6:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-6:active {
+    transform: scale(0.9);
+}
+
+.controls-6 button#pause-6 {
+    transition: 0.1s;
+}
+
+.controls-6 button#pause-6:focus {
+    transform: scale(1);
+}
+
+.controls-6 button#pause-6:active {
+    transform: scale(0.9);
+}
+
+.controls-6 button#play-6 {
+    transition: 0.1s;
+}
+
+.controls-6 button#play-6:focus {
+    transform: scale(1);
+}
+
+.controls-6 button#play-6:active {
+    transform: scale(0.9);
+}
+
+
 }
 
 
@@ -2960,6 +3313,344 @@
 .controls-4 button#play-4:active {
     transform: scale(0.9);
 }
+
+
+
+
+
+
+
+
+.music-player-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-5 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-5 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-5 button#play-5 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-5 button#pause-5 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-5 button#toggle-lyrics-5 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-5 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-5 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-5 {
+    text-align: center;
+}
+
+#lyrics-5 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-5{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-5:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-5:active:not(button){
+    box-shadow: 0 0 0 3px #02302099;
+    outline: none;
+  }
+
+.seek-bar-container-5 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-5 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-5 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-5 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+        
+}
+
+#toggle-lyrics-5 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-5:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-5:active {
+    transform: scale(0.9);
+}
+
+.controls-5 button#pause-5 {
+    transition: 0.1s;
+}
+
+.controls-5 button#pause-5:focus {
+    transform: scale(1);
+}
+
+.controls-5 button#pause-5:active {
+    transform: scale(0.9);
+}
+
+.controls-5 button#play-5 {
+    transition: 0.1s;
+}
+
+.controls-5 button#play-5:focus {
+    transform: scale(1);
+}
+
+.controls-5 button#play-5:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+.music-player-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-6 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-6 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-6 button#play-6 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-6 button#pause-6 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-6 button#toggle-lyrics-6 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-6 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-6 {
+    color: #f5f5f7;
+}
+
+.lyrics-container-6 {
+    text-align: center;
+}
+
+#lyrics-6 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-6{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-6:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-6:active:not(button){
+    box-shadow: 0 0 0 3px #02302099;
+    outline: none;
+  }
+
+.seek-bar-container-6 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-6 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-6 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-6 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+        
+}
+
+#toggle-lyrics-6 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-6:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-6:active {
+    transform: scale(0.9);
+}
+
+.controls-6 button#pause-6 {
+    transition: 0.1s;
+}
+
+.controls-6 button#pause-6:focus {
+    transform: scale(1);
+}
+
+.controls-6 button#pause-6:active {
+    transform: scale(0.9);
+}
+
+.controls-6 button#play-6 {
+    transition: 0.1s;
+}
+
+.controls-6 button#play-6:focus {
+    transform: scale(1);
+}
+
+.controls-6 button#play-6:active {
+    transform: scale(0.9);
+}
 }
 </style>
 
@@ -3908,6 +4599,371 @@ function formatTime(time) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayer5 = document.getElementById('audio-player-5');
+const playButton5 = document.getElementById('play-5');
+const pauseButton5 = document.getElementById('pause-5');
+const timeDisplay5 = document.getElementById('time-display-5');
+const lyricsContainer5 = document.querySelector('.lyrics-container-5');
+const toggleLyricsButton5 = document.getElementById('toggle-lyrics-5');
+const lyricsLanguageSelector5 = document.getElementById('language-select-5');
+const lyricsText5 = document.getElementById('lyrics-5');
+
+const lyricsData5 = {
+    ermenice5: [
+    { startTime: 0, endTime: 26.55, text: '♪' },
+            { startTime: 26.55, endTime: 32.9, text: 'SÖZLER BULUNMAZ' },
+
+    ],
+    latinermeni5: [
+            { startTime: 0, endTime: 26.55, text: '♪' },
+            { startTime: 26.55, endTime: 32.9, text: 'SÖZLER BULUNMAZ' },
+
+
+    ],
+    turkce5: [
+            { startTime: 0, endTime: 1, text: '♪' },
+            { startTime: 1, endTime: 26.55, text: 'SÖZLER BULUNMAZ' },
+
+    ],
+};
+
+let currentLyricIndex5 = -1;
+
+playButton5.addEventListener('click', () => {
+    audioPlayer5.play();
+    playButton5.style.display = 'none';
+    pauseButton5.style.display = 'inline';
+});
+
+pauseButton5.addEventListener('click', () => {
+    audioPlayer5.pause();
+    pauseButton5.style.display = 'none';
+    playButton5.style.display = 'inline';
+});
+
+toggleLyricsButton5.addEventListener('click', () => {
+    if (lyricsContainer5.style.display === 'none') {
+        lyricsContainer5.style.display = 'block';
+        displayLyric5(0);
+    } else {
+        lyricsContainer5.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector5.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector5.value;
+    displayLyric5(0, selectedLanguage);
+});
+
+audioPlayer5.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer5.currentTime;
+    const selectedLanguage = lyricsLanguageSelector5.value;
+    const lyrics5 = lyricsData5[selectedLanguage];
+
+    for (let i = 0; i < lyrics5.length; i++) {
+        const lyric = lyrics5[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex5) {
+                displayLyric5(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+    // If no matching lyric is found, display an empty line.
+    displayLyric5(-1, selectedLanguage);
+
+    // Update the time display
+    timeDisplay5.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer5.duration)}`;
+});
+
+function displayLyric5(index, language) {
+    const lyrics5 = lyricsData5[language];
+    if (index >= 0 && index < lyrics5.length) {
+        lyricsText5.textContent = lyrics5[index].text;
+        currentLyricIndex5 = index;
+        lyricsText5.style.color = '#f5f5f7';
+        lyricsText5.style.fontSize = '20px';
+        lyricsText5.style.fontWeight = '500';
+        lyricsText5.style.marginTop = '20px';
+        lyricsText5.style.width = '242px';
+        lyricsText5.style.textAlign = 'center';
+        lyricsText5.style.borderRadius = '15px';
+        lyricsText5.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsText5.textContent = '';
+        currentLyricIndex5 = -1;
+    }
+}
+
+// Add seek bar functionality for the third player
+const seekBar5 = document.querySelector('.seek-bar-5');
+const seekBarFill5 = document.querySelector('.seek-bar-fill-5');
+const seekBarThumb5 = document.querySelector('.seek-bar-thumb-5');
+
+seekBar5.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBar5.getBoundingClientRect().left;
+    const seekBarWidth = seekBar5.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer5.duration;
+
+    audioPlayer5.currentTime = seekTime;
+});
+
+audioPlayer5.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer5.currentTime;
+    const duration = audioPlayer5.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFill5.style.width = progress + '%';
+    seekBarThumb5.style.left = progress + '%';
+
+    // Update the time display
+    timeDisplay5.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumb5.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove5);
+    document.addEventListener('mouseup', onMouseUp5);
+});
+
+function onMouseMove5(e) {
+    const clickX = e.clientX - seekBar5.getBoundingClientRect().left;
+    const seekBarWidth = seekBar5.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer5.duration;
+
+    audioPlayer5.currentTime = seekTime;
+}
+
+function onMouseUp5() {
+    document.removeEventListener('mousemove', onMouseMove5);
+    document.removeEventListener('mouseup', onMouseUp5);
+}
+
+// Add formatTime function (same as the previous players)
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayer6 = document.getElementById('audio-player-6');
+const playButton6 = document.getElementById('play-6');
+const pauseButton6 = document.getElementById('pause-6');
+const timeDisplay6 = document.getElementById('time-display-6');
+const lyricsContainer6 = document.querySelector('.lyrics-container-6');
+const toggleLyricsButton6 = document.getElementById('toggle-lyrics-6');
+const lyricsLanguageSelector6 = document.getElementById('language-select-6');
+const lyricsText6 = document.getElementById('lyrics-6');
+
+const lyricsData6 = {
+    ermenice6: [
+            { startTime: 0, endTime: 28.88, text: '♪' },
+            { startTime: 28.88, endTime: 32.4, text: 'Takhtin vuhra knirenk' },
+            { startTime: 32.4, endTime: 40.98, text: 'Harzi loos artentsirenk' },
+            { startTime: 40.98, endTime: 44.65, text: 'Badane shad pantsuhr er' },
+            { startTime: 44.65, endTime: 52.95, text: 'Chachan oyin guh khaghenk' },
+            { startTime: 52.95, endTime: 56.96, text: 'Dikranagerdi hokin' },
+            { startTime: 56.96, endTime: 65, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 65, endTime: 81.9, text: '♪' },
+            { startTime: 81.9, endTime: 85.5, text: 'Khoshoor mir tsuhmeruguh' },
+            { startTime: 85.5, endTime: 93.98, text: 'Dkhmare mech nuhsdire' },
+            { startTime: 93.98, endTime: 97.5, text: 'Pashi paghnike gertenk' },
+            { startTime: 97.5, endTime: 105.9, text: 'Shuhptor kuhshir guh loknenk' },
+            { startTime: 105.9, endTime: 109.8, text: 'Diyarbekiri hokin' },
+            { startTime: 109.8, endTime: 117.9, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 117.9, endTime: 135.1, text: '♪' },
+            { startTime: 135.1, endTime: 138.4, text: 'Uhmuhn desag khagherov' },
+            { startTime: 138.4, endTime: 146.93, text: 'Harzi lus gerguhntsuhnenk' },
+            { startTime: 146.93, endTime: 150.2, text: 'Khanchapake khoroo ye' },
+            { startTime: 150.2, endTime: 158.9, text: 'Mir taghen shad enten e' },
+            { startTime: 158.9, endTime: 162.75, text: 'Dikranagerdi hokin' },
+            { startTime: 162.75, endTime: 171.3, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 171.3, endTime: 187.23, text: '♪' },
+            { startTime: 187.23, endTime: 190.9, text: 'Surp Sarkise irantsn e' },
+            { startTime: 190.9, endTime: 199, text: 'Giragosle ni mirn e' },
+            { startTime: 199, endTime: 210.9, text: 'Diyarbekiri hokin' },
+            { startTime: 210.9, endTime: 216, text: 'Dikranagerdi hokin' },
+
+    ],
+    latinermeni6: [
+            { startTime: 0, endTime: 28.88, text: '♪' },
+            { startTime: 28.88, endTime: 32.4, text: 'Takhtin vuhra knirenk' },
+            { startTime: 32.4, endTime: 40.98, text: 'Harzi loos artentsirenk' },
+            { startTime: 40.98, endTime: 44.65, text: 'Badane shad pantsuhr er' },
+            { startTime: 44.65, endTime: 52.95, text: 'Chachan oyin guh khaghenk' },
+            { startTime: 52.95, endTime: 56.96, text: 'Dikranagerdi hokin' },
+            { startTime: 56.96, endTime: 65, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 65, endTime: 81.9, text: '♪' },
+            { startTime: 81.9, endTime: 85.5, text: 'Khoshoor mir tsuhmeruguh' },
+            { startTime: 85.5, endTime: 93.98, text: 'Dkhmare mech nuhsdire' },
+            { startTime: 93.98, endTime: 97.5, text: 'Pashi paghnike gertenk' },
+            { startTime: 97.5, endTime: 105.9, text: 'Shuhptor kuhshir guh loknenk' },
+            { startTime: 105.9, endTime: 109.8, text: 'Diyarbekiri hokin' },
+            { startTime: 109.8, endTime: 117.9, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 117.9, endTime: 135.1, text: '♪' },
+            { startTime: 135.1, endTime: 138.4, text: 'Uhmuhn desag khagherov' },
+            { startTime: 138.4, endTime: 146.93, text: 'Harzi lus gerguhntsuhnenk' },
+            { startTime: 146.93, endTime: 150.2, text: 'Khanchapake khoroo ye' },
+            { startTime: 150.2, endTime: 158.9, text: 'Mir taghen shad enten e' },
+            { startTime: 158.9, endTime: 162.75, text: 'Dikranagerdi hokin' },
+            { startTime: 162.75, endTime: 171.3, text: 'Uhmuhnus suhrdin mechn e' },
+            { startTime: 171.3, endTime: 187.23, text: '♪' },
+            { startTime: 187.23, endTime: 190.9, text: 'Surp Sarkise irantsn e' },
+            { startTime: 190.9, endTime: 199, text: 'Giragosle ni mirn e' },
+            { startTime: 199, endTime: 210.9, text: 'Diyarbekiri hokin' },
+            { startTime: 210.9, endTime: 216, text: 'Dikranagerdi hokin' },
+    ],
+    turkce6: [
+            { startTime: 0, endTime: 1, text: '♪' },
+            { startTime: 1, endTime: 26.55, text: 'SÖZLER BULUNMAZ' },
+
+    ],
+};
+
+let currentLyricIndex6 = -1;
+
+playButton6.addEventListener('click', () => {
+    audioPlayer6.play();
+    playButton6.style.display = 'none';
+    pauseButton6.style.display = 'inline';
+});
+
+pauseButton6.addEventListener('click', () => {
+    audioPlayer6.pause();
+    pauseButton6.style.display = 'none';
+    playButton6.style.display = 'inline';
+});
+
+toggleLyricsButton6.addEventListener('click', () => {
+    if (lyricsContainer6.style.display === 'none') {
+        lyricsContainer6.style.display = 'block';
+        displayLyric6(0);
+    } else {
+        lyricsContainer6.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector6.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector6.value;
+    displayLyric6(0, selectedLanguage);
+});
+
+audioPlayer6.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer6.currentTime;
+    const selectedLanguage = lyricsLanguageSelector6.value;
+    const lyrics6 = lyricsData6[selectedLanguage];
+
+    for (let i = 0; i < lyrics6.length; i++) {
+        const lyric = lyrics6[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex6) {
+                displayLyric6(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+    // If no matching lyric is found, display an empty line.
+    displayLyric6(-1, selectedLanguage);
+
+    // Update the time display
+    timeDisplay6.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer6.duration)}`;
+});
+
+function displayLyric6(index, language) {
+    const lyrics6 = lyricsData6[language];
+    if (index >= 0 && index < lyrics6.length) {
+        lyricsText6.textContent = lyrics6[index].text;
+        currentLyricIndex6 = index;
+        lyricsText6.style.color = '#f5f5f7';
+        lyricsText6.style.fontSize = '20px';
+        lyricsText6.style.fontWeight = '500';
+        lyricsText6.style.marginTop = '20px';
+        lyricsText6.style.width = '242px';
+        lyricsText6.style.textAlign = 'center';
+        lyricsText6.style.borderRadius = '15px';
+        lyricsText6.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsText6.textContent = '';
+        currentLyricIndex6 = -1;
+    }
+}
+
+// Add seek bar functionality for the third player
+const seekBar6 = document.querySelector('.seek-bar-6');
+const seekBarFill6 = document.querySelector('.seek-bar-fill-6');
+const seekBarThumb6 = document.querySelector('.seek-bar-thumb-6');
+
+seekBar6.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBar6.getBoundingClientRect().left;
+    const seekBarWidth = seekBar6.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer6.duration;
+
+    audioPlayer6.currentTime = seekTime;
+});
+
+audioPlayer6.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer6.currentTime;
+    const duration = audioPlayer6.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFill6.style.width = progress + '%';
+    seekBarThumb6.style.left = progress + '%';
+
+    // Update the time display
+    timeDisplay6.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumb6.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove6);
+    document.addEventListener('mouseup', onMouseUp6);
+});
+
+function onMouseMove6(e) {
+    const clickX = e.clientX - seekBar6.getBoundingClientRect().left;
+    const seekBarWidth = seekBar6.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer6.duration;
+
+    audioPlayer6.currentTime = seekTime;
+}
+
+function onMouseUp6() {
+    document.removeEventListener('mousemove', onMouseMove6);
+    document.removeEventListener('mouseup', onMouseUp6);
+}
+
+// Add formatTime function (same as the previous players)
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
 
 
 
