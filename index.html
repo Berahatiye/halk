@@ -30,7 +30,7 @@
         </span>
         <span class="line-bottom">
         </span>
-      </label>
+    </label>
 
     <p>Hakkında eklenecek</p>
   </div>
@@ -78,8 +78,8 @@
 
     <div id="muzikContent" style="display: none;">
         <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪...</span> <i>-Melodi 30 saniyeden uzun sürer.-</i></p>
-            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">(  )</span> <i>-Koro söyler.-</i></p>
-            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪="..."</span> <i>-Bestenin asliyetini açıklar.-</i></p>
+            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">(ㅤ)</span> <i>-Koro söyler.-</i></p>
+            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪="ㅤ"</span> <i>-Bestenin asliyetini açıklar.-</i></p>
                     <p style="font-size: 17.5px;"><span style="font-weight: 600;">(Latinize)</span> <i>-Genellikle bu çalışmada, İngilizce tarzı latinize kullanılmıştır.-</i></p>
     </div>
 
@@ -684,8 +684,8 @@
     grid-column: 3 / 4;
     width: 2px;
     background-color: #666666;
-    margin-top: 0.45rem;
-    margin-bottom: 0.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     border-radius: 1px;
 }
 
@@ -693,10 +693,10 @@
 .bir:hover{
   background-color: #008080;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 5px;
     text-align: center;
 
@@ -709,10 +709,10 @@
 .biki:hover{
   background-color: #023020;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     color: #f5f5f7;
     text-align: center;
     cursor: pointer;
@@ -738,10 +738,10 @@
 .uc:hover{
   background-color: #8B0000;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     text-align: center;
     border-radius: 50%;
 }
@@ -750,10 +750,10 @@
 .hak:hover{
   background-color: #702963;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 5px;
     text-align: center;
 }
@@ -765,10 +765,10 @@
 .iki:hover{
   background-color: #8B8000;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 5px;
     text-align: center;  
 }
@@ -811,8 +811,12 @@
     .close-button {
       cursor: pointer;
       position: absolute;
-      top: 30px;
-      right: 62px;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
 }
 
 .line-top{
@@ -822,6 +826,8 @@
   width: 56px;
   transform: rotate(45deg);
   border-radius: 4px;
+  top: 26px;
+  right: 0;
 }
 
 .line-bottom{   
@@ -831,6 +837,8 @@
   width: 56px;
   transform: rotate(-45deg);   
   border-radius: 4px;
+  top: 26px;
+  right: 0;
 }
     
   
@@ -1100,7 +1108,7 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 13.5s linear infinite;
+    animation: shine 14s linear infinite;
     position: relative;
     width: 100%;
     left: 0;
@@ -2464,8 +2472,8 @@
     grid-column: 3 / 4;
     width: 2px;
     background-color: #666666;
-    margin-top: 0.45rem;
-    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     border-radius: 1px;
 }
 
@@ -2473,10 +2481,10 @@
 .bir:hover{
   background-color: #008080;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 8px;
     text-align: center;
 
@@ -2489,10 +2497,10 @@
 .biki:hover{
   background-color: #FFBF00;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     color: #023020;
     text-align: center;
     cursor: pointer;
@@ -2511,10 +2519,10 @@
 .uc:hover{
   background-color: #8B0000;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     text-align: center;
     border-radius: 50%;
 }
@@ -2527,10 +2535,10 @@
 .hak:hover{
   background-color: #702963;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 8px;
     text-align: center;
 }
@@ -2542,10 +2550,10 @@
 .iki:hover{
   background-color: #8B8000;
   transition: 0.2s ease;
-    -moz-transition: 0.2s ease; /* Firefox 4 */
-    -webkit-transition: 0.2s ease; /* Safari and Chrome */
-    -o-transition: 0.2s ease; /* Opera */
-    -ms-transition: 0.2s ease; /* Explorer 10 */
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
     border-radius: 8px;
     text-align: center;  
 }
@@ -2586,26 +2594,34 @@
     .close-button {
       cursor: pointer;
       position: absolute;
-      top: 51px;
-      right: 50px;
+      top: 5px;
+      right: 0;
+      background-color: transparent;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
 }
 
 .line-top{
   position: absolute;
-  height: 4px;
+  height: 8px;
   background: #FFBF00;
-  width: 46px;
+  width: 42px;
   transform: rotate(45deg);
   border-radius: 4px;
+  top: 20px;
+  right: 0;
 }
 
 .line-bottom{   
   position: absolute;
-  height: 4px;
+  height: 8px;
   background: #FFBF00;
-  width: 46px;
+  width: 42px;
   transform: rotate(-45deg);   
   border-radius: 4px;
+  top: 20px;
+  right: 0;
 }
     
   
@@ -2651,7 +2667,7 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 10s linear infinite;
+    animation: shine 11s linear infinite;
     position: relative;
     width: 100%;
     left: 0;
@@ -4141,7 +4157,7 @@
     const lyricsLanguageSelector = document.getElementById('language-select');
     const lyricsText = document.getElementById('lyrics');
 
-    // Define lyrics for both languages with specific times
+
     const lyricsData = {
         ermenice: [
             { startTime: 0, endTime: 17.9, text: '♪' },
@@ -4247,10 +4263,10 @@
             }
         }
 
-        // If no matching lyric is found, display an empty line.
+
         displayLyric(-1, selectedLanguage);
 
-        // Update the time display
+
         timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer.duration)}`;
     });
 
@@ -4260,7 +4276,7 @@
         if (index >= 0 && index < lyrics.length) {
             lyricsText.textContent = lyrics[index].text;
             currentLyricIndex = index;
-            lyricsText.style.color = '#f5f5f7'; // Change text color when a lyric starts
+            lyricsText.style.color = '#f5f5f7';
             lyricsText.style.fontSize = '20px';
             lyricsText.style.fontWeight = '500';
             lyricsText.style.marginTop = '20px';
@@ -4271,7 +4287,7 @@
         } else {
             lyricsText.textContent = '';
             currentLyricIndex = -1;
-            lyricsText.style.color = 'white'; // Change text color to default when no lyric is displayed
+            lyricsText.style.color = 'white'; 
         }
     }
 
@@ -4281,7 +4297,7 @@
         return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
 
-    // Add seek bar functionality
+
     const seekBar = document.querySelector('.seek-bar');
     const seekBarFill = document.querySelector('.seek-bar-fill');
     const seekBarThumb = document.querySelector('.seek-bar-thumb');
@@ -4302,7 +4318,7 @@
         seekBarFill.style.width = progress + '%';
         seekBarThumb.style.left = progress + '%';
 
-        // Update the time display
+
         timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
     });
 
@@ -4347,7 +4363,7 @@ const toggleLyricsButton2 = document.getElementById('toggle-lyrics-2');
 const lyricsLanguageSelector2 = document.getElementById('language-select-2');
 const lyricsText2 = document.getElementById('lyrics-2');
 
-// Define lyrics for the second player with specific times (you can create a new lyricsData object)
+
 const lyricsData2 = {
     ermenice2: [
     { startTime: 0, endTime: 34, text: '♪' },
@@ -4474,10 +4490,10 @@ audioPlayer2.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric2(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay2.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer2.duration)}`;
 });
 
@@ -4486,7 +4502,7 @@ function displayLyric2(index, language) {
     if (index >= 0 && index < lyrics2.length) {
         lyricsText2.textContent = lyrics2[index].text;
         currentLyricIndex2 = index;
-        lyricsText2.style.color = '#f5f5f7'; // Change text color when a lyric starts
+        lyricsText2.style.color = '#f5f5f7'; 
         lyricsText2.style.fontSize = '20px';
         lyricsText2.style.fontWeight = '500';
         lyricsText2.style.marginTop = '20px';
@@ -4497,11 +4513,11 @@ function displayLyric2(index, language) {
     } else {
         lyricsText2.textContent = '';
         currentLyricIndex2 = -1;
-        lyricsText2.style.color = 'white'; // Change text color to default when no lyric is displayed
+        lyricsText2.style.color = 'white'; 
     }
 }
 
-// Add seek bar functionality for the second player (you can reuse the existing code with modified class names)
+
 const seekBar2 = document.querySelector('.seek-bar-2');
 const seekBarFill2 = document.querySelector('.seek-bar-fill-2');
 const seekBarThumb2 = document.querySelector('.seek-bar-thumb-2');
@@ -4522,7 +4538,7 @@ audioPlayer2.addEventListener('timeupdate', () => {
     seekBarFill2.style.width = progress + '%';
     seekBarThumb2.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay2.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -4545,7 +4561,7 @@ function onMouseUp2() {
     document.removeEventListener('mouseup', onMouseUp2);
 }
 
-// Add formatTime function (you can reuse the existing code)
+
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -4735,10 +4751,10 @@ audioPlayer3.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric3(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay3.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer3.duration)}`;
 });
 
@@ -4761,7 +4777,7 @@ function displayLyric3(index, language) {
     }
 }
 
-// Add seek bar functionality for the third player
+
 const seekBar3 = document.querySelector('.seek-bar-3');
 const seekBarFill3 = document.querySelector('.seek-bar-fill-3');
 const seekBarThumb3 = document.querySelector('.seek-bar-thumb-3');
@@ -4782,7 +4798,7 @@ audioPlayer3.addEventListener('timeupdate', () => {
     seekBarFill3.style.width = progress + '%';
     seekBarThumb3.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay3.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -4805,7 +4821,7 @@ function onMouseUp3() {
     document.removeEventListener('mouseup', onMouseUp3);
 }
 
-// Add formatTime function (same as the previous players)
+
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -4994,10 +5010,10 @@ audioPlayer4.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric4(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay4.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer4.duration)}`;
 });
 
@@ -5020,7 +5036,7 @@ function displayLyric4(index, language) {
     }
 }
 
-// Add seek bar functionality for the third player
+
 const seekBar4 = document.querySelector('.seek-bar-4');
 const seekBarFill4 = document.querySelector('.seek-bar-fill-4');
 const seekBarThumb4 = document.querySelector('.seek-bar-thumb-4');
@@ -5041,7 +5057,7 @@ audioPlayer4.addEventListener('timeupdate', () => {
     seekBarFill4.style.width = progress + '%';
     seekBarThumb4.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay4.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -5064,7 +5080,7 @@ function onMouseUp4() {
     document.removeEventListener('mouseup', onMouseUp4);
 }
 
-// Add formatTime function (same as the previous players)
+
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -5163,10 +5179,10 @@ audioPlayer5.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric5(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay5.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer5.duration)}`;
 });
 
@@ -5189,7 +5205,7 @@ function displayLyric5(index, language) {
     }
 }
 
-// Add seek bar functionality for the third player
+
 const seekBar5 = document.querySelector('.seek-bar-5');
 const seekBarFill5 = document.querySelector('.seek-bar-fill-5');
 const seekBarThumb5 = document.querySelector('.seek-bar-thumb-5');
@@ -5210,7 +5226,7 @@ audioPlayer5.addEventListener('timeupdate', () => {
     seekBarFill5.style.width = progress + '%';
     seekBarThumb5.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay5.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -5233,7 +5249,7 @@ function onMouseUp5() {
     document.removeEventListener('mouseup', onMouseUp5);
 }
 
-// Add formatTime function (same as the previous players)
+
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -5394,10 +5410,10 @@ audioPlayer6.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric6(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay6.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer6.duration)}`;
 });
 
@@ -5420,7 +5436,7 @@ function displayLyric6(index, language) {
     }
 }
 
-// Add seek bar functionality for the third player
+
 const seekBar6 = document.querySelector('.seek-bar-6');
 const seekBarFill6 = document.querySelector('.seek-bar-fill-6');
 const seekBarThumb6 = document.querySelector('.seek-bar-thumb-6');
@@ -5441,7 +5457,7 @@ audioPlayer6.addEventListener('timeupdate', () => {
     seekBarFill6.style.width = progress + '%';
     seekBarThumb6.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay6.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -5464,7 +5480,6 @@ function onMouseUp6() {
     document.removeEventListener('mouseup', onMouseUp6);
 }
 
-// Add formatTime function (same as the previous players)
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -5701,10 +5716,10 @@ audioPlayer7.addEventListener('timeupdate', () => {
         }
     }
 
-    // If no matching lyric is found, display an empty line.
+
     displayLyric7(-1, selectedLanguage);
 
-    // Update the time display
+
     timeDisplay7.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer7.duration)}`;
 });
 
@@ -5727,7 +5742,7 @@ function displayLyric7(index, language) {
     }
 }
 
-// Add seek bar functionality for the third player
+
 const seekBar7 = document.querySelector('.seek-bar-7');
 const seekBarFill7 = document.querySelector('.seek-bar-fill-7');
 const seekBarThumb7 = document.querySelector('.seek-bar-thumb-7');
@@ -5748,7 +5763,7 @@ audioPlayer7.addEventListener('timeupdate', () => {
     seekBarFill7.style.width = progress + '%';
     seekBarThumb7.style.left = progress + '%';
 
-    // Update the time display
+
     timeDisplay7.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
 });
 
@@ -5772,7 +5787,7 @@ function onMouseUp7() {
     document.removeEventListener('mouseup', onMouseUp7);
 }
 
-// Add formatTime function (same as the previous players)
+
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -5797,7 +5812,7 @@ function openPopup(popupId) {
     popup.style.opacity = '0';
     setTimeout(function () {
       popup.style.display = 'none';
-    }, 300); // Adjust the time to match the transition duration
+    }, 300); 
   }
 
 
@@ -5811,32 +5826,32 @@ function openPopup(popupId) {
 
 
   function showContent(contentType) {
-    // Hide all content divs
+
     document.getElementById('koroContent').style.display = 'none';
     document.getElementById('besteContent').style.display = 'none';
     document.getElementById('latinizeContent').style.display = 'none';
     document.getElementById('muzikContent').style.display = 'none';
-    // Show the selected content
+
     document.getElementById(contentType + 'Content').style.display = 'block';
-// Hide the current content with a smooth effect
+
 var currentContent = document.getElementById('muzikContent');
 currentContent.style.transition = 'ease 0.2s';
 currentContent.style.opacity = '0';
 
-// Set a timeout to hide the current content after the transition is complete
+
 setTimeout(function () {
     currentContent.style.display = 'none';
 
-    // Show the selected content with a smooth effect
+
     var newContent = document.getElementById(contentType + 'Content');
     newContent.style.opacity = '0';
     newContent.style.display = 'block';
 
-    // Trigger a reflow to apply the display and opacity changes before starting the next transition
+
     newContent.offsetHeight;
 
     newContent.style.opacity = '1';
-}, 200);  // Adjust the timeout duration to match the transition duration
+}, 200);  
 
 }
 </script>
