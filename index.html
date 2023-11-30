@@ -78,9 +78,9 @@
 
     <div id="muzikContent" style="display: none;">
         <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪...</span> <i>-Melodi 30 saniyeden uzun sürer.-</i></p>
-            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">(ㅤ)</span> <i>-Koro söyler.-</i></p>
-            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪="ㅤ"</span> <i>-Bestenin asliyetini açıklar.-</i></p>
-                    <p style="font-size: 17.5px;"><span style="font-weight: 600;">(Latinize)</span> <i>-Genellikle bu çalışmada, İngilizce tarzı latinize kullanılmıştır.-</i></p>
+            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">(ㅤ )</span> <i>-Koro söyler.-</i></p>
+            <p style="font-size: 17.5px;"><span style="font-weight: 600; font-size: 19.5px;">♪="ㅤ "</span> <i>-Bestenin asliyetini açıklar.-</i></p>
+            <p style="font-size: 17.5px;"><span style="font-weight: 600;">(Latinize)</span> <i>-Genellikle bu çalışmada, İngilizce tarzı latinize kullanılmıştır.-</i></p>
     </div>
 
     <div id="koroContent" style="display: none;">
@@ -488,15 +488,15 @@
                   <div id="lyrics-language-selector-8" style="justify-content: center;">
                       <select id="language-select-8">
                           <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice">հայերեն</option>
-                          <option value="latinermeni">հայերեն (Latinize)</option>
-                          <option value="turkce">Türkçe</option>
+                          <option value="ermenice8">հայերեն</option>
+                          <option value="latinermeni8">հայերեն (Latinize)</option>
+                          <option value="turkce8">Türkçe</option>
                       </select>
                   </div>
                   <div id="lyrics-8" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
             
-              <audio id="audio-player-8" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+              <audio id="audio-player-8" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/18_Nare.mp3"></audio>
             </div>
             
           </li>
@@ -532,15 +532,15 @@
                   <div id="lyrics-language-selector-9" style="justify-content: center;">
                       <select id="language-select-9">
                           <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice">հայերեն</option>
-                          <option value="latinermeni">հայերեն (Latinize)</option>
-                          <option value="turkce">Türkçe</option>
+                          <option value="ermenice9">հայերեն</option>
+                          <option value="latinermeni9">հայերեն (Latinize)</option>
+                          <option value="turkce9">Türkçe</option>
                       </select>
                   </div>
                   <div id="lyrics-9" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
             
-              <audio id="audio-player-9" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+              <audio id="audio-player-9" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/17_Tsavirsi.mp3"></audio>
             </div>
             
           </li>
@@ -641,6 +641,8 @@
 
 <style>
 @media only screen and (min-width: 480px){
+
+
 
 .baba{
   background-color: transparent;
@@ -811,8 +813,8 @@
     .close-button {
       cursor: pointer;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       background-color: transparent;
       width: 60px;
       height: 60px;
@@ -2412,6 +2414,385 @@
 }
 
 
+
+
+
+
+
+
+.music-player-8 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-8 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-8 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-8 button#play-8 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-8 button#pause-8 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-8 button#toggle-lyrics-8 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-8 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-8 {
+    color: #f5f5f7;
+}
+
+.song-details-8 p{
+    color: #f5f5f7;
+    opacity: 0.75;
+  }
+
+.lyrics-container-8 {
+    text-align: center;
+}
+
+#lyrics-8 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-8{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-8:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-8:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-8 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-8 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-8 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-8 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seek-bar-thumb-8:focus {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-8:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+#toggle-lyrics-8 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-8:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-8:active {
+    transform: scale(0.9);
+}
+
+.controls-8 button#pause-8 {
+    transition: 0.1s;
+}
+
+.controls-8 button#pause-8:focus {
+    transform: scale(1);
+}
+
+.controls-8 button#pause-8:active {
+    transform: scale(0.9);
+}
+
+.controls-8 button#play-8 {
+    transition: 0.1s;
+}
+
+.controls-8 button#play-8:focus {
+    transform: scale(1);
+}
+
+.controls-8 button#play-8:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.music-player-9 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-9 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-9 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-9 button#play-9 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-9 button#pause-9 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-9 button#toggle-lyrics-9 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-9 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-9 {
+    color: #f5f5f7;
+}
+
+.song-details-9 p{
+    color: #f5f5f7;
+    opacity: 0.75;
+  }
+
+.lyrics-container-9 {
+    text-align: center;
+}
+
+#lyrics-9 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-9{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-9:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-9:active:not(button){
+    box-shadow: 0 0 0 3px rgba(2, 48, 32,0.6);
+    outline: none;
+  }
+
+.seek-bar-container-9 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-9 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-9 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-9 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seek-bar-thumb-9:focus {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-9:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+#toggle-lyrics-9 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-9:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-9:active {
+    transform: scale(0.9);
+}
+
+.controls-9 button#pause-9 {
+    transition: 0.1s;
+}
+
+.controls-9 button#pause-9:focus {
+    transform: scale(1);
+}
+
+.controls-9 button#pause-9:active {
+    transform: scale(0.9);
+}
+
+.controls-9 button#play-9 {
+    transition: 0.1s;
+}
+
+.controls-9 button#play-9:focus {
+    transform: scale(1);
+}
+
+.controls-9 button#play-9:active {
+    transform: scale(0.9);
+}
 }
 
 
@@ -2575,7 +2956,7 @@
       background-color: #00000080;
       z-index: 9999;
       display: none;
-      opacity: 0;
+      opacity: 0.65;
       transition: opacity 0.2s ease;
     }
 
@@ -3973,10 +4354,6 @@
 
 
 
-
-
-
-
 .music-player-7 {
     display: flex;
     flex-direction: column;
@@ -4141,6 +4518,370 @@
 }
 
 .controls-7 button#play-7:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+.music-player-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-8 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-8 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-8 button#play-8 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-8 button#pause-8 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-8 button#toggle-lyrics-8 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-8 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-8 {
+    color: #f5f5f7;
+}
+
+.song-details-8 p{
+    color: #f5f5f7;
+    opacity: 0.75;
+  }
+
+.lyrics-container-8 {
+    text-align: center;
+}
+
+#lyrics-8 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-8{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-8:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-8:active:not(button){
+    box-shadow: 0 0 0 3px #02302099;
+    outline: none;
+  }
+
+.seek-bar-container-8 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-8 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-8 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-8 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+        
+}
+
+#toggle-lyrics-8 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-8:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-8:active {
+    transform: scale(0.9);
+}
+
+.controls-8 button#pause-8 {
+    transition: 0.1s;
+}
+
+.controls-8 button#pause-8:focus {
+    transform: scale(1);
+}
+
+.controls-8 button#pause-8:active {
+    transform: scale(0.9);
+}
+
+.controls-8 button#play-8 {
+    transition: 0.1s;
+}
+
+.controls-8 button#play-8:focus {
+    transform: scale(1);
+}
+
+.controls-8 button#play-8:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.music-player-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.album-cover-9 img {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.controls-9 button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls-9 button#play-9 {
+    background-color: #023020;
+    color: white;
+    border-style: solid;
+    border-color: #f5f5f7;
+    border-radius: 15px;
+}
+
+.controls-9 button#pause-9 {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #f5f5f7;
+}
+
+.controls-9 button#toggle-lyrics-9 {
+    background-color: #F5F5DC;
+    color: #023020;
+    border: none;
+    border-radius: 980px;
+}
+
+#time-display-9 {
+    font-size: 21px;
+    margin-top: 10px;
+    color: #f5f5f7;
+    background-color: #00000066;
+    border-radius: 5px;
+}
+
+.song-details-9 {
+    color: #f5f5f7;
+}
+
+.song-details-9 p{
+    color: #f5f5f7;
+    opacity: 0.75;
+  }
+
+.lyrics-container-9 {
+    text-align: center;
+}
+
+#lyrics-9 {
+    max-height: 200px;
+    overflow-y: none;
+    color: #f5f5f7;
+}
+
+#language-select-9{
+    font-size: 20px; 
+    font-family: sans-serif; 
+    color: #f5f5f7; 
+    background-color: #1d1d1f;
+    margin-inline: auto;
+    font-weight: 500;
+    height: auto;
+    border-radius: 980px;
+    margin-bottom: 3px;
+    outline: none;
+  }
+
+  #language-select-9:active{
+    border-color:  #023020;
+    outline: none;
+  }
+  
+
+  #language-select-9:active:not(button){
+    box-shadow: 0 0 0 3px #02302099;
+    outline: none;
+  }
+
+.seek-bar-container-9 {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.seek-bar-9 {
+    flex-grow: 1;
+    background-color: #f5f5f733;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.seek-bar-fill-9 {
+    background-color: #f5f5f7;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: 0.1s;
+}
+
+.seek-bar-thumb-9 {
+    width: 13px;
+    height: 13px;
+    background-color: #f5f5f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+        
+}
+
+#toggle-lyrics-9 {
+    transition: 0.1s;
+}
+
+#toggle-lyrics-9:focus {
+    transform: scale(1);
+}
+
+#toggle-lyrics-9:active {
+    transform: scale(0.9);
+}
+
+.controls-9 button#pause-9 {
+    transition: 0.1s;
+}
+
+.controls-9 button#pause-9:focus {
+    transform: scale(1);
+}
+
+.controls-9 button#pause-9:active {
+    transform: scale(0.9);
+}
+
+.controls-9 button#play-9 {
+    transition: 0.1s;
+}
+
+.controls-9 button#play-9:focus {
+    transform: scale(1);
+}
+
+.controls-9 button#play-9:active {
     transform: scale(0.9);
 }
 }
@@ -5344,8 +6085,8 @@ const lyricsData6 = {
             { startTime: 52.95, endTime: 56.96, text: 'Dikranagerdin ruhu' },
             { startTime: 56.96, endTime: 65, text: 'Hepimizin yüreğinde' },
             { startTime: 65, endTime: 81.9, text: '♪' },
-            { startTime: 81.9, endTime: 85.5, text: 'Koca koca karpularımız' },
-            { startTime: 85.5, endTime: 93.98, text: 'İçine çocuğun oturacağı kadar' },
+            { startTime: 81.9, endTime: 85.5, text: 'Koca koca karpuzlarımız' },
+            { startTime: 85.5, endTime: 93.98, text: 'İçine çocuk gireceği kadar' },
             { startTime: 93.98, endTime: 97.5, text: 'Paşa hamamına giderdik' },
             { startTime: 97.5, endTime: 105.9, text: 'Cumartesi akşamları duş alırdık' },
             { startTime: 105.9, endTime: 109.8, text: 'Diyarbekirin ruhu' },
@@ -5793,6 +6534,385 @@ function formatTime(time) {
     const seconds = Math.floor(time % 60);
     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
+
+
+
+
+
+
+
+
+
+const audioPlayer8 = document.getElementById('audio-player-8');
+const playButton8 = document.getElementById('play-8');
+const pauseButton8 = document.getElementById('pause-8');
+const timeDisplay8 = document.getElementById('time-display-8');
+const lyricsContainer8 = document.querySelector('.lyrics-container-8');
+const toggleLyricsButton8 = document.getElementById('toggle-lyrics-8');
+const lyricsLanguageSelector8 = document.getElementById('language-select-8');
+const lyricsText8 = document.getElementById('lyrics-8');
+
+const lyricsData8 = {
+    ermenice8: [
+            { startTime: 0, endTime: 105, text: '♪' },
+
+    ],
+    latinermeni8: [
+    { startTime: 0, endTime: 22.9, text: '♪' },
+    { startTime: 22.9, endTime: 25.4, text: 'Icha chayi kinare, nare' },
+    { startTime: 25.4, endTime: 28.55, text: 'Desa achke khoomare, nare' },
+    { startTime: 28.55, endTime: 31.2, text: 'Achok uhnkok guh ganche, nare' },
+    { startTime: 31.2, endTime: 34.1, text: 'Atlas uhngoghni daguh, nare' },
+    { startTime: 34.1, endTime: 37.2, text: 'Chim kina inchoo mare, nare' },
+    { startTime: 37.2, endTime: 48.43, text: 'Nare nare hey nare nare' },
+    { startTime: 48.43, endTime: 71.45, text: '♪' },
+    { startTime: 71.45, endTime: 74, text: 'Chayuh chooruh chi dani, nare' },
+    { startTime: 74, endTime: 77.2, text: 'Mamis jakhrag chi mani, nare' },
+    { startTime: 77.2, endTime: 80, text: 'Babis dookan chi pani, nare' },
+    { startTime: 80, endTime: 82.9, text: 'Shorban dak e chi baghi, nare' },
+    { startTime: 82.9, endTime: 85.5, text: 'Yes kuhghtsadz im chim gayni, nare' },
+    { startTime: 85.5, endTime: 97, text: 'Nare nare hey nare nare' },
+    { startTime: 97, endTime: 120, text: '♪' },
+    { startTime: 120, endTime: 122.9, text: 'Nuhsdire badoo daguh, nare' },
+    { startTime: 122.9, endTime: 125.88, text: 'Araki shooshan tserke, nare' },
+    { startTime: 125.88, endTime: 128.63, text: 'Khagh guhse oo guh khuhme, nare' },
+    { startTime: 128.63, endTime: 131.5, text: 'Yes kinam inchoo mare, nare' },
+    { startTime: 131.5, endTime: 142.9, text: 'Nare nare hey nare nare' },
+    { startTime: 142.9, endTime: 221.5, text: '♪...' },
+
+    ],
+    turkce8: [
+    { startTime: 0, endTime: 22.9, text: '♪' },
+    { startTime: 22.9, endTime: 25.4, text: 'Çaydan aşağı geldim' },
+    { startTime: 25.4, endTime: 28.55, text: 'Gözlerindeki ışığı gördüm' },
+    { startTime: 28.55, endTime: 31.2, text: 'Başı, gözüyle çağırır;' },
+    { startTime: 31.2, endTime: 34.1, text: 'İpek yorganın altından' },
+    { startTime: 34.1, endTime: 37.2, text: 'Nedenini hiç bilmem' },
+    { startTime: 37.2, endTime: 48.43, text: 'Nare nare hey nare nare' },
+    { startTime: 48.43, endTime: 71.45, text: '♪' },
+    { startTime: 71.45, endTime: 74, text: 'Akarsuyu akmıyor' },
+    { startTime: 74, endTime: 77.2, text: 'Annem makineyi açmıyor' },
+    { startTime: 77.2, endTime: 80, text: 'Babam dükkanda durmuyor' },
+    { startTime: 80, endTime: 82.9, text: 'Çorba sıcak, soğumuyor' },
+    { startTime: 82.9, endTime: 85.5, text: 'Açım dayanamıyorum' },
+    { startTime: 85.5, endTime: 97, text: 'Nare nare hey nare nare' },
+    { startTime: 97, endTime: 120, text: '♪' },
+    { startTime: 120, endTime: 122.9, text: 'Köşesinde oturuyor' },
+    { startTime: 122.9, endTime: 125.88, text: 'Elinde bir arak var' },
+    { startTime: 125.88, endTime: 128.63, text: 'İçiyor ve söylüyor' },
+    { startTime: 128.63, endTime: 131.5, text: 'Nedenini iyi bilirim' },
+    { startTime: 131.5, endTime: 142.9, text: 'Nare nare hey nare nare' },
+    { startTime: 142.9, endTime: 221.5, text: '♪...' },
+
+    ],
+};
+
+let currentLyricIndex8 = -1;
+
+playButton8.addEventListener('click', () => {
+    audioPlayer8.play();
+    playButton8.style.display = 'none';
+    pauseButton8.style.display = 'inline';
+});
+
+pauseButton8.addEventListener('click', () => {
+    audioPlayer8.pause();
+    pauseButton8.style.display = 'none';
+    playButton8.style.display = 'inline';
+});
+
+toggleLyricsButton8.addEventListener('click', () => {
+    if (lyricsContainer8.style.display === 'none') {
+        lyricsContainer8.style.display = 'block';
+        displayLyric8(0);
+    } else {
+        lyricsContainer8.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector8.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector8.value;
+    displayLyric8(0, selectedLanguage);
+});
+
+audioPlayer8.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer8.currentTime;
+    const selectedLanguage = lyricsLanguageSelector8.value;
+    const lyrics8 = lyricsData8[selectedLanguage];
+
+    for (let i = 0; i < lyrics8.length; i++) {
+        const lyric = lyrics8[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex8) {
+                displayLyric8(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyric8(-1, selectedLanguage);
+
+
+    timeDisplay8.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer8.duration)}`;
+});
+
+function displayLyric8(index, language) {
+    const lyrics8 = lyricsData8[language];
+    if (index >= 0 && index < lyrics8.length) {
+        lyricsText8.textContent = lyrics8[index].text;
+        currentLyricIndex8 = index;
+        lyricsText8.style.color = '#f5f5f7';
+        lyricsText8.style.fontSize = '20px';
+        lyricsText8.style.fontWeight = '500';
+        lyricsText8.style.marginTop = '20px';
+        lyricsText8.style.width = '242px';
+        lyricsText8.style.textAlign = 'center';
+        lyricsText8.style.borderRadius = '15px';
+        lyricsText8.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsText8.textContent = '';
+        currentLyricIndex8 = -1;
+    }
+}
+
+
+const seekBar8 = document.querySelector('.seek-bar-8');
+const seekBarFill8 = document.querySelector('.seek-bar-fill-8');
+const seekBarThumb8 = document.querySelector('.seek-bar-thumb-8');
+
+seekBar8.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBar8.getBoundingClientRect().left;
+    const seekBarWidth = seekBar8.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer8.duration;
+
+    audioPlayer8.currentTime = seekTime;
+});
+
+audioPlayer8.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer8.currentTime;
+    const duration = audioPlayer8.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFill8.style.width = progress + '%';
+    seekBarThumb8.style.left = progress + '%';
+
+
+    timeDisplay8.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumb8.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove8);
+    document.addEventListener('mouseup', onMouseUp8);
+});
+
+function onMouseMove8(e) {
+    const clickX = e.clientX - seekBar8.getBoundingClientRect().left;
+    const seekBarWidth = seekBar8.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer8.duration;
+
+    audioPlayer8.currentTime = seekTime;
+}
+
+function onMouseUp8() {
+    document.removeEventListener('mousemove', onMouseMove8);
+    document.removeEventListener('mouseup', onMouseUp8);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayer9 = document.getElementById('audio-player-9');
+const playButton9 = document.getElementById('play-9');
+const pauseButton9 = document.getElementById('pause-9');
+const timeDisplay9 = document.getElementById('time-display-9');
+const lyricsContainer9 = document.querySelector('.lyrics-container-9');
+const toggleLyricsButton9 = document.getElementById('toggle-lyrics-9');
+const lyricsLanguageSelector9 = document.getElementById('language-select-9');
+const lyricsText9 = document.getElementById('lyrics-9');
+
+const lyricsData9 = {
+    ermenice9: [
+            { startTime: 0, endTime: 105, text: '♪' },
+
+    ],
+    latinermeni9: [
+    { startTime: 0, endTime: 18.9, text: '♪' },
+    { startTime: 18.9, endTime: 23.4, text: 'Hala ni che, inch khuhsis' },
+    { startTime: 23.4, endTime: 32.8, text: 'Mi hartsni, agheg chim' },
+    { startTime: 32.8, endTime: 36.8, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 36.8, endTime: 46.8, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 46.8, endTime: 50.9, text: 'Kuhshir tsorig vuhras e' },
+
+    ],
+    turkce9: [
+    { startTime: 0, endTime: 22.9, text: '♪' },
+    { startTime: 22.9, endTime: 23.4, text: 'Çaydan aşağı geldim' },
+    { startTime: 25.4, endTime: 32.8, text: 'Gözlerindeki ışığı gördüm' },
+
+
+    ],
+};
+
+let currentLyricIndex9 = -1;
+
+playButton9.addEventListener('click', () => {
+    audioPlayer9.play();
+    playButton9.style.display = 'none';
+    pauseButton9.style.display = 'inline';
+});
+
+pauseButton9.addEventListener('click', () => {
+    audioPlayer9.pause();
+    pauseButton9.style.display = 'none';
+    playButton9.style.display = 'inline';
+});
+
+toggleLyricsButton9.addEventListener('click', () => {
+    if (lyricsContainer9.style.display === 'none') {
+        lyricsContainer9.style.display = 'block';
+        displayLyric9(0);
+    } else {
+        lyricsContainer9.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector9.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector9.value;
+    displayLyric9(0, selectedLanguage);
+});
+
+audioPlayer9.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer9.currentTime;
+    const selectedLanguage = lyricsLanguageSelector9.value;
+    const lyrics9 = lyricsData9[selectedLanguage];
+
+    for (let i = 0; i < lyrics9.length; i++) {
+        const lyric = lyrics9[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex9) {
+                displayLyric9(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyric9(-1, selectedLanguage);
+
+
+    timeDisplay9.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer9.duration)}`;
+});
+
+function displayLyric9(index, language) {
+    const lyrics9 = lyricsData9[language];
+    if (index >= 0 && index < lyrics9.length) {
+        lyricsText9.textContent = lyrics9[index].text;
+        currentLyricIndex9 = index;
+        lyricsText9.style.color = '#f5f5f7';
+        lyricsText9.style.fontSize = '20px';
+        lyricsText9.style.fontWeight = '500';
+        lyricsText9.style.marginTop = '20px';
+        lyricsText9.style.width = '242px';
+        lyricsText9.style.textAlign = 'center';
+        lyricsText9.style.borderRadius = '15px';
+        lyricsText9.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsText9.textContent = '';
+        currentLyricIndex9 = -1;
+    }
+}
+
+
+const seekBar9 = document.querySelector('.seek-bar-9');
+const seekBarFill9 = document.querySelector('.seek-bar-fill-9');
+const seekBarThumb9 = document.querySelector('.seek-bar-thumb-9');
+
+seekBar9.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBar9.getBoundingClientRect().left;
+    const seekBarWidth = seekBar9.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer9.duration;
+
+    audioPlayer9.currentTime = seekTime;
+});
+
+audioPlayer9.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer9.currentTime;
+    const duration = audioPlayer9.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFill9.style.width = progress + '%';
+    seekBarThumb9.style.left = progress + '%';
+
+
+    timeDisplay9.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumb9.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove9);
+    document.addEventListener('mouseup', onMouseUp9);
+});
+
+function onMouseMove9(e) {
+    const clickX = e.clientX - seekBar9.getBoundingClientRect().left;
+    const seekBarWidth = seekBar9.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayer9.duration;
+
+    audioPlayer9.currentTime = seekTime;
+}
+
+function onMouseUp9() {
+    document.removeEventListener('mousemove', onMouseMove9);
+    document.removeEventListener('mouseup', onMouseUp9);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
 
 
 
