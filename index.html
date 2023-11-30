@@ -1087,6 +1087,9 @@
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   .sla {
     text-decoration: none;
@@ -3024,6 +3027,9 @@
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     text-align: center;
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+    appearance: none;
   }
   .sla {
     text-decoration: none;
@@ -6771,9 +6777,37 @@ const lyricsText9 = document.getElementById('lyrics-9');
 
 const lyricsData9 = {
     ermenice9: [
-            { startTime: 0, endTime: 105, text: '♪' },
+    { startTime: 0, endTime: 18.9, text: '♪' },
+    { startTime: 18.9, endTime: 23.4, text: 'Hala ni che, inch khuhsis' },
+    { startTime: 23.4, endTime: 32.8, text: 'Mi hartsni, agheg chim' },
+    { startTime: 32.8, endTime: 36.8, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 36.8, endTime: 46.8, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 46.8, endTime: 50.9, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 50.9, endTime: 60, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 60, endTime: 78.9, text: '♪' },
+    { startTime: 78.9, endTime: 83.45, text: 'Jivirsi nants guh gota' },
+    { startTime: 83.45, endTime: 92.9, text: 'Gerguhnnam hankisd chuhga' },
+    { startTime: 92.9, endTime: 96.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 96.9, endTime: 106.4, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 106.4, endTime: 110.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 110.9, endTime: 120, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 120, endTime: 138.9, text: '♪' },
+    { startTime: 138.9, endTime: 143.2, text: 'Doktore hab mi duhvits' },
+    { startTime: 143.2, endTime: 152.9, text: 'Kuhlokhsi partsin tuhrits' },
+    { startTime: 152.9, endTime: 156.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 156.9, endTime: 166.6, text: 'Agheg geghnas shafakin' },
+    { startTime: 166.6, endTime: 170.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 170.9, endTime: 180.1, text: 'Agheg geghnas shafakin' },
+    { startTime: 180.1, endTime: 198.9, text: '♪' },
+    { startTime: 198.9, endTime: 202.9, text: 'Shalagtsi nans guh tsava' },
+    { startTime: 202.9, endTime: 212.6, text: 'Dakootinle soor vuhra' },
+    { startTime: 212.6, endTime: 216.9, text: 'Al herike charchuhrvim' },
+    { startTime: 216.9, endTime: 226.45, text: 'Soor sone yerp muhnika' },
+    { startTime: 226.45, endTime: 230.9, text: 'Al herike charchuhrvim' },
+    { startTime: 230.9, endTime: 241, text: 'Soor sone yerp muhnika' },
 
     ],
+    
     latinermeni9: [
     { startTime: 0, endTime: 18.9, text: '♪' },
     { startTime: 18.9, endTime: 23.4, text: 'Hala ni che, inch khuhsis' },
@@ -6781,13 +6815,59 @@ const lyricsData9 = {
     { startTime: 32.8, endTime: 36.8, text: 'Kuhshir tsorig vuhras e' },
     { startTime: 36.8, endTime: 46.8, text: 'Gerevna ki ichvadzk e' },
     { startTime: 46.8, endTime: 50.9, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 50.9, endTime: 60, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 60, endTime: 78.9, text: '♪' },
+    { startTime: 78.9, endTime: 83.45, text: 'Jivirsi nants guh gota' },
+    { startTime: 83.45, endTime: 92.9, text: 'Gerguhnnam hankisd chuhga' },
+    { startTime: 92.9, endTime: 96.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 96.9, endTime: 106.4, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 106.4, endTime: 110.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 110.9, endTime: 120, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 120, endTime: 138.9, text: '♪' },
+    { startTime: 138.9, endTime: 143.2, text: 'Doktore hab mi duhvits' },
+    { startTime: 143.2, endTime: 152.9, text: 'Kuhlokhsi partsin tuhrits' },
+    { startTime: 152.9, endTime: 156.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 156.9, endTime: 166.6, text: 'Agheg geghnas shafakin' },
+    { startTime: 166.6, endTime: 170.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 170.9, endTime: 180.1, text: 'Agheg geghnas shafakin' },
+    { startTime: 180.1, endTime: 198.9, text: '♪' },
+    { startTime: 198.9, endTime: 202.9, text: 'Shalagtsi nans guh tsava' },
+    { startTime: 202.9, endTime: 212.6, text: 'Dakootinle soor vuhra' },
+    { startTime: 212.6, endTime: 216.9, text: 'Al herike charchuhrvim' },
+    { startTime: 216.9, endTime: 226.45, text: 'Soor sone yerp muhnika' },
+    { startTime: 226.45, endTime: 230.9, text: 'Al herike charchuhrvim' },
+    { startTime: 230.9, endTime: 241, text: 'Soor sone yerp muhnika' },
 
     ],
     turkce9: [
-    { startTime: 0, endTime: 22.9, text: '♪' },
-    { startTime: 22.9, endTime: 23.4, text: 'Çaydan aşağı geldim' },
-    { startTime: 25.4, endTime: 32.8, text: 'Gözlerindeki ışığı gördüm' },
-
+    { startTime: 0, endTime: 18.9, text: '♪' },
+    { startTime: 18.9, endTime: 23.4, text: 'Hala ni che, inch khuhsis' },
+    { startTime: 23.4, endTime: 32.8, text: 'Mi hartsni, agheg chim' },
+    { startTime: 32.8, endTime: 36.8, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 36.8, endTime: 46.8, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 46.8, endTime: 50.9, text: 'Kuhshir tsorig vuhras e' },
+    { startTime: 50.9, endTime: 60, text: 'Gerevna ki ichvadzk e' },
+    { startTime: 60, endTime: 78.9, text: '♪' },
+    { startTime: 78.9, endTime: 83.45, text: 'Jivirsi nants guh gota' },
+    { startTime: 83.45, endTime: 92.9, text: 'Gerguhnnam hankisd chuhga' },
+    { startTime: 92.9, endTime: 96.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 96.9, endTime: 106.4, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 106.4, endTime: 110.9, text: 'Geragtsi suhrdis muhnats' },
+    { startTime: 110.9, endTime: 120, text: 'Boghazis chortsoog muhnats' },
+    { startTime: 120, endTime: 138.9, text: '♪' },
+    { startTime: 138.9, endTime: 143.2, text: 'Doktore hab mi duhvits' },
+    { startTime: 143.2, endTime: 152.9, text: 'Kuhlokhsi partsin tuhrits' },
+    { startTime: 152.9, endTime: 156.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 156.9, endTime: 166.6, text: 'Agheg geghnas shafakin' },
+    { startTime: 166.6, endTime: 170.9, text: 'Uhsats si ar es kuhshir' },
+    { startTime: 170.9, endTime: 180.1, text: 'Agheg geghnas shafakin' },
+    { startTime: 180.1, endTime: 198.9, text: '♪' },
+    { startTime: 198.9, endTime: 202.9, text: 'Shalagtsi nans guh tsava' },
+    { startTime: 202.9, endTime: 212.6, text: 'Dakootinle soor vuhra' },
+    { startTime: 212.6, endTime: 216.9, text: 'Al herike charchuhrvim' },
+    { startTime: 216.9, endTime: 226.45, text: 'Soor sone yerp muhnika' },
+    { startTime: 226.45, endTime: 230.9, text: 'Al herike charchuhrvim' },
+    { startTime: 230.9, endTime: 241, text: 'Soor sone yerp muhnika' },
 
     ],
 };
