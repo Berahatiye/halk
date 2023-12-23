@@ -37,7 +37,7 @@
 </div>
 
 <div id="birPopup" class="popup-container2">
-  <div class="popup">
+  <div class="popup2">
 <label class="close-button" onclick="closePopup('birPopup')">
   <span class="line-top">
   </span>
@@ -138,6 +138,12 @@
 
 <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">հայ  Kurd  عَرَبِيٌّ  Lazi  ܣܘܪܝܝܐ  ქართველები  Έλληνες  Адыгэхэр  Համշենցիներ  Hохчи  Ezîdî  Zaza  ирæттæ  Помаци  татарлар</span></p>
 <hr class="ll"/>
+
+<div class="aramam">
+  <input class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Merak ettiğin ne varsa..." value="">
+  <button class="wex" disabled=""><i class="fa fa-search"></i></button>
+</div>
+
 
 <div>
 <div class="custom-center-12">
@@ -681,7 +687,46 @@
 <style>
 @media only screen and (min-width: 480px){
 
+  .xwe{
+    background-color: #f5f5f7;
+    outline: none;
+    border-color: none;
+    border: none; 
+    width: 50vw;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 1.125rem 0rem 0rem;
+    padding: 0.75rem 1rem;
+  }
 
+  .xwe::placeholder{
+    color: #666666;
+  }
+
+  .wex{
+    padding: 0.75rem 1rem;
+    background-color: #666666;
+    outline: none;
+    border-color: none;
+    border: none; 
+    border-radius: 0rem 1.125rem 0rem 0rem;
+    color: #f5f5f7;
+  }
+
+.aramam{
+  -webkit-box-pack: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    position: relative;
+}
+
+.ben{
+  --color-primary: #023020;
+  font-size: 1.2em;
+  --color-accent: #FFBF00;
+}
 
 .baba{
   background-color: transparent;
@@ -852,7 +897,7 @@
     }
 
     .popup {
-      background-color: #f5f5f71a;
+      background-color: #023020;
       border: none;
       border-radius: 15px;
       padding: 20px;
@@ -862,6 +907,16 @@
       font-weight: 300;
     }
 
+    .popup2 {
+      background-color: #f5f5f71a;
+      border: none;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      color: #f5f5f7;
+      font-family: sans-serif;
+      font-weight: 300;
+    }
     
     .close-button {
       cursor: pointer;
@@ -1208,6 +1263,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
   }
 
   .controls button {
@@ -1398,6 +1454,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-2 button {
@@ -1580,6 +1637,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-3 button {
@@ -1762,6 +1820,7 @@
 .album-cover-4 img {
     width: 250px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-4 button {
@@ -1941,6 +2000,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-5 button {
@@ -2122,6 +2182,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-6 button {
@@ -2309,6 +2370,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-7 button {
@@ -2492,6 +2554,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-8 button {
@@ -2690,6 +2753,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-9 button {
@@ -2886,7 +2950,8 @@
 /***** Vertical Sitemap *****/
 .vsitemap {
   text-align: center;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 500px;
 }
 
@@ -3018,14 +3083,6 @@
 
 
 
-
-
-
-
-
-
-
-
 }
 
 
@@ -3046,6 +3103,13 @@
 
 
 @media only screen and (max-width: 480px){
+
+  .ben{
+  --color-primary: #023020;
+  font-size: 1.2em;
+  --color-accent: #FFBF00;
+}
+
   .baba{
   background-color: transparent;
   border-style: solid;
@@ -3324,6 +3388,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
   }
 
   .controls button {
@@ -3731,6 +3796,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-2 button {
@@ -3902,6 +3968,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-3 button {
@@ -4086,6 +4153,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-4 button {
@@ -4260,6 +4328,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-5 button {
@@ -4434,6 +4503,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-6 button {
@@ -4606,6 +4676,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-7 button {
@@ -4780,6 +4851,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-8 button {
@@ -4970,6 +5042,7 @@
     max-width: 200px;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 
 .controls-9 button {
@@ -5305,6 +5378,47 @@
       transition: opacity 0.2s ease;
     }
 
+
+
+
+
+
+.wex{
+    padding: 0.75rem 1rem;
+    background-color: #666666;
+    outline: none;
+    border-color: none;
+    border: none; 
+    border-radius: 0rem 1.125rem 0rem 0rem;
+    color: #f5f5f7;
+}
+
+
+
+.xwe{
+    background-color: #f5f5f7;
+    outline: none;
+    border-color: none;
+    border: none; 
+    width: 80vw;
+    margin: 0;
+    font-family: inherit;
+    border-radius: 1.125rem 0rem 0rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .xwe::placeholder{
+    color: #666666;
+  }
+
+.aramam{
+  -webkit-box-pack: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    position: relative;
+}
 
 }
 </style>
