@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div id="birPopup" class="popup-container" onclick="closePopup('birPopup')">
+<div id="birPopup" class="popup-container2">
   <div class="popup">
 <label class="close-button" onclick="closePopup('birPopup')">
   <span class="line-top">
@@ -45,7 +45,46 @@
   </span>
 </label>
 
-    <p>Harita eklenecek</p>
+<div class="vsitemap" >
+    <ul>
+      <li><span>Giriş</span>
+        <ul>
+          <li><span>Tanıtım <br/></span>
+            <ul>
+              <li><span><small>Hakkında - Harita - İletisim - ?</small></span></li>
+            </ul>
+          </li>
+          <li><span>ROOM</span></li>
+          <li><span>ROOM2</span>
+            <ul>
+              <li><span>ROOM3</span>
+                <ul>
+                  <li><span>ROOM4</span></li>
+                  <li><span>ROOM5</span>
+                    <ul>
+                      <li><span>ROOM6</span></li>
+                      <li><span>ROOM7</span></li>
+                    </ul>
+                  </li>
+                  <li><span>ROOM8</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span>Yunanca</span></li>
+          <li><span>Gürcüce</span></li>
+          <li><span>Farsça</span></li>
+          <li><span>Ermenice</span></li>
+          <li><span>Kürtçe</span></li>
+          <li><span>Lazca</span></li>
+          <li><span>Arapça</span></li>
+          <li><span>Süryanice</span></li>
+        </ul>
+      </li>
+        <li class="ben"><span>© կուրմամիեան</span></li>
+    </ul>
+    
+  </div>
   </div>
 </div>
 
@@ -98,6 +137,7 @@
 </div>
 
 <p class="kap">TÜRKİYE'NİN ETNOKÜLTÜREL SÖZLÜĞÜ <br><span class="sla">հայ  Kurd  عَرَبِيٌّ  Lazi  ܣܘܪܝܝܐ  ქართველები  Έλληνες  Адыгэхэр  Համշենցիներ  Hохчи  Ezîdî  Zaza  ирæттæ  Помаци  татарлар</span></p>
+<hr class="ll"/>
 
 <div>
 <div class="custom-center-12">
@@ -708,24 +748,25 @@
 }
 
 .biki:hover{
-  background-color: #023020;
+  background-color: #FFBF00;
   transition: 0.2s ease;
     -moz-transition: 0.2s ease; 
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
-    color: #f5f5f7;
+    color: #023020;
     text-align: center;
     cursor: pointer;
+    border-color: #FFBF00;
 
 }
 
 .biki{
   font-size: 24px;
-  border-color: #023020;
+  border-color: #f5f5f7;
   border-style: solid;
   border-width: 2px;
-  color: #023020;
+  color: #f5f5f7;
   border-radius: 10px;
 }
 
@@ -778,7 +819,20 @@
   width: 96px;
 }
 
-
+.popup-container2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #00000080;
+      z-index: 99999;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
 
 
 
@@ -798,12 +852,12 @@
     }
 
     .popup {
-      background-color: #f5f5f7;
+      background-color: #f5f5f71a;
       border: none;
       border-radius: 15px;
       padding: 20px;
       text-align: center;
-      color: #000000;
+      color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
     }
@@ -1112,20 +1166,25 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 14s linear infinite;
+    animation: shine 12s linear infinite;
     position: relative;
     width: 100%;
     left: 0;
-    margin-top: 30px;
     margin-inline: auto;
+  }
+
+  .ll{
+    width: 80%;
+    bottom: 27px;
+    position: relative;
   }
 
   @keyframes shine {
     0% {
-      background-position-x: -442%;
+      background-position-x: -457%;
     }
     100% {
-      background-position-x: 442%;
+      background-position-x: 457%;
     }
   }
 
@@ -2795,6 +2854,178 @@
 .controls-9 button#play-9:active {
     transform: scale(0.9);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Colors & Sizes *****/
+:root {
+  --color-primary: #0088CE;
+  --color-primary-tint: #FFF;
+  --color-accent: #005399;
+  --color-accent-tint: #FFF;
+  --color-line: #ccc;
+  --item-gap: 15px;
+}
+/***** Vertical Sitemap *****/
+.vsitemap {
+  text-align: center;
+  overflow: scroll;
+  height: 500px;
+}
+
+
+.vsitemap  * {
+  box-sizing: border-box;
+}
+.vsitemap ul {
+  margin: 0 var(--item-gap);
+  list-style: none;
+  padding: 0;
+}
+.vsitemap ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 0 calc(var(--item-gap) / 2);
+  position: relative;
+}
+.vsitemap ul > li:before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  height: 1px;
+  left: calc(-1 * var(--item-gap) / 2);
+  width: calc(var(--item-gap) / 2);
+  background: var(--color-line);
+}
+
+/* Draw Line */
+.vsitemap ul > li:first-child:before {
+  width: var(--item-gap);
+  left: calc(-1 * var(--item-gap));
+}
+.vsitemap ul li:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--item-gap));
+  left: calc((var(--item-gap) / 2) - var(--item-gap));
+  bottom: 0;
+  width: 1px;
+  background: var(--color-line);
+}
+.vsitemap ul li:first-child:after {
+  top: 1em;
+}
+.vsitemap ul li:last-child:after {
+  bottom: auto;
+  height: calc(var(--item-gap) + 1em);
+}
+.vsitemap ul li:only-child:after {
+  display: none;
+}
+
+/* Box Item */
+.vsitemap small {
+  line-height: 1.5em;
+  position: relative;
+  font-size: 0.8em;
+}
+.vsitemap span {
+  line-height: 1.5em;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 8px;
+  width: var(--item-width);
+  transition: background-color 0.4s;
+}
+.vsitemap span, 
+.vsitemap span:visited {
+  background: var(--color-primary);
+  color:var(--color-primary-tint);
+}
+.vsitemap span:hover, 
+.vsitemap span:active {
+  background: var(--color-accent);
+  color: var(--color-accent-tint);
+}
+
+/* Responsive */
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .vsitemap > ul > li > ul > li ul li{
+    flex-direction: column;
+  }
+  .vsitemap > ul > li > ul > li ul li ul{
+    margin-top: calc(var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul li:after {
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:first-child:before {
+    width: calc(var(--item-gap)/2);
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:first-child:after{
+    top: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:only-child:after {
+    display: block;
+    height: calc(var(--item-gap)/2 + 1em);
+  }
+}
+/* mobile */
+@media only screen and (max-width: 480px) {
+  .vsitemap > ul > li ul li{
+    flex-direction: column;
+  }
+  .vsitemap > ul > li ul li ul{
+    margin-top: calc(var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul li:after {
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:first-child:before {
+    width: calc(var(--item-gap)/2);
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:first-child:after{
+    top: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:only-child:after {
+    display: block;
+    height: calc(var(--item-gap)/2 + 1em);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -3039,6 +3270,11 @@
     font-weight: 500;
   }
 
+  .ll{
+    width: 90%;
+    bottom: 16px;
+    position: relative;
+  }
   
   .kap {
     font-weight: 600;
@@ -4889,6 +5125,187 @@
 .controls-9 button#play-9:active {
     transform: scale(0.9);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --color-primary: #0088CE;
+  --color-primary-tint: #FFF;
+  --color-accent: #005399;
+  --color-accent-tint: #FFF;
+  --color-line: #ccc;
+  --item-gap: 15px;
+}
+/***** Vertical Sitemap *****/
+.vsitemap {
+  text-align: center;
+  overflow: scroll;
+  height: 500px;
+}
+
+
+.vsitemap  * {
+  box-sizing: border-box;
+}
+.vsitemap ul {
+  margin: 0 var(--item-gap);
+  list-style: none;
+  padding: 0;
+}
+.vsitemap ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 0 calc(var(--item-gap) / 2);
+  position: relative;
+}
+.vsitemap ul > li:before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  height: 1px;
+  left: calc(-1 * var(--item-gap) / 2);
+  width: calc(var(--item-gap) / 2);
+  background: var(--color-line);
+}
+
+/* Draw Line */
+.vsitemap ul > li:first-child:before {
+  width: var(--item-gap);
+  left: calc(-1 * var(--item-gap));
+}
+.vsitemap ul li:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--item-gap));
+  left: calc((var(--item-gap) / 2) - var(--item-gap));
+  bottom: 0;
+  width: 1px;
+  background: var(--color-line);
+}
+.vsitemap ul li:first-child:after {
+  top: 1em;
+}
+.vsitemap ul li:last-child:after {
+  bottom: auto;
+  height: calc(var(--item-gap) + 1em);
+}
+.vsitemap ul li:only-child:after {
+  display: none;
+}
+
+/* Box Item */
+.vsitemap small {
+  line-height: 1.5em;
+  position: relative;
+  font-size: 0.8em;
+}
+.vsitemap span {
+  line-height: 1.5em;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 8px;
+  width: var(--item-width);
+  transition: background-color 0.4s;
+}
+.vsitemap span, 
+.vsitemap span:visited {
+  background: var(--color-primary);
+  color:var(--color-primary-tint);
+}
+.vsitemap span:hover, 
+.vsitemap span:active {
+  background: var(--color-accent);
+  color: var(--color-accent-tint);
+}
+
+/* Responsive */
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .vsitemap > ul > li > ul > li ul li{
+    flex-direction: column;
+  }
+  .vsitemap > ul > li > ul > li ul li ul{
+    margin-top: calc(var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul li:after {
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:first-child:before {
+    width: calc(var(--item-gap)/2);
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:first-child:after{
+    top: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li > ul > li li:only-child:after {
+    display: block;
+    height: calc(var(--item-gap)/2 + 1em);
+  }
+}
+/* mobile */
+@media only screen and (max-width: 480px) {
+  .vsitemap > ul > li ul li{
+    flex-direction: column;
+  }
+  .vsitemap > ul > li ul li ul{
+    margin-top: calc(var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul li:after {
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:first-child:before {
+    width: calc(var(--item-gap)/2);
+    left: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:first-child:after{
+    top: calc(-1 * var(--item-gap)/2);
+  }
+  .vsitemap > ul > li > ul > li li:only-child:after {
+    display: block;
+    height: calc(var(--item-gap)/2 + 1em);
+  }
+}
+
+
+.popup-container2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #00000080;
+      z-index: 99999;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+
 }
 </style>
 
@@ -6559,7 +6976,27 @@ const lyricsText8 = document.getElementById('lyrics-8');
 
 const lyricsData8 = {
     ermenice8: [
-            { startTime: 0, endTime: 105, text: '♪' },
+    { startTime: 0, endTime: 22.9, text: '♪' },
+    { startTime: 22.9, endTime: 25.4, text: 'Իջա չայի քինարէ, նարէ' },
+    { startTime: 25.4, endTime: 28.55, text: 'Տեսա աչքէ խումար է, նարէ' },
+    { startTime: 28.55, endTime: 31.2, text: 'Աչօք ընքօք կը կանչէ, նարէ' },
+    { startTime: 31.2, endTime: 34.1, text: 'Աթլաս ընկողնի տակէ, նարէ' },
+    { startTime: 34.1, endTime: 37.2, text: 'Չիմ գինա ինչու (հը)մար է, նարէ' },
+    { startTime: 37.2, endTime: 48.43, text: 'Նարէ նարէ հէյ նարէ, նարէ' },
+    { startTime: 48.43, endTime: 71.45, text: '♪' },
+    { startTime: 71.45, endTime: 74, text: 'Չայը ջուրը չի տանի, նարէ' },
+    { startTime: 74, endTime: 77.2, text: 'Մամիս ճախրակ չի մանի, նարէ' },
+    { startTime: 77.2, endTime: 80, text: 'Պապիս տուքան չի բանի, նարէ' },
+    { startTime: 80, endTime: 82.9, text: 'Շորպան տաք է չի պաղի, նարէ' },
+    { startTime: 82.9, endTime: 85.5, text: 'Ես քըղցած իմ, չիմ կանի, նարէ' },
+    { startTime: 85.5, endTime: 97, text: 'Նարէ նարէ հէյ նարէ, նարէ' },
+    { startTime: 97, endTime: 120, text: '♪' },
+    { startTime: 120, endTime: 122.9, text: 'Նստիր է պատու տակը, նարէ' },
+    { startTime: 122.9, endTime: 125.88, text: 'Արաքի շուշէն ձեռքը, նարէ' },
+    { startTime: 125.88, endTime: 128.63, text: 'Խաղ կ՚ըսէ ու կը խմէ, նարէ' },
+    { startTime: 128.63, endTime: 131.5, text: 'Ես գինամ ինչու (հը)մար է, նարէ' },
+    { startTime: 131.5, endTime: 142.9, text: 'Նարէ նարէ հէյ նարէ, նարէ (4 X)' },
+    { startTime: 142.9, endTime: 221.5, text: '♪...' },
 
     ],
     latinermeni8: [
