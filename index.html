@@ -9919,6 +9919,1199 @@
 
 
 
+
+
+
+
+
+
+
+
+
+function myFunction() {
+        // Get the reference to the ufakdenemeler div
+        var ufakdenemelerDiv = document.querySelector('.ufakdenemeler');
+        var yukaridenemelerDiv = document.querySelector('.yukaricik');
+
+        // Check if content is already present
+        if (ufakdenemelerDiv.innerHTML.trim() === '') {
+            // Create a new div element
+            var newDiv = document.createElement('div');
+
+            // Set some content for the new div (you can customize this as needed)
+            newDiv.innerHTML = `
+            <div class="yukaricik">
+<div class="yukaricik">
+<div class="custom-center-12">
+  <div class="custom-carousel-wrapper-12">
+
+    <input id="custom-slide56" type="radio" name="custom-controls-12" checked="checked" />
+    <input id="custom-slide57" type="radio" name="custom-controls-12" />
+    <input id="custom-slide58" type="radio" name="custom-controls-12" />
+    <input id="custom-slide59" type="radio" name="custom-controls-12" />
+    <input id="custom-slide60" type="radio" name="custom-controls-12" />
+    <input id="custom-slide61" type="radio" name="custom-controls-12" />
+    <input id="custom-slide62" type="radio" name="custom-controls-12" />
+    <input id="custom-slide63" type="radio" name="custom-controls-12" />
+    <input id="custom-slide64" type="radio" name="custom-controls-12" />
+    <input id="custom-slide65" type="radio" name="custom-controls-12" />
+    <input id="custom-slide66" type="radio" name="custom-controls-12" />
+
+    <label for="custom-slide56" class="custom-nav-dot-12"></label>
+    <label for="custom-slide57" class="custom-nav-dot-12"></label>
+    <label for="custom-slide58" class="custom-nav-dot-12"></label>
+    <label for="custom-slide59" class="custom-nav-dot-12"></label>
+    <label for="custom-slide60" class="custom-nav-dot-12"></label>
+    <label for="custom-slide61" class="custom-nav-dot-12"></label>
+    <label for="custom-slide62" class="custom-nav-dot-12"></label>
+    <label for="custom-slide63" class="custom-nav-dot-12"></label>
+    <label for="custom-slide64" class="custom-nav-dot-12"></label>
+    <label for="custom-slide65" class="custom-nav-dot-12"></label>
+    <label for="custom-slide66" class="custom-nav-dot-12"></label>
+
+    <label for="custom-slide56" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide57" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide58" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide59" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide60" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide61" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide62" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide63" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide64" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide65" class="custom-left-arrow-12"> &lt; </label>
+    <label for="custom-slide66" class="custom-left-arrow-12"> &lt; </label>
+
+    <label for="custom-slide56" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide57" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide58" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide59" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide60" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide61" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide62" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide63" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide64" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide65" class="custom-right-arrow-12"> &gt; </label>
+    <label for="custom-slide66" class="custom-right-arrow-12"> &gt; </label>
+
+    <div class="custom-carousel-12">
+      <ul>
+        <li>
+          <div class="form">
+            <div class="music-player">
+
+                <div class="album-cover">
+                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                </div>
+                <div class="song-details">
+                    <h2>Siranuş</h2>
+                    <p>Onnik Dinkjian</p>
+                </div>
+                <div id="time-display">0:00 / 0:00</div>
+            </div>
+          
+            <div class="seek-bar-container">
+                <div class="seek-bar">
+                    <div class="seek-bar-fill"></div>
+                    <div class="seek-bar-thumb"></div>
+                </div>
+            </div>
+          
+            <div class="controls">
+              <button id="play"><i class="fas fa-play"></i></button>
+              <button id="pause"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector" style="justify-content: center;">
+                    <select id="language-select">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="ermenice">հայերեն</option>
+                        <option value="latinermeni">հայերեն (Latinize)</option>
+                        <option value="turkce">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+          
+            <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+          </div>
+          
+        </li>
+        <li>
+          <div class="form">
+            <div class="music-player-2">
+                <div class="album-cover-2">
+                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                </div>
+                <div class="song-details-2">
+                    <h2>Vay Babo</h2>
+                    <p>Onnik Dinkjian</p>
+                </div>
+                <div id="time-display-2">0:00 / 0:00</div>
+            </div>
+        
+            <div class="seek-bar-container-2">
+                <div class="seek-bar-2">
+                    <div class="seek-bar-fill-2"></div>
+                    <div class="seek-bar-thumb-2"></div>
+                </div>
+            </div>
+        
+            <div class="controls-2">
+                <button id="play-2"><i class="fas fa-play"></i></button>
+                <button id="pause-2"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-2"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+        
+            <div class="lyrics-container-2" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-2" style="justify-content: center;">
+                    <select id="language-select-2">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="ermenice2">հայերեն</option>
+                        <option value="latinermeni2">հայերեն (Latinize)</option>
+                        <option value="turkce2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-2" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+        
+            <audio id="audio-player-2" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/13_Vay_Babo.mp3"></audio>
+        </div>                  
+        </li>
+        <li>
+<div class="form">
+    <div class="music-player-3">
+        <div class="album-cover-3">
+            <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+        </div>
+        <div class="song-details-3">
+            <h2>Şeg Mazerov Er</h2>
+            <p>Onnik Dinkjian</p>
+        </div>
+        <div id="time-display-3">0:00 / 0:00</div>
+    </div>
+
+    <div class="seek-bar-container-3">
+        <div class="seek-bar-3">
+            <div class="seek-bar-fill-3"></div>
+            <div class="seek-bar-thumb-3"></div>
+        </div>
+    </div>
+
+    <div class="controls-3">
+        <button id="play-3"><i class="fas fa-play"></i></button>
+        <button id="pause-3"><i class="fas fa-pause"></i></button>
+        <button id="toggle-lyrics-3"><i class="fas fa-music"></i> Sözler</button>
+    </div>
+
+    <div class="lyrics-container-3" style="display: none; text-align: center;">
+        <div id="lyrics-language-selector-3" style="justify-content: center;">
+            <select id="language-select-3">
+                <option value disabled selected>Dil Seç.</option>
+                <option value="ermenice3">հայերեն</option>
+                <option value="latinermeni3">հայերեն (Latinize)</option>
+                <option value="turkce3">Türkçe</option>
+            </select>
+        </div>
+        <div id="lyrics-3" style="width: max-content; margin: 0 auto; color: #333; font-size: 18px; font-weight: 500;"></div>
+    </div>
+
+    <audio id="audio-player-3" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/12_Sheg_Mazerov_Er.mp3"></audio>
+</div>         
+        </li>
+
+        <li>
+          <div class="form">
+            <div class="music-player-4">
+                <div class="album-cover-4">
+                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                </div>
+                <div class="song-details-4">
+                    <h2>Mamis</h2>
+                    <p>Onnik Dinkjian</p>
+                </div>
+                <div id="time-display-4">0:00 / 0:00</div>
+            </div>
+          
+            <div class="seek-bar-container-4">
+                <div class="seek-bar-4">
+                    <div class="seek-bar-fill-4"></div>
+                    <div class="seek-bar-thumb-4"></div>
+                </div>
+            </div>
+          
+            <div class="controls-4">
+              <button id="play-4"><i class="fas fa-play"></i></button>
+              <button id="pause-4"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-4"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-4" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-4" style="justify-content: center;">
+                    <select id="language-select-4">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="ermenice4">հայերեն</option>
+                        <option value="latinermeni4">հայերեն (Latinize)</option>
+                        <option value="turkce4">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-4" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+
+            <audio id="audio-player-4" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/19_Mamis_1.mp3"></audio>
+          </div>
+          
+        </li>
+
+
+        <li>
+          <div class="form">
+            <div class="music-player-5">
+
+                <div class="album-cover-5">
+                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                </div>
+                <div class="song-details-5">
+                    <h2>Diyarbekir Peşrevi</h2>
+                    <p>Onnik Dinkjian</p>
+                </div>
+                <div id="time-display-5">0:00 / 0:00</div>
+            </div>
+          
+            <div class="seek-bar-container-5">
+                <div class="seek-bar-5">
+                    <div class="seek-bar-fill-5"></div>
+                    <div class="seek-bar-thumb-5"></div>
+                </div>
+            </div>
+          
+            <div class="controls-5">
+              <button id="play-5"><i class="fas fa-play"></i></button>
+              <button id="pause-5"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-5"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-5" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-5" style="justify-content: center;">
+                    <select id="language-select-5">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="ermenice5">հայերեն</option>
+                        <option value="latinermeni5">հայերեն (Latinize)</option>
+                        <option value="turkce5">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-5" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+          
+            <audio id="audio-player-5" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/08_Diyarbak%C4%B1r_Peshrevi.mp3"></audio>
+          </div>
+          
+        </li>
+        
+
+        <li>
+            <div class="form">
+              <div class="music-player-6">
+
+                  <div class="album-cover-6">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-6">
+                      <h2>Diyarbekiri Hokin</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-6">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-6">
+                  <div class="seek-bar-6">
+                      <div class="seek-bar-fill-6"></div>
+                      <div class="seek-bar-thumb-6"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-6">
+                <button id="play-6"><i class="fas fa-play"></i></button>
+                <button id="pause-6"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-6"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-6" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-6" style="justify-content: center;">
+                      <select id="language-select-6">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice6">հայերեն</option>
+                          <option value="latinermeni6">հայերեն (Latinize)</option>
+                          <option value="turkce6">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-6" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-6" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/02_Diyarbekiri_Hokin.mp3"></audio>
+            </div>
+            
+          </li>
+
+          <li>
+            <div class="form">
+              <div class="music-player-7">
+
+                  <div class="album-cover-7">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-7">
+                      <h2>Kale Kale</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-7">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-7">
+                  <div class="seek-bar-7">
+                      <div class="seek-bar-fill-7"></div>
+                      <div class="seek-bar-thumb-7"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-7">
+                <button id="play-7"><i class="fas fa-play"></i></button>
+                <button id="pause-7"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-7"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-7" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-7" style="justify-content: center;">
+                      <select id="language-select-7">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice7">հայերեն</option>
+                          <option value="latinermeni7">հայերեն (Latinize)</option>
+                          <option value="turkce7">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-7" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-7" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/11_Kale_Kale.mp3"></audio>
+            </div>
+            
+          </li>
+
+          <li>
+            <div class="form">
+              <div class="music-player-8">
+
+                  <div class="album-cover-8">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-8">
+                      <h2>Nare</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-8">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-8">
+                  <div class="seek-bar-8">
+                      <div class="seek-bar-fill-8"></div>
+                      <div class="seek-bar-thumb-8"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-8">
+                <button id="play-8"><i class="fas fa-play"></i></button>
+                <button id="pause-8"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-8"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-8" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-8" style="justify-content: center;">
+                      <select id="language-select-8">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice8">հայերեն</option>
+                          <option value="latinermeni8">հայերեն (Latinize)</option>
+                          <option value="turkce8">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-8" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-8" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/18_Nare.mp3"></audio>
+            </div>
+            
+          </li>
+
+          <li>
+            <div class="form">
+              <div class="music-player-9">
+
+                  <div class="album-cover-9">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-9">
+                      <h2>Tsarvisi</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-9">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-9">
+                  <div class="seek-bar-9">
+                      <div class="seek-bar-fill-9"></div>
+                      <div class="seek-bar-thumb-9"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-9">
+                <button id="play-9"><i class="fas fa-play"></i></button>
+                <button id="pause-9"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-9"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-9" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-9" style="justify-content: center;">
+                      <select id="language-select-9">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice9">հայերեն</option>
+                          <option value="latinermeni9">հայերեն (Latinize)</option>
+                          <option value="turkce9">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-9" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-9" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/17_Tsavirsi.mp3"></audio>
+            </div>
+            
+          </li>
+
+          <li>
+            <div class="form">
+              <div class="music-player-10">
+
+                  <div class="album-cover-10">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-10">
+                      <h2>Nanay</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-10">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-10">
+                  <div class="seek-bar-10">
+                      <div class="seek-bar-fill-10"></div>
+                      <div class="seek-bar-thumb-10"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-10">
+                <button id="play-10"><i class="fas fa-play"></i></button>
+                <button id="pause-10"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-10"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-10" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-10" style="justify-content: center;">
+                      <select id="language-select-10">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice">հայերեն</option>
+                          <option value="latinermeni">հայերեն (Latinize)</option>
+                          <option value="turkce">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-10" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+            </div>
+            
+          </li>
+
+          <li>
+            <div class="form">
+              <div class="music-player-11">
+
+                  <div class="album-cover-11">
+                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
+                  </div>
+                  <div class="song-details-11">
+                      <h2>Oy Canım</h2>
+                      <p>Onnik Dinkjian</p>
+                  </div>
+                  <div id="time-display-11">0:00 / 0:00</div>
+              </div>
+            
+              <div class="seek-bar-container-11">
+                  <div class="seek-ba-11r">
+                      <div class="seek-bar-fill-11"></div>
+                      <div class="seek-bar-thumb-11"></div>
+                  </div>
+              </div>
+            
+              <div class="controls-11">
+                <button id="play-11"><i class="fas fa-play"></i></button>
+                <button id="pause-11"><i class="fas fa-pause"></i></button>
+                <button id="toggle-lyrics-11"><i class="fas fa-music"></i> Sözler</button>
+              </div>
+            
+              <div class="lyrics-container-11" style="display: none; text-align: center;">
+                  <div id="lyrics-language-selector-11" style="justify-content: center;">
+                      <select id="language-select-11">
+                          <option value disabled selected>Dil Seç.</option>
+                          <option value="ermenice">հայերեն</option>
+                          <option value="latinermeni">հայերեն (Latinize)</option>
+                          <option value="turkce">Türkçe</option>
+                      </select>
+                  </div>
+                  <div id="lyrics-11" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+              </div>
+            
+              <audio id="audio-player-11" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
+            </div>
+            
+          </li>
+      </ul>
+    </div>
+  </div>
+</div> 
+<p style="color: #666666; position: relative; bottom: 35px; margin-inline: auto; width: 250px; font-weight: 500;">Houshamadyan’a<br>teşekkürler.</p>
+</div>
+
+
+
+
+
+
+
+<div class="yukaricik">
+  <div class="custom-center-xyz">
+    <div class="custom-carousel-wrapper-xyz">
+
+      <input id="custom-slideA" type="radio" name="custom-controls-xyz" checked="checked" />
+      <input id="custom-slideB" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideC" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideD" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideE" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideF" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideG" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideH" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideI" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideJ" type="radio" name="custom-controls-xyz" />
+      <input id="custom-slideK" type="radio" name="custom-controls-xyz" />
+
+      <label for="custom-slideA" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideB" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideC" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideD" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideE" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideF" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideG" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideH" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideI" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideJ" class="custom-nav-dot-xyz"></label>
+      <label for="custom-slideK" class="custom-nav-dot-xyz"></label>
+
+      <label for="custom-slideA" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideB" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideC" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideD" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideE" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideF" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideG" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideH" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideI" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideJ" class="custom-left-arrow-xyz"> &lt; </label>
+      <label for="custom-slideK" class="custom-left-arrow-xyz"> &lt; </label>
+
+      <label for="custom-slideA" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideB" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideC" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideD" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideE" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideF" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideG" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideH" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideI" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideJ" class="custom-right-arrow-xyz"> &gt; </label>
+      <label for="custom-slideK" class="custom-right-arrow-xyz"> &gt; </label>
+
+      <div class="custom-carousel-xyz">
+        <ul>
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz">
+
+                <div class="album-cover-xyz">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz">
+                <div class="seek-bar-xyz">
+                    <div class="seek-bar-fill-xyz"></div>
+                    <div class="seek-bar-thumb-xyz"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz">
+              <button id="play-xyz"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz" style="justify-content: center;">
+                    <select id="language-select-xyz">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+          
+          
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz1">
+
+                <div class="album-cover-xyz1">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz1">
+                  <h2>Ya Baba Dhaqoutta</h2>
+                  <p>Sanatçı Bilinmiyor</p>
+              </div>
+              <div id="time-display-xyz1">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz1">
+                <div class="seek-bar-xyz1">
+                    <div class="seek-bar-fill-xyz1"></div>
+                    <div class="seek-bar-thumb-xyz1"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz1">
+              <button id="play-xyz1"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz1"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz1"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz1" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz1" style="justify-content: center;">
+                    <select id="language-select-xyz1">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanicexyz1">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanicexyz1">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz1">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz1" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz1" src="https://github.com/Berahatiye/kl/raw/main/Chant%20Chald%C3%A9en%20Ya%20Baba%20Dhaqqouta.mp3"></audio>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz2">
+
+                <div class="album-cover-xyz2">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz2">
+                  <h2>Ya Mar Gewargees</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz2">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz2">
+                <div class="seek-bar-xyz2">
+                    <div class="seek-bar-fill-xyz2"></div>
+                    <div class="seek-bar-thumb-xyz2"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz2">
+              <button id="play-xyz2"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz2"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz2"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz2" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz2" style="justify-content: center;">
+                    <select id="language-select-xyz2">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanicexyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanicexyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz2" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz2" src="https://github.com/Berahatiye/kl/raw/main/Ya%20Mar%20Gewargees%20%20%D9%8A%D8%A7%20%D9%85%D8%A7%D8%B1%20%D9%83%D9%8A%D9%88%D8%B1%D9%83%D9%8A%D8%B3.mp3"></audio>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz3">
+
+                <div class="album-cover-xyz3">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz3">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz3">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz3">
+                <div class="seek-bar-xyz3">
+                    <div class="seek-bar-fill-xyz3"></div>
+                    <div class="seek-bar-thumb-xyz3"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz3">
+              <button id="play-xyz3"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz3"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz3"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz3" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz3" style="justify-content: center;">
+                    <select id="language-select-xyz3">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz3" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz3" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz4">
+
+                <div class="album-cover-xyz4">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz4">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz4">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz4">
+                <div class="seek-bar-xyz4">
+                    <div class="seek-bar-fill-xyz4"></div>
+                    <div class="seek-bar-thumb-xyz4"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz4">
+              <button id="play-xyz4"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz4"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz4"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz4" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz4" style="justify-content: center;">
+                    <select id="language-select-xyz4">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz4" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz4" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz5">
+
+                <div class="album-cover-xyz5">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz5">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz5">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz5">
+                <div class="seek-bar-xyz5">
+                    <div class="seek-bar-fill-xyz5"></div>
+                    <div class="seek-bar-thumb-xyz5"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz5">
+              <button id="play-xyz5"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz5"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz5"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz5" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz5" style="justify-content: center;">
+                    <select id="language-select-xyz5">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz5" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz5" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz6">
+
+                <div class="album-cover-xyz6">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz6">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz6">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz6">
+                <div class="seek-bar-xyz6">
+                    <div class="seek-bar-fill-xyz6"></div>
+                    <div class="seek-bar-thumb-xyz6"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz6">
+              <button id="play-xyz6"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz6"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz6"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz6" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz6" style="justify-content: center;">
+                    <select id="language-select-xyz6">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz6" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz6" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz7">
+
+                <div class="album-cover-xyz7">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz7">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz7">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz7">
+                <div class="seek-bar-xyz7">
+                    <div class="seek-bar-fill-xyz7"></div>
+                    <div class="seek-bar-thumb-xyz7"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz7">
+              <button id="play-xyz7"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz7"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz7"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz7" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz7" style="justify-content: center;">
+                    <select id="language-select-xyz7">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz7" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz7" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz8">
+
+                <div class="album-cover-xyz8">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz8">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz8">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz8">
+                <div class="seek-bar-xyz8">
+                    <div class="seek-bar-fill-xyz8"></div>
+                    <div class="seek-bar-thumb-xyz8"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz8">
+              <button id="play-xyz8"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz8"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz8"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz8" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz8" style="justify-content: center;">
+                    <select id="language-select-xyz8">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz8" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz8" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz9">
+
+                <div class="album-cover-xyz9">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz9">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz9">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz9">
+                <div class="seek-bar-xyz9">
+                    <div class="seek-bar-fill-xyz9"></div>
+                    <div class="seek-bar-thumb-xyz9"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz9">
+              <button id="play-xyz9"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz9"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz9"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz9" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz9" style="justify-content: center;">
+                    <select id="language-select-xyz9">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz9" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz9" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz10">
+
+                <div class="album-cover-xyz10">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz10">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz10">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz10">
+                <div class="seek-bar-xyz10">
+                    <div class="seek-bar-fill-xyz10"></div>
+                    <div class="seek-bar-thumb-xyz10"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz10">
+              <button id="play-xyz10"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz10"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz10"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz10" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz10" style="justify-content: center;">
+                    <select id="language-select-xyz10">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz10" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+
+
+
+
+          <li>
+            <div class="formss">
+              <div class="music-player-xyz11">
+
+                <div class="album-cover-xyz11">
+                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
+                  <!-- Add your content for the first slide here -->
+                </div>
+                <div class="song-details-xyz11">
+                  <h2>Halellujah</h2>
+                  <p>Onnik Dinkjian</p>
+              </div>
+              <div id="time-display-xyz11">0:00 / 0:00</div>
+              </div>
+
+              <div class="seek-bar-container-xyz11">
+                <div class="seek-bar-xyz11">
+                    <div class="seek-bar-fill-xyz11"></div>
+                    <div class="seek-bar-thumb-xyz11"></div>
+                </div>
+            </div>
+          
+            <div class="controls-xyz11">
+              <button id="play-xyz11"><i class="fas fa-play"></i></button>
+              <button id="pause-xyz11"><i class="fas fa-pause"></i></button>
+              <button id="toggle-lyrics-xyz11"><i class="fas fa-music"></i> Sözler</button>
+            </div>
+          
+            <div class="lyrics-container-xyz11" style="display: none; text-align: center;">
+                <div id="lyrics-language-selector-xyz11" style="justify-content: center;">
+                    <select id="language-select-xyz11">
+                        <option value disabled selected>Dil Seç.</option>
+                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
+                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
+                        <option value="turkcexyz2">Türkçe</option>
+                    </select>
+                </div>
+                <div id="lyrics-xyz11" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
+            </div>
+            <audio id="audio-player-xyz11" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+            // Append the new div to the ufakdenemeler div
+            ufakdenemelerDiv.appendChild(newDiv);
+        }
+
+        setTimeout(function() {
+                ufakdenemelerDiv.style.opacity = 1;
+                ufakdenemelerDiv.style.borderRadius = "30px";
+            }, 100); 
+          
+            setTimeout(function() {
+              ufakdenemelerDiv.style.display = "block";
+            }, 50);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
     const audioPlayer = document.getElementById('audio-player');
     const playButton = document.getElementById('play');
     const pauseButton = document.getElementById('pause');
@@ -12632,1185 +13825,7 @@ function formatTime(time) {
 
 
 
-
-
-
-
-
-
-
-
-
-function myFunction() {
-        // Get the reference to the ufakdenemeler div
-        var ufakdenemelerDiv = document.querySelector('.ufakdenemeler');
-        var yukaridenemelerDiv = document.querySelector('.yukaricik');
-
-        // Check if content is already present
-        if (ufakdenemelerDiv.innerHTML.trim() === '') {
-            // Create a new div element
-            var newDiv = document.createElement('div');
-
-            // Set some content for the new div (you can customize this as needed)
-            newDiv.innerHTML = `
-            <div class="yukaricik">
-<div class="yukaricik">
-<div class="custom-center-12">
-  <div class="custom-carousel-wrapper-12">
-
-    <input id="custom-slide56" type="radio" name="custom-controls-12" checked="checked" />
-    <input id="custom-slide57" type="radio" name="custom-controls-12" />
-    <input id="custom-slide58" type="radio" name="custom-controls-12" />
-    <input id="custom-slide59" type="radio" name="custom-controls-12" />
-    <input id="custom-slide60" type="radio" name="custom-controls-12" />
-    <input id="custom-slide61" type="radio" name="custom-controls-12" />
-    <input id="custom-slide62" type="radio" name="custom-controls-12" />
-    <input id="custom-slide63" type="radio" name="custom-controls-12" />
-    <input id="custom-slide64" type="radio" name="custom-controls-12" />
-    <input id="custom-slide65" type="radio" name="custom-controls-12" />
-    <input id="custom-slide66" type="radio" name="custom-controls-12" />
-
-    <label for="custom-slide56" class="custom-nav-dot-12"></label>
-    <label for="custom-slide57" class="custom-nav-dot-12"></label>
-    <label for="custom-slide58" class="custom-nav-dot-12"></label>
-    <label for="custom-slide59" class="custom-nav-dot-12"></label>
-    <label for="custom-slide60" class="custom-nav-dot-12"></label>
-    <label for="custom-slide61" class="custom-nav-dot-12"></label>
-    <label for="custom-slide62" class="custom-nav-dot-12"></label>
-    <label for="custom-slide63" class="custom-nav-dot-12"></label>
-    <label for="custom-slide64" class="custom-nav-dot-12"></label>
-    <label for="custom-slide65" class="custom-nav-dot-12"></label>
-    <label for="custom-slide66" class="custom-nav-dot-12"></label>
-
-    <label for="custom-slide56" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide57" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide58" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide59" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide60" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide61" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide62" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide63" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide64" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide65" class="custom-left-arrow-12"> &lt; </label>
-    <label for="custom-slide66" class="custom-left-arrow-12"> &lt; </label>
-
-    <label for="custom-slide56" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide57" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide58" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide59" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide60" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide61" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide62" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide63" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide64" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide65" class="custom-right-arrow-12"> &gt; </label>
-    <label for="custom-slide66" class="custom-right-arrow-12"> &gt; </label>
-
-    <div class="custom-carousel-12">
-      <ul>
-        <li>
-          <div class="form">
-            <div class="music-player">
-
-                <div class="album-cover">
-                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                </div>
-                <div class="song-details">
-                    <h2>Siranuş</h2>
-                    <p>Onnik Dinkjian</p>
-                </div>
-                <div id="time-display">0:00 / 0:00</div>
-            </div>
-          
-            <div class="seek-bar-container">
-                <div class="seek-bar">
-                    <div class="seek-bar-fill"></div>
-                    <div class="seek-bar-thumb"></div>
-                </div>
-            </div>
-          
-            <div class="controls">
-              <button id="play"><i class="fas fa-play"></i></button>
-              <button id="pause"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector" style="justify-content: center;">
-                    <select id="language-select">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice">հայերեն</option>
-                        <option value="latinermeni">հայերեն (Latinize)</option>
-                        <option value="turkce">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-          
-            <audio id="audio-player" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
-          </div>
-          
-        </li>
-        <li>
-          <div class="form">
-            <div class="music-player-2">
-                <div class="album-cover-2">
-                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                </div>
-                <div class="song-details-2">
-                    <h2>Vay Babo</h2>
-                    <p>Onnik Dinkjian</p>
-                </div>
-                <div id="time-display-2">0:00 / 0:00</div>
-            </div>
-        
-            <div class="seek-bar-container-2">
-                <div class="seek-bar-2">
-                    <div class="seek-bar-fill-2"></div>
-                    <div class="seek-bar-thumb-2"></div>
-                </div>
-            </div>
-        
-            <div class="controls-2">
-                <button id="play-2"><i class="fas fa-play"></i></button>
-                <button id="pause-2"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-2"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-        
-            <div class="lyrics-container-2" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-2" style="justify-content: center;">
-                    <select id="language-select-2">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice2">հայերեն</option>
-                        <option value="latinermeni2">հայերեն (Latinize)</option>
-                        <option value="turkce2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-2" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-        
-            <audio id="audio-player-2" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/13_Vay_Babo.mp3"></audio>
-        </div>                  
-        </li>
-        <li>
-<div class="form">
-    <div class="music-player-3">
-        <div class="album-cover-3">
-            <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-        </div>
-        <div class="song-details-3">
-            <h2>Şeg Mazerov Er</h2>
-            <p>Onnik Dinkjian</p>
-        </div>
-        <div id="time-display-3">0:00 / 0:00</div>
-    </div>
-
-    <div class="seek-bar-container-3">
-        <div class="seek-bar-3">
-            <div class="seek-bar-fill-3"></div>
-            <div class="seek-bar-thumb-3"></div>
-        </div>
-    </div>
-
-    <div class="controls-3">
-        <button id="play-3"><i class="fas fa-play"></i></button>
-        <button id="pause-3"><i class="fas fa-pause"></i></button>
-        <button id="toggle-lyrics-3"><i class="fas fa-music"></i> Sözler</button>
-    </div>
-
-    <div class="lyrics-container-3" style="display: none; text-align: center;">
-        <div id="lyrics-language-selector-3" style="justify-content: center;">
-            <select id="language-select-3">
-                <option value disabled selected>Dil Seç.</option>
-                <option value="ermenice3">հայերեն</option>
-                <option value="latinermeni3">հայերեն (Latinize)</option>
-                <option value="turkce3">Türkçe</option>
-            </select>
-        </div>
-        <div id="lyrics-3" style="width: max-content; margin: 0 auto; color: #333; font-size: 18px; font-weight: 500;"></div>
-    </div>
-
-    <audio id="audio-player-3" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/12_Sheg_Mazerov_Er.mp3"></audio>
-</div>         
-        </li>
-
-        <li>
-          <div class="form">
-            <div class="music-player-4">
-                <div class="album-cover-4">
-                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                </div>
-                <div class="song-details-4">
-                    <h2>Mamis</h2>
-                    <p>Onnik Dinkjian</p>
-                </div>
-                <div id="time-display-4">0:00 / 0:00</div>
-            </div>
-          
-            <div class="seek-bar-container-4">
-                <div class="seek-bar-4">
-                    <div class="seek-bar-fill-4"></div>
-                    <div class="seek-bar-thumb-4"></div>
-                </div>
-            </div>
-          
-            <div class="controls-4">
-              <button id="play-4"><i class="fas fa-play"></i></button>
-              <button id="pause-4"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-4"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-4" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-4" style="justify-content: center;">
-                    <select id="language-select-4">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice4">հայերեն</option>
-                        <option value="latinermeni4">հայերեն (Latinize)</option>
-                        <option value="turkce4">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-4" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-
-            <audio id="audio-player-4" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/19_Mamis_1.mp3"></audio>
-          </div>
-          
-        </li>
-
-
-        <li>
-          <div class="form">
-            <div class="music-player-5">
-
-                <div class="album-cover-5">
-                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                </div>
-                <div class="song-details-5">
-                    <h2>Diyarbekir Peşrevi</h2>
-                    <p>Onnik Dinkjian</p>
-                </div>
-                <div id="time-display-5">0:00 / 0:00</div>
-            </div>
-          
-            <div class="seek-bar-container-5">
-                <div class="seek-bar-5">
-                    <div class="seek-bar-fill-5"></div>
-                    <div class="seek-bar-thumb-5"></div>
-                </div>
-            </div>
-          
-            <div class="controls-5">
-              <button id="play-5"><i class="fas fa-play"></i></button>
-              <button id="pause-5"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-5"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-5" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-5" style="justify-content: center;">
-                    <select id="language-select-5">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="ermenice5">հայերեն</option>
-                        <option value="latinermeni5">հայերեն (Latinize)</option>
-                        <option value="turkce5">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-5" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-          
-            <audio id="audio-player-5" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/08_Diyarbak%C4%B1r_Peshrevi.mp3"></audio>
-          </div>
-          
-        </li>
-        
-
-        <li>
-            <div class="form">
-              <div class="music-player-6">
-
-                  <div class="album-cover-6">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-6">
-                      <h2>Diyarbekiri Hokin</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-6">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-6">
-                  <div class="seek-bar-6">
-                      <div class="seek-bar-fill-6"></div>
-                      <div class="seek-bar-thumb-6"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-6">
-                <button id="play-6"><i class="fas fa-play"></i></button>
-                <button id="pause-6"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-6"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-6" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-6" style="justify-content: center;">
-                      <select id="language-select-6">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice6">հայերեն</option>
-                          <option value="latinermeni6">հայերեն (Latinize)</option>
-                          <option value="turkce6">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-6" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-6" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/02_Diyarbekiri_Hokin.mp3"></audio>
-            </div>
-            
-          </li>
-
-          <li>
-            <div class="form">
-              <div class="music-player-7">
-
-                  <div class="album-cover-7">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-7">
-                      <h2>Kale Kale</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-7">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-7">
-                  <div class="seek-bar-7">
-                      <div class="seek-bar-fill-7"></div>
-                      <div class="seek-bar-thumb-7"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-7">
-                <button id="play-7"><i class="fas fa-play"></i></button>
-                <button id="pause-7"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-7"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-7" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-7" style="justify-content: center;">
-                      <select id="language-select-7">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice7">հայերեն</option>
-                          <option value="latinermeni7">հայերեն (Latinize)</option>
-                          <option value="turkce7">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-7" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-7" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/11_Kale_Kale.mp3"></audio>
-            </div>
-            
-          </li>
-
-          <li>
-            <div class="form">
-              <div class="music-player-8">
-
-                  <div class="album-cover-8">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-8">
-                      <h2>Nare</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-8">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-8">
-                  <div class="seek-bar-8">
-                      <div class="seek-bar-fill-8"></div>
-                      <div class="seek-bar-thumb-8"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-8">
-                <button id="play-8"><i class="fas fa-play"></i></button>
-                <button id="pause-8"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-8"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-8" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-8" style="justify-content: center;">
-                      <select id="language-select-8">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice8">հայերեն</option>
-                          <option value="latinermeni8">հայերեն (Latinize)</option>
-                          <option value="turkce8">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-8" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-8" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/18_Nare.mp3"></audio>
-            </div>
-            
-          </li>
-
-          <li>
-            <div class="form">
-              <div class="music-player-9">
-
-                  <div class="album-cover-9">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-9">
-                      <h2>Tsarvisi</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-9">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-9">
-                  <div class="seek-bar-9">
-                      <div class="seek-bar-fill-9"></div>
-                      <div class="seek-bar-thumb-9"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-9">
-                <button id="play-9"><i class="fas fa-play"></i></button>
-                <button id="pause-9"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-9"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-9" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-9" style="justify-content: center;">
-                      <select id="language-select-9">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice9">հայերեն</option>
-                          <option value="latinermeni9">հայերեն (Latinize)</option>
-                          <option value="turkce9">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-9" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-9" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/17_Tsavirsi.mp3"></audio>
-            </div>
-            
-          </li>
-
-          <li>
-            <div class="form">
-              <div class="music-player-10">
-
-                  <div class="album-cover-10">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-10">
-                      <h2>Nanay</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-10">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-10">
-                  <div class="seek-bar-10">
-                      <div class="seek-bar-fill-10"></div>
-                      <div class="seek-bar-thumb-10"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-10">
-                <button id="play-10"><i class="fas fa-play"></i></button>
-                <button id="pause-10"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-10"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-10" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-10" style="justify-content: center;">
-                      <select id="language-select-10">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice">հայերեն</option>
-                          <option value="latinermeni">հայերեն (Latinize)</option>
-                          <option value="turkce">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-10" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
-            </div>
-            
-          </li>
-
-          <li>
-            <div class="form">
-              <div class="music-player-11">
-
-                  <div class="album-cover-11">
-                      <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
-                  </div>
-                  <div class="song-details-11">
-                      <h2>Oy Canım</h2>
-                      <p>Onnik Dinkjian</p>
-                  </div>
-                  <div id="time-display-11">0:00 / 0:00</div>
-              </div>
-            
-              <div class="seek-bar-container-11">
-                  <div class="seek-ba-11r">
-                      <div class="seek-bar-fill-11"></div>
-                      <div class="seek-bar-thumb-11"></div>
-                  </div>
-              </div>
-            
-              <div class="controls-11">
-                <button id="play-11"><i class="fas fa-play"></i></button>
-                <button id="pause-11"><i class="fas fa-pause"></i></button>
-                <button id="toggle-lyrics-11"><i class="fas fa-music"></i> Sözler</button>
-              </div>
-            
-              <div class="lyrics-container-11" style="display: none; text-align: center;">
-                  <div id="lyrics-language-selector-11" style="justify-content: center;">
-                      <select id="language-select-11">
-                          <option value disabled selected>Dil Seç.</option>
-                          <option value="ermenice">հայերեն</option>
-                          <option value="latinermeni">հայերեն (Latinize)</option>
-                          <option value="turkce">Türkçe</option>
-                      </select>
-                  </div>
-                  <div id="lyrics-11" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-              </div>
-            
-              <audio id="audio-player-11" src="https://www.houshamadyan.org/fileadmin/houshamadyan/images/content_images/Dyarbekir_vilayet/Onnik_Dinkjian_songs/audio_files/16_Siranus%CC%A7.mp3"></audio>
-            </div>
-            
-          </li>
-      </ul>
-    </div>
-  </div>
-</div> 
-<p style="color: #666666; position: relative; bottom: 35px; margin-inline: auto; width: 250px; font-weight: 500;">Houshamadyan’a<br>teşekkürler.</p>
-</div>
-
-
-
-
-
-
-
-<div class="yukaricik">
-  <div class="custom-center-xyz">
-    <div class="custom-carousel-wrapper-xyz">
-
-      <input id="custom-slideA" type="radio" name="custom-controls-xyz" checked="checked" />
-      <input id="custom-slideB" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideC" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideD" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideE" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideF" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideG" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideH" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideI" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideJ" type="radio" name="custom-controls-xyz" />
-      <input id="custom-slideK" type="radio" name="custom-controls-xyz" />
-
-      <label for="custom-slideA" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideB" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideC" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideD" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideE" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideF" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideG" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideH" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideI" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideJ" class="custom-nav-dot-xyz"></label>
-      <label for="custom-slideK" class="custom-nav-dot-xyz"></label>
-
-      <label for="custom-slideA" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideB" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideC" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideD" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideE" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideF" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideG" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideH" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideI" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideJ" class="custom-left-arrow-xyz"> &lt; </label>
-      <label for="custom-slideK" class="custom-left-arrow-xyz"> &lt; </label>
-
-      <label for="custom-slideA" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideB" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideC" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideD" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideE" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideF" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideG" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideH" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideI" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideJ" class="custom-right-arrow-xyz"> &gt; </label>
-      <label for="custom-slideK" class="custom-right-arrow-xyz"> &gt; </label>
-
-      <div class="custom-carousel-xyz">
-        <ul>
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz">
-
-                <div class="album-cover-xyz">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz">
-                <div class="seek-bar-xyz">
-                    <div class="seek-bar-fill-xyz"></div>
-                    <div class="seek-bar-thumb-xyz"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz">
-              <button id="play-xyz"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz" style="justify-content: center;">
-                    <select id="language-select-xyz">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-          
-          
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz1">
-
-                <div class="album-cover-xyz1">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz1">
-                  <h2>Ya Baba Dhaqoutta</h2>
-                  <p>Sanatçı Bilinmiyor</p>
-              </div>
-              <div id="time-display-xyz1">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz1">
-                <div class="seek-bar-xyz1">
-                    <div class="seek-bar-fill-xyz1"></div>
-                    <div class="seek-bar-thumb-xyz1"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz1">
-              <button id="play-xyz1"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz1"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz1"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz1" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz1" style="justify-content: center;">
-                    <select id="language-select-xyz1">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanicexyz1">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanicexyz1">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz1">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz1" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz1" src="https://github.com/Berahatiye/kl/raw/main/Chant%20Chald%C3%A9en%20Ya%20Baba%20Dhaqqouta.mp3"></audio>
-            </div>
-          </li>
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz2">
-
-                <div class="album-cover-xyz2">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz2">
-                  <h2>Ya Mar Gewargees</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz2">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz2">
-                <div class="seek-bar-xyz2">
-                    <div class="seek-bar-fill-xyz2"></div>
-                    <div class="seek-bar-thumb-xyz2"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz2">
-              <button id="play-xyz2"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz2"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz2"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz2" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz2" style="justify-content: center;">
-                    <select id="language-select-xyz2">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanicexyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanicexyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz2" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz2" src="https://github.com/Berahatiye/kl/raw/main/Ya%20Mar%20Gewargees%20%20%D9%8A%D8%A7%20%D9%85%D8%A7%D8%B1%20%D9%83%D9%8A%D9%88%D8%B1%D9%83%D9%8A%D8%B3.mp3"></audio>
-            </div>
-          </li>
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz3">
-
-                <div class="album-cover-xyz3">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz3">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz3">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz3">
-                <div class="seek-bar-xyz3">
-                    <div class="seek-bar-fill-xyz3"></div>
-                    <div class="seek-bar-thumb-xyz3"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz3">
-              <button id="play-xyz3"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz3"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz3"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz3" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz3" style="justify-content: center;">
-                    <select id="language-select-xyz3">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz3" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz3" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz4">
-
-                <div class="album-cover-xyz4">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz4">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz4">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz4">
-                <div class="seek-bar-xyz4">
-                    <div class="seek-bar-fill-xyz4"></div>
-                    <div class="seek-bar-thumb-xyz4"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz4">
-              <button id="play-xyz4"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz4"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz4"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz4" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz4" style="justify-content: center;">
-                    <select id="language-select-xyz4">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz4" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz4" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz5">
-
-                <div class="album-cover-xyz5">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz5">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz5">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz5">
-                <div class="seek-bar-xyz5">
-                    <div class="seek-bar-fill-xyz5"></div>
-                    <div class="seek-bar-thumb-xyz5"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz5">
-              <button id="play-xyz5"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz5"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz5"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz5" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz5" style="justify-content: center;">
-                    <select id="language-select-xyz5">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz5" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz5" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz6">
-
-                <div class="album-cover-xyz6">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz6">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz6">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz6">
-                <div class="seek-bar-xyz6">
-                    <div class="seek-bar-fill-xyz6"></div>
-                    <div class="seek-bar-thumb-xyz6"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz6">
-              <button id="play-xyz6"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz6"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz6"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz6" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz6" style="justify-content: center;">
-                    <select id="language-select-xyz6">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz6" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz6" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz7">
-
-                <div class="album-cover-xyz7">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz7">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz7">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz7">
-                <div class="seek-bar-xyz7">
-                    <div class="seek-bar-fill-xyz7"></div>
-                    <div class="seek-bar-thumb-xyz7"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz7">
-              <button id="play-xyz7"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz7"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz7"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz7" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz7" style="justify-content: center;">
-                    <select id="language-select-xyz7">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz7" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz7" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz8">
-
-                <div class="album-cover-xyz8">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz8">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz8">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz8">
-                <div class="seek-bar-xyz8">
-                    <div class="seek-bar-fill-xyz8"></div>
-                    <div class="seek-bar-thumb-xyz8"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz8">
-              <button id="play-xyz8"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz8"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz8"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz8" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz8" style="justify-content: center;">
-                    <select id="language-select-xyz8">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz8" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz8" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz9">
-
-                <div class="album-cover-xyz9">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz9">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz9">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz9">
-                <div class="seek-bar-xyz9">
-                    <div class="seek-bar-fill-xyz9"></div>
-                    <div class="seek-bar-thumb-xyz9"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz9">
-              <button id="play-xyz9"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz9"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz9"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz9" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz9" style="justify-content: center;">
-                    <select id="language-select-xyz9">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz9" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz9" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz10">
-
-                <div class="album-cover-xyz10">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz10">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz10">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz10">
-                <div class="seek-bar-xyz10">
-                    <div class="seek-bar-fill-xyz10"></div>
-                    <div class="seek-bar-thumb-xyz10"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz10">
-              <button id="play-xyz10"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz10"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz10"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz10" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz10" style="justify-content: center;">
-                    <select id="language-select-xyz10">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz10" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-
-
-
-
-          <li>
-            <div class="formss">
-              <div class="music-player-xyz11">
-
-                <div class="album-cover-xyz11">
-                  <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/syriac.png"/>
-                  <!-- Add your content for the first slide here -->
-                </div>
-                <div class="song-details-xyz11">
-                  <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
-              </div>
-              <div id="time-display-xyz11">0:00 / 0:00</div>
-              </div>
-
-              <div class="seek-bar-container-xyz11">
-                <div class="seek-bar-xyz11">
-                    <div class="seek-bar-fill-xyz11"></div>
-                    <div class="seek-bar-thumb-xyz11"></div>
-                </div>
-            </div>
-          
-            <div class="controls-xyz11">
-              <button id="play-xyz11"><i class="fas fa-play"></i></button>
-              <button id="pause-xyz11"><i class="fas fa-pause"></i></button>
-              <button id="toggle-lyrics-xyz11"><i class="fas fa-music"></i> Sözler</button>
-            </div>
-          
-            <div class="lyrics-container-xyz11" style="display: none; text-align: center;">
-                <div id="lyrics-language-selector-xyz11" style="justify-content: center;">
-                    <select id="language-select-xyz11">
-                        <option value disabled selected>Dil Seç.</option>
-                        <option value="suryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ</option>
-                        <option value="latinsuryanixyz2">ܠܫܢܐ ܣܘܪܝܝܐ (Latinize)</option>
-                        <option value="turkcexyz2">Türkçe</option>
-                    </select>
-                </div>
-                <div id="lyrics-xyz11" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
-            </div>
-            <audio id="audio-player-xyz11" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>`;
-
-            // Append the new div to the ufakdenemeler div
-            ufakdenemelerDiv.appendChild(newDiv);
-        }
-
-        setTimeout(function() {
-                ufakdenemelerDiv.style.opacity = 1;
-                ufakdenemelerDiv.style.borderRadius = "30px";
-            }, 100); 
-          
-            setTimeout(function() {
-              ufakdenemelerDiv.style.display = "block";
-            }, 50);
-    }
+}
 </script>
 
 </body>
