@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body ontouchstart="">
+<div id="loading" class="loading-container">
+    <div class="loading-spinner"></div>
+</div>
+
+<button onclick="simulateLoading()">Button 1</button>
+<button onclick="simulateLoading()">Button 2</button>
 
 <div class="baba">
   <div class="ogul">
@@ -30,7 +36,9 @@
         </span>
     </label>
 
-    <p>Hakkında eklenecek</p>
+    <div class="hakkınız">
+    <p>Hakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecek</p>
+    </div>
   </div>
 </div>
 
@@ -43,7 +51,7 @@
   </span>
 </label>
 
-<div class="vsitemap" >
+<div class="vsitemap">
     <ul>
       <li><span>Giriş</span>
         <ul>
@@ -145,28 +153,56 @@
   </div>
 </div>
 
-<button class="list-item" data-content="radyo" onclick="myFunction()" style="margin-inline: auto; position: relative;">ETNOKÜLTÜREL RADYO</button>
+<button class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading()" style="margin-inline: auto; position: relative;">ETNOKÜLTÜREL RADYO</button>
 
 <div class="ufakdenemeler">
-
-
 </div>
 
 
 
 <style>
 @media only screen and (min-width: 480px){
+  .loading-container {
+            display: none;
+            position: fixed;
+            right: 0;
+            top: 1.2rem;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+        .loading-spinner {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2.5px solid rgba(255, 255, 255, 0.3);
+            border-top: 2.5px solid #3498db;
+            animation: spin 0.45s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+
+  .hakkınız{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
 
   .ufakdenemeler{
     background: #f5f5f71a;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     border-radius: 0;
     transition: all 0.15s;
     margin-top: 40px;
     opacity: 0.1;
-    padding: 20px;
     border: none;
     display: none;
   }
@@ -179,7 +215,8 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       display: none; /* Initially hide the listing */
-      width: 25vw;
+      width: 25rem;
+      transition: all 0.15s;
     }
 
     .listing-item {
@@ -192,7 +229,6 @@
   .xwe{
     background-color: #f5f5f7;
     outline: none;
-    border-color: none;
     border: none; 
     width: 25rem;
     margin: 0;
@@ -200,7 +236,8 @@
     border-radius: 1.125rem 0rem 0rem;
     padding: 0.75rem 1rem;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3); 
-    font-size: 16px;
+    font-size: 18px;
+    transition: all 0.15s;
   }
 
   .xwe::placeholder{
@@ -211,13 +248,19 @@
     padding: 0.75rem 1rem;
     background-color: #666666;
     outline: none;
-    border-color: none;
     border: none; 
     border-radius: 0rem 1.125rem 0.3rem 0rem;
     color: #f5f5f7;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.15s ease 0s;
-    font-size: 16px;
+    font-size: 18px;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+
+  .wex:hover{
+    background-color: #494949;
+    transition: all ease 0.15s
   }
 
   .wex:active {
@@ -417,6 +460,7 @@
       color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
+      width: 50%;
     }
 
     .popup2 {
@@ -733,7 +777,7 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: shine 12s linear infinite;
+    animation: shine 10s linear infinite;
     position: relative;
     width: 100%;
     left: 0;
@@ -748,10 +792,10 @@
 
   @keyframes shine {
     0% {
-      background-position-x: -457%;
+      background-position-x: -456%;
     }
     100% {
-      background-position-x: 457%;
+      background-position-x: 456%;
     }
   }
 
@@ -5087,16 +5131,44 @@
 
 
 @media only screen and (max-width: 480px){
+  .loading-container {
+            display: none;
+            position: fixed;
+            right: -7px;
+            top: 1rem;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .loading-spinner {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2.5px solid rgba(255, 255, 255, 0.3);
+            border-top: 2.5px solid #3498db;
+            animation: spin 0.45s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+
+
+
 
   .ufakdenemeler{
-    background: #f4f4f60d;
-    width: 80%;
+    background: #f5f5f71a;
+    width: 100%;
     margin: 0 auto;
     border-radius: 0;
     transition: all 0.15s;
     margin-top: 40px;
     opacity: 0.1;
-    padding: 20px;
+
     border: none;
     display: none;
     position: relative;
@@ -7385,7 +7457,6 @@
     padding: 0.75rem 1rem;
     background-color: #666666;
     outline: none;
-    border-color: none;
     border: none; 
     border-radius: 0rem 1.125rem 0.3rem 0rem;
     color: #f5f5f7;
@@ -7425,6 +7496,7 @@
     padding: 0.75rem 1rem;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3); 
     font-size: 16px;
+    transition: all 0.15s;
   }
 
   .xwe::placeholder{
@@ -9869,6 +9941,25 @@
 </style>
 
 <script>
+        // JavaScript to simulate loading
+        function simulateLoading() {
+            var loadingDiv = document.getElementById('loading');
+
+            // Show loading animation
+            loadingDiv.style.display = 'block';
+
+            // Simulate loading delay (you can replace this with your actual loading logic)
+            setTimeout(function() {
+                // Hide loading animation
+                loadingDiv.style.display = 'none';
+
+                // Add your button click logic here
+                console.log(buttonText + ' clicked!');
+            }, 1000); // Simulated 2 seconds loading time, change as needed
+        }
+
+
+
   function showContent(contentType) {
 
 document.getElementById('koroContent').style.display = 'none';
@@ -9975,9 +10066,11 @@ function openPopup(popupId) {
 
 
 
-
 function myFunction() {
-        // Get the reference to the ufakdenemeler div
+        
+  var button = document.querySelector('.list-item');
+  button.style.display = 'none';
+  
         var ufakdenemelerDiv = document.querySelector('.ufakdenemeler');
         var yukaridenemelerDiv = document.querySelector('.yukaricik');
 
@@ -9985,7 +10078,7 @@ function myFunction() {
         if (ufakdenemelerDiv.innerHTML.trim() === '') {
             // Create a new div element
             var newDiv = document.createElement('div');
-
+            
             // Set some content for the new div (you can customize this as needed)
             newDiv.innerHTML = `
             <div class="yukaricik">
@@ -11139,14 +11232,16 @@ function myFunction() {
 
         setTimeout(function() {
                 ufakdenemelerDiv.style.opacity = 1;
-                ufakdenemelerDiv.style.borderRadius = "30px";
+                ufakdenemelerDiv.style.borderRadius = "36px";
+                
             }, 100); 
-          
+    
+
             setTimeout(function() {
               ufakdenemelerDiv.style.display = "block";
-            }, 50);
+            }, 20);
 
-
+            
 
 
 
