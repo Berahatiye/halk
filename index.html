@@ -11,18 +11,15 @@
     <div class="loading-spinner"></div>
 </div>
 
-<button onclick="simulateLoading()">Button 1</button>
-<button onclick="simulateLoading()">Button 2</button>
-
 <div class="baba">
   <div class="ogul">
     <label class="hak" onclick="openPopup('hakPopup')">Hakkında</label>
     <div class="bos"></div>
-    <label class="bir" onclick="openPopup('birPopup')">Harita</label>
-    <div class="bos"></div>
-    <label class="iki" onclick="openPopup('ikiPopup')">İletişim</label>
-    <div class="bos"></div>
     <label class="uc" onclick="openPopup('ucPopup')">?</label>
+    <div class="bos"></div>
+    <label class="iki" onclick="openPopup('ikiPopup')">Iletisim</label>
+    <div class="bos"></div>
+    <label class="bir" onclick="openPopup('birPopup')">Harita</label>
   </div>
 </div>
 
@@ -37,7 +34,7 @@
     </label>
 
     <div class="hakkınız">
-    <p>Hakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecekHakkında eklenecek</p>
+    <p>'Türkiye'nin Etnokültürel Sözlüğü Materyali ile Lise Öğrencilerinin Etnokültürel Empati Düzeylerinde Mufassal Bir Çalışma' adından da anlaşılacağı üzere; Bahsi geçen proje altında hazırlanmış bu materyal, Türkiye Halkları'nın kültürel birikimlerini mahdut ve interaktif bir şekilde  sunar. Materyalin mahdutluğu kısa bir süreliğine mahsus olup yakında proje adında da geçen mufassal ifadesinin hakkını verecektir. <br>-Berat Can TURSUN <br><i>10/01/2024</i></p>
     </div>
   </div>
 </div>
@@ -153,19 +150,103 @@
   </div>
 </div>
 
-<button class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading()" style="margin-inline: auto; position: relative;">ETNOKÜLTÜREL RADYO</button>
+<button class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading()" style="margin-inline: auto; position: relative;">İÇERİK PROTOTİP</button>
 
 <div class="ufakdenemeler">
 </div>
 
 
 
+
+
+
 <style>
 @media only screen and (min-width: 480px){
+
+  .ewWseY{
+    grid-column: 2 / 3;
+    width: 100%;
+    display: grid;
+    column-gap: 0.25rem;
+    grid-auto-flow: column;
+    padding: 0.5rem 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    color: #333333;
+  }
+
+  .ewWseY:hover{
+    background-color: #023020;
+    color: #f5f5f7 !important;
+  }
+
+  .gHjYLB{
+    grid-column: 1 / 2;
+    width: 100%;
+    display: grid;
+    column-gap: 0.25rem;
+    grid-auto-flow: column;
+    padding: 0.5rem 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    color: #333333;
+  }
+
+  .gHjYLB:hover{
+    background-color: #023020;
+    color: #f5f5f7 !important;
+  }
+
+  .gqhs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+    overflow: hidden;
+  }
+
+  .hniGU{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 0.3rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: start;
+    color: #f0f0f0;
+    background-color: #333333;
+    border-top-left-radius: 1.125rem;
+    border-top-right-radius: 1.125rem;
+    padding: 0.75rem 1rem 0.6rem;
+    user-select: none;
+  }
+
+  .gFUDYB {
+    grid-column: 1 / -1;
+    display: grid;
+    width: 25rem;
+    grid-template-columns: auto;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    margin-inline: auto;
+  }
+
+
+
+  
+
   .loading-container {
             display: none;
             position: fixed;
-            right: 0;
+            right: -7px;
             top: 1.2rem;
             transform: translate(-50%, -50%);
             text-align: center;
@@ -180,6 +261,8 @@
             border-top: 2.5px solid #3498db;
             animation: spin 0.45s linear infinite;
             margin: 0 auto;
+            transition: all 0.15s;
+            
         }
 
         @keyframes spin {
@@ -192,8 +275,17 @@
   .hakkınız{
     overflow-y: scroll;
     overflow-x: hidden;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-indent: 12px;
+    line-height: 1.8;
   }
 
+  .hakkınız::first-letter{
+    font-size: 29px;
+  }
 
   .ufakdenemeler{
     background: #f5f5f71a;
@@ -286,19 +378,16 @@
 .baba{
   background-color: transparent;
   border-style: solid;
-  border-bottom-color: #666666;
-  border-top-color: #666666;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
   border-right-color: #666666;
   border-left-color: #666666;
-  border-width: 2px;
+  border-width: 3px;
   position: relative;
   margin-inline: auto;
   width: fit-content;
   height: auto;
-  border-bottom-left-radius: 980px;
-  border-bottom-right-radius: 980px;
-  border-top-right-radius: 980px;
-  border-top-left-radius: 980px;
+  border-radius: 980px;
 }
 
 
@@ -314,11 +403,11 @@
 }
 
 .ogul label{
-  font-size: 24px;
+  font-size: 26px;
   position: relative;
   font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
   font-weight: 500;
-  margin-inline: 1.3px;
+  margin-inline: 4px;
   color: #f5f5f7;
   text-align: center;
 }
@@ -327,8 +416,8 @@
     grid-column: 3 / 4;
     width: 3px;
     background-color: #666666;
-    margin-top: 0.15rem;
-    margin-bottom: 0.15rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     border-radius: 3px;
 }
 
@@ -340,13 +429,13 @@
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
-    border-radius: 980px;
+    border-radius: 12px;
     text-align: center;
 
 }
 
 .bir{
-  width: 78px;
+  width: 88px;
 }
 
 .biki:hover{
@@ -373,8 +462,8 @@
 }
 
 .uc{
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .uc:hover{
@@ -396,12 +485,12 @@
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
-    border-radius: 980px;
+    border-radius: 12px;
     text-align: center;
 }
 
 .hak{
-  width: 118px;
+  width: 130px;
 }
 
 .iki:hover{
@@ -411,12 +500,12 @@
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
-    border-radius: 980px;
+    border-radius: 12px;
     text-align: center;  
 }
 
 .iki{
-  width: 96px;
+  width: 108px;
 }
 
 .popup-container2 {
@@ -487,24 +576,26 @@
 
 .line-top{
   position: absolute;
-  height: 8px;
+  height: 9px;
   background: #FFBF00;
-  width: 56px;
+  width: 60px;
   transform: rotate(45deg);
-  border-radius: 4px;
+  border-radius: 5px;
   top: 26px;
   right: 0;
+  box-shadow: 0px 0px 3px 0px #FFBF00;
 }
 
 .line-bottom{   
   position: absolute;
-  height: 8px;
+  height: 9px;
   background: #FFBF00;
-  width: 56px;
+  width: 60px;
   transform: rotate(-45deg);   
-  border-radius: 4px;
+  border-radius: 5px;
   top: 26px;
   right: 0;
+  box-shadow: 0px 0px 3px 0px #FFBF00;
 }
     
   
@@ -5131,6 +5222,108 @@
 
 
 @media only screen and (max-width: 480px){
+  .hakkınız{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-indent: 12px;
+    line-height: 1.7;
+  }
+
+  .hakkınız::first-letter{
+    font-size: 30px;
+  }
+
+
+  .ewWseY{
+    grid-column: 2 / 3;
+    width: 100%;
+    display: grid;
+    column-gap: 0.25rem;
+    grid-auto-flow: column;
+    padding: 0.5rem 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    color: #333333;
+  }
+
+  .ewWseY:hover{
+    background-color: #023020;
+    color: #f5f5f7 !important;
+  }
+
+  .gHjYLB{
+    grid-column: 1 / 2;
+    width: 100%;
+    display: grid;
+    column-gap: 0.25rem;
+    grid-auto-flow: column;
+    padding: 0.5rem 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    color: #333333;
+  }
+
+  .gHjYLB:hover{
+    background-color: #023020;
+    color: #f5f5f7 !important;
+  }
+
+  .gqhs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+    overflow: hidden;
+  }
+
+  .hniGU{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 0.3rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: start;
+    color: #f0f0f0;
+    background-color: #333333;
+    border-top-left-radius: 1.125rem;
+    border-top-right-radius: 1.125rem;
+    padding: 0.75rem 1rem 0.6rem;
+    user-select: none;
+  }
+
+  .gFUDYB {
+    grid-column: 1 / -1;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: auto;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    margin-inline: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
   .loading-container {
             display: none;
             position: fixed;
@@ -5148,6 +5341,7 @@
             border-top: 2.5px solid #3498db;
             animation: spin 0.45s linear infinite;
             margin: 0 auto;
+
         }
 
         @keyframes spin {
@@ -9945,7 +10139,7 @@
         function simulateLoading() {
             var loadingDiv = document.getElementById('loading');
 
-            // Show loading animation
+            
             loadingDiv.style.display = 'block';
 
             // Simulate loading delay (you can replace this with your actual loading logic)
@@ -9955,7 +10149,7 @@
 
                 // Add your button click logic here
                 console.log(buttonText + ' clicked!');
-            }, 1000); // Simulated 2 seconds loading time, change as needed
+            }, 900); 
         }
 
 
@@ -10081,6 +10275,14 @@ function myFunction() {
             
             // Set some content for the new div (you can customize this as needed)
             newDiv.innerHTML = `
+            <div class="gFUDYB">
+  <div class="hniGU"><span>Basılı Sözlük <span>(Print Version)</span></span></div>
+  <div class="gqhs"><span class="gHjYLB">Kitapyurdu</span><span class="ewWseY">Amazon</span><span class="gHjYLB">Edebiyat</span><span class="ewWseY">ARMOOOO</span></div>
+</div>
+
+<button onclick="simulateLoading()">Button 1</button>
+<button onclick="simulateLoading()">Button 2</button>
+
             <div class="yukaricik">
 <div class="yukaricik">
 <div class="custom-center-12">
