@@ -89,7 +89,7 @@
           <li><span>Süryanice</span></li>
         </ul>
       </li>
-        <li class="ben"><span><i class="fa fa-search"></i> Merak Ettiğin Ne varsa...</span></li>
+        <li class="ben"><span><i class="fa fa-search"></i> Ne görmek istersin?</span></li>
     </ul>
     
   </div>
@@ -148,12 +148,14 @@
 <hr class="ll"/>
 
 <div class="aramam">
-  <input class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Merak ettiğin ne varsa..." value="">
+  <input class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Ne görmek istersin?" value="">
   <button class="wex" disabled=""><i class="fa fa-search"></i></button>
   <div class="listing" id="listing">
     <!-- Dynamically populated listing items will go here -->
   </div>
 </div>
+
+<button class="list-item" style="margin-inline: auto; position: relative;">RASGELE MALUMAT</button>
 
 <button class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading()" style="margin-inline: auto; position: relative;">İÇERİK PROTOTİP</button>
 
@@ -161,12 +163,28 @@
 </div>
 
 
+<div class="lplp">
+
+<div class="gFUDYB">
+  <div class="hniGU"><span>Sanat <span>(Print Version)</span></span></div>
+  <div class="gqhs"><span class="gHjYLB">Müzik</span><span class="ewWseY">Görsel</span><span class="gHjYLB">Tiyatro/Sinema</span><span class="ewWseY">Edebiyat</span></div>
+</div>
 
 
+<div class="gFUDYB">
+  <div class="hniGU"><span>Felsefe <span>(Print Version)</span></span></div>
+  <div class="gqhs"><span class="gHjYLB">Kitapyurdu</span><span class="ewWseY">Amazon</span><span class="gHjYLB">Edebiyat</span><span class="ewWseY">ARMOOOO</span></div>
+</div>
 
-
+</div>
 <style>
 @media only screen and (min-width: 480px){
+
+  .lplp{
+    grid-template-columns: auto;
+    gap: 1.25rem 0px;
+    display: grid;
+  }
 
       
   .lomading-container {
@@ -296,7 +314,7 @@
             top: 1.2rem;
             transform: translate(-50%, -50%);
             text-align: center;
-
+            z-index: 9999;
         }
 
         .loading-spinner {
@@ -319,14 +337,15 @@
 
 
   .hakkınız{
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     text-align: left;
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 1px;
-    text-indent: 12px;
-    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-indent: 18px;
+    line-height: 1.7;
+    transition: all 0.15s;
   }
 
   .hakkınız::first-letter{
@@ -334,8 +353,8 @@
   }
 
   .ufakdenemeler{
-    background: #f5f5f71a;
-    width: 60%;
+    background: #f5f5f705;
+    width: 84vw; 
     margin: 0 auto;
     border-radius: 0;
     transition: all 0.15s;
@@ -607,7 +626,7 @@
     }
 
     .popup2 {
-      background-color: #f5f5f71a;
+      background-color: #f5f5f70d;
       border: none;
       border-radius: 15px;
       padding: 20px;
@@ -5287,9 +5306,10 @@
     text-align: left;
     font-size: 17px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-indent: 12px;
     line-height: 1.7;
+    transition: all 0.15s;
   }
 
   .hakkınız::first-letter{
@@ -5386,10 +5406,11 @@
   .loading-container {
             display: none;
             position: fixed;
-            right: -7px;
+            right: -9px;
             top: 1rem;
             transform: translate(-50%, -50%);
             text-align: center;
+            z-index: 9999;
         }
 
         .loading-spinner {
@@ -5414,7 +5435,7 @@
 
 
   .ufakdenemeler{
-    background: #f5f5f71a;
+    background: #f5f5f705;
     width: 100%;
     margin: 0 auto;
     border-radius: 0;
@@ -10372,10 +10393,6 @@ function myFunction() {
             
             // Set some content for the new div (you can customize this as needed)
             newDiv.innerHTML = `
-            <div class="gFUDYB">
-  <div class="hniGU"><span>Basılı Sözlük <span>(Print Version)</span></span></div>
-  <div class="gqhs"><span class="gHjYLB">Kitapyurdu</span><span class="ewWseY">Amazon</span><span class="gHjYLB">Edebiyat</span><span class="ewWseY">ARMOOOO</span></div>
-</div>
 
 <button onclick="simulateLoading()">Button 1</button>
 <button onclick="simulateLoading()">Button 2</button>
