@@ -14232,13 +14232,86 @@ function formatTime(time) {
 
 
 const audio = document.getElementById('audio-player');
-    const loading = document.getElementById('lomading');
+const audio2 = document.getElementById('audio-player-2');
+const audio3 = document.getElementById('audio-player-3');
+const audio4 = document.getElementById('audio-player-4');
+const audio5 = document.getElementById('audio-player-5');
+const audio6 = document.getElementById('audio-player-6');
+const audio7 = document.getElementById('audio-player-7');
+const audio8 = document.getElementById('audio-player-8');
+const audio9 = document.getElementById('audio-player-9');
+const loading = document.getElementById('lomading');
 
     audio.addEventListener('canplaythrough', () => {
         loading.style.display = 'none';
     });
 
     audio.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio2.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio2.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+
+    audio3.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio3.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio4.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio4.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio5.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio5.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio6.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio6.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio7.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio7.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+    
+    audio8.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio8.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
+
+    audio9.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio9.addEventListener('waiting', () => {
         loading.style.display = 'block';
     });
 
