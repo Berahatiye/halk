@@ -2,11 +2,16 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body ontouchstart="">
+
+<div id="lomading" class="lomading-container">
+    <div class="lomading-spinner"></div>
+</div>  
+  
 <div id="loading" class="loading-container">
     <div class="loading-spinner"></div>
 </div>
@@ -162,6 +167,47 @@
 
 <style>
 @media only screen and (min-width: 480px){
+
+      
+  .lomading-container {
+            display: none;
+            position: fixed;
+            right: -7px;
+            top: 1.2rem;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+        .lomading-spinner {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2.5px solid rgba(255, 255, 255, 0.3);
+            border-top: 2.5px solid #3498db;
+            animation: spin 0.45s linear infinite;
+            margin: 0 auto;
+            transition: all 0.15s;
+            
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .ewWseY{
     grid-column: 2 / 3;
@@ -382,12 +428,13 @@
   border-top-color: transparent;
   border-right-color: #666666;
   border-left-color: #666666;
-  border-width: 3px;
+  border-width: 4px;
   position: relative;
   margin-inline: auto;
   width: fit-content;
   height: auto;
   border-radius: 980px;
+  transition: all 0.15s;
 }
 
 
@@ -400,6 +447,7 @@
   margin-inline: auto;
   background-color: #1d1d1f;
   border-radius: 980px;
+  transition: all 0.15s;
 }
 
 .ogul label{
@@ -410,25 +458,22 @@
   margin-inline: 4px;
   color: #f5f5f7;
   text-align: center;
+  transition: all 0.15s;
 }
 
 .bos{
     grid-column: 3 / 4;
-    width: 3px;
+    width: 4px;
     background-color: #666666;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    border-radius: 3px;
+    border-radius: 4px;
+    transition: all 0.15s;
 }
 
 
 .bir:hover{
-  background-color: #008080;
-  transition: 0.2s ease;
-    -moz-transition: 0.2s ease; 
-    -webkit-transition: 0.2s ease; 
-    -o-transition: 0.2s ease; 
-    -ms-transition: 0.2s ease; 
+    background-color: #008080;
     border-radius: 12px;
     text-align: center;
 
@@ -436,20 +481,20 @@
 
 .bir{
   width: 88px;
-}
-
-.biki:hover{
-  background-color: #FFBF00;
   transition: 0.2s ease;
     -moz-transition: 0.2s ease; 
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
-    -ms-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.biki:hover{
+    background-color: #FFBF00;
     color: #023020;
     text-align: center;
     cursor: pointer;
     border-color: #FFBF00;
-
 }
 
 .biki{
@@ -459,53 +504,62 @@
   border-width: 2px;
   color: #f5f5f7;
   border-radius: 10px;
-}
-
-.uc{
-  width: 30px;
-  height: 30px;
-}
-
-.uc:hover{
-  background-color: #8B0000;
   transition: 0.2s ease;
     -moz-transition: 0.2s ease; 
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
+    cursor: pointer;
+}
+
+.uc{
+  width: 30px;
+  height: 30px;
+  transition: 0.2s ease;
+    -moz-transition: 0.2s ease; 
+    -webkit-transition: 0.2s ease; 
+    -o-transition: 0.2s ease; 
+    -ms-transition: 0.2s ease; 
+    cursor: pointer;
+}
+
+.uc:hover{
+    background-color: #8B0000;
     text-align: center;
     border-radius: 50%;
 }
 
 
 .hak:hover{
-  background-color: #702963;
-  transition: 0.2s ease;
-    -moz-transition: 0.2s ease; 
-    -webkit-transition: 0.2s ease; 
-    -o-transition: 0.2s ease; 
-    -ms-transition: 0.2s ease; 
+    background-color: #702963;
     border-radius: 12px;
     text-align: center;
 }
 
 .hak{
-  width: 130px;
-}
-
-.iki:hover{
-  background-color: #8B8000;
-  transition: 0.2s ease;
+    width: 130px;
+    transition: 0.2s ease;
     -moz-transition: 0.2s ease; 
     -webkit-transition: 0.2s ease; 
     -o-transition: 0.2s ease; 
     -ms-transition: 0.2s ease; 
+    cursor: pointer;
+}
+
+.iki:hover{
+    background-color: #8B8000;
     border-radius: 12px;
     text-align: center;  
 }
 
 .iki{
   width: 108px;
+  transition: 0.2s ease;
+  -moz-transition: 0.2s ease; 
+  -webkit-transition: 0.2s ease; 
+  -o-transition: 0.2s ease; 
+  -ms-transition: 0.2s ease; 
+  cursor: pointer;
 }
 
 .popup-container2 {
@@ -853,6 +907,7 @@
     letter-spacing: 0;
     text-transform: none;
     font-weight: 500;
+    transition: all 0.15s;
   }
 
   .kap {
@@ -873,12 +928,16 @@
     width: 100%;
     left: 0;
     margin-inline: auto;
+    transition: all 0.15s;
   }
 
   .ll{
     width: 80%;
     bottom: 27px;
     position: relative;
+    transition: all 0.15s;
+    border: 1px solid #f5f5f7;
+    border-radius: 1px;
   }
 
   @keyframes shine {
@@ -5603,6 +5662,8 @@
     width: 90%;
     bottom: 16px;
     position: relative;
+    border: 1px solid #f5f5f7;
+    border-radius: 1px;
   }
   
   .kap {
@@ -10131,6 +10192,42 @@
   display: block;
 }
 
+
+
+
+
+
+
+
+.lomading-container {
+            display: none;
+            position: fixed;
+            right: -7px;
+            top: 1.2rem;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+        .lomading-spinner {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2.5px solid rgba(255, 255, 255, 0.3);
+            border-top: 2.5px solid #3498db;
+            animation: spin 0.45s linear infinite;
+            margin: 0 auto;
+            transition: all 0.15s;
+            
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+
 }
 </style>
 
@@ -14127,6 +14224,23 @@ function formatTime(time) {
 }
 
 
+
+
+
+
+
+
+
+const audio = document.getElementById('audio-player');
+    const loading = document.getElementById('lomading');
+
+    audio.addEventListener('canplaythrough', () => {
+        loading.style.display = 'none';
+    });
+
+    audio.addEventListener('waiting', () => {
+        loading.style.display = 'block';
+    });
 
 }
 </script>
