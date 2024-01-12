@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -173,12 +171,55 @@
 
 <button class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading()" style="margin-inline: auto; position: relative;">İÇERİK PROTOTİP</button>
 
+
+<div id="AramPopup" class="popup-container">
+    <div class="popup">
+      <label class="close-button" onclick="closePopup('AramPopup')">
+          <span class="line-top">
+          </span>
+          <span class="line-bottom">
+          </span>
+        </label>
+      <div style="overflow-y: scroll; height: 500px; transition: all 0.15s;">
+      <h2>ARAM TİGRAN</h2>
+      <img class="tigran" src="https://raw.githubusercontent.com/Berahatiye/kl/main/tigran.jpg" alt="tigran">
+      <p class="tigranbio"> Ailesinin Ermeni Kırımı'nda Diyarbekir'den sürgün edilmesi münasabetiyle; Ermeni bestekâr ve müzisyen Aram Tigran/Dikran Suriye'ye bağlı Qamışlo kentinde 1934 yılında dünyaya geldi. Aram'ın müziğe ilgisi dokuz yaşında başladı. 1966 yılında Yerevan'a yerleşti. Radyonun yönetici sorumlusu Xelile Çaçan'ın gayretleri sonucunda Yerevan Radyosu'nda işe başladı; burada 18 yıl çalıştı. Birçok şarkısı radyo vasıtasıyla kaydedildi ve namını bölge halklarına duyurabildi. 1995'te Atina'ya yerleşme kararı aldı. Tigran Arapça, Kürtçe, Süryanice, Türkçe, Ermenice ve diğer dillerde eserler seslendirdi. Diyarbakır 9. Kültür Sabat Festivali'ne katıldı, ancak rahatsızlığı nedeniyle yalnızca 3 Kürtçe şarkı seslendirmesi dikkatlerden kaçmadı. Batman Newroz kutlamalarında da yine çok dilli şarkıları seslendirdi. 8 Ağustos 2009 tarihinde Yunanistan'da tedavi gördüğü hastanede yaşamını yitirdi. Aram vasiyeti olarak Diyarbekir'e gömülmek istediğini belirtmiş ancak Türkiye vatandaşı olmaması sebeb gösterilerek bu vasiyeti Türkiye Hükümeti tarafından reddedildi. Mezarı Brüksel'de bulunmaktadır.</p>
+      </div>
+    </div>
+  </div>
+
 <div class="ufakdenemeler">
 </div>
 
 
 <style>
 @media only screen and (min-width: 480px){
+
+    .aramyol:hover{
+        text-decoration: underline;
+        transform: scale(1.2);
+        transition: all 0.15s;
+        cursor: pointer;
+    }
+
+    .tigranbio{
+      font-size: 17.6px;
+      font-weight: 500;
+      letter-spacing: 0.9px;
+      text-indent: 12px;
+      line-height: 1.7;
+      transition: all 0.15s;
+    }
+
+    .tigran{
+    width: 250px;
+    border-radius: 20px;
+    object-fit: contain;
+    transition: all 0.15s;
+    }
+
+
+
 
   .lplp{
     grid-template-columns: auto;
@@ -623,6 +664,7 @@
       font-family: sans-serif;
       font-weight: 300;
       width: 50%;
+      transition: all 0.15s;
     }
 
     .popup2 {
@@ -634,6 +676,7 @@
       color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
+      transition: all 0.15s;
     }
     
     .close-button {
@@ -918,6 +961,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    scroll-behavior: smooth;
   }
   .sla {
     text-decoration: none;
@@ -12725,6 +12769,25 @@
 
 
 @media only screen and (max-width: 480px){
+
+    .tigran{
+    width: 250px;
+    border-radius: 20px;
+    object-fit: contain;
+    transition: all 0.15s;
+    }
+
+
+    .tigranbio{
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-indent: 12px;
+      line-height: 1.5;
+      transition: all 0.15s;
+    }
+
+
   .hakkınız{
     overflow-y: scroll;
     overflow-x: hidden;
@@ -13036,6 +13099,7 @@
       color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
+      transition: all 0.15s;
     }
 
     
@@ -15224,6 +15288,8 @@
       color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
+      transition: all 0.15s;
+
     }
 
 
@@ -18225,6 +18291,7 @@
       font-family: sans-serif;
       font-weight: 300;
       width: 50%;
+      transition: all 0.15s;
     }
 
     .popup2 {
@@ -18236,6 +18303,7 @@
       color: #f5f5f7;
       font-family: sans-serif;
       font-weight: 300;
+      transition: all 0.15s;
     }
     
     .close-button {
@@ -18520,6 +18588,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    scroll-behavior: smooth;
   }
   .sla {
     text-decoration: none;
@@ -25516,13 +25585,13 @@ function openPopup(popupId) {
 
 
 
+
 function myFunction() {
         
   var button = document.querySelector('.list-item');
   button.style.display = 'none';
   
         var ufakdenemelerDiv = document.querySelector('.ufakdenemeler');
-        var yukaridenemelerDiv = document.querySelector('.yukaricik');
 
         // Check if content is already present
         if (ufakdenemelerDiv.innerHTML.trim() === '') {
@@ -27385,7 +27454,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz">
                     <h2>Rojbaş Diyarbekir</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz">0:00 / 0:00</div>
                 </div>
@@ -27429,7 +27498,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz1">
                     <h2>Gelo Ew Ki Bu ?</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz1">0:00 / 0:00</div>
                 </div>
@@ -27473,7 +27542,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz2">
                     <h2>Ay Dilbere</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz2">0:00 / 0:00</div>
                 </div>
@@ -27517,7 +27586,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz3">
                     <h2>Penaber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz3">0:00 / 0:00</div>
                 </div>
@@ -27561,7 +27630,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz4">
                     <h2>Lo Lo Pismamo</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz4">0:00 / 0:00</div>
                 </div>
@@ -27607,7 +27676,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz5">
                     <h2>Lo Şivano</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz5">0:00 / 0:00</div>
                 </div>
@@ -27652,7 +27721,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz6">
                     <h2>Newroz</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz6">0:00 / 0:00</div>
                 </div>
@@ -27696,7 +27765,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz7">
                     <h2>Zimanê Kurdi</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz7">0:00 / 0:00</div>
                 </div>
@@ -27742,7 +27811,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz8">
                     <h2>Dilberam Dilber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz8">0:00 / 0:00</div>
                 </div>
@@ -27789,7 +27858,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz9">
                     <h2>Çiyayê Gabare</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz9">0:00 / 0:00</div>
                 </div>
@@ -27836,7 +27905,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz10">
                     <h2>Şev Çu</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz10">0:00 / 0:00</div>
                 </div>
@@ -27882,7 +27951,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-zzz11">
                     <h2>Halellujah</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-zzz11">0:00 / 0:00</div>
                 </div>
@@ -28047,7 +28116,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx1">
                     <h2>Gelo Ew Ki Bu ?</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx1">0:00 / 0:00</div>
                 </div>
@@ -28091,7 +28160,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx2">
                     <h2>Ay Dilbere</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx2">0:00 / 0:00</div>
                 </div>
@@ -28135,7 +28204,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx3">
                     <h2>Penaber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx3">0:00 / 0:00</div>
                 </div>
@@ -28179,7 +28248,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx4">
                     <h2>Lo Lo Pismamo</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx4">0:00 / 0:00</div>
                 </div>
@@ -28225,7 +28294,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx5">
                     <h2>Lo Şivano</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx5">0:00 / 0:00</div>
                 </div>
@@ -28270,7 +28339,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx6">
                     <h2>Newroz</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx6">0:00 / 0:00</div>
                 </div>
@@ -28314,7 +28383,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx7">
                     <h2>Zimanê Kurdi</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx7">0:00 / 0:00</div>
                 </div>
@@ -28360,7 +28429,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx8">
                     <h2>Dilberam Dilber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx8">0:00 / 0:00</div>
                 </div>
@@ -28407,7 +28476,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx9">
                     <h2>Çiyayê Gabare</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx9">0:00 / 0:00</div>
                 </div>
@@ -28454,7 +28523,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx10">
                     <h2>Şev Çu</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx10">0:00 / 0:00</div>
                 </div>
@@ -28500,7 +28569,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xxx11">
                     <h2>Halellujah</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xxx11">0:00 / 0:00</div>
                 </div>
@@ -28750,7 +28819,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz3">
                     <h2>Penaber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz3">0:00 / 0:00</div>
                 </div>
@@ -28794,7 +28863,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz4">
                     <h2>Lo Lo Pismamo</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz4">0:00 / 0:00</div>
                 </div>
@@ -28840,7 +28909,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz5">
                     <h2>Lo Şivano</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz5">0:00 / 0:00</div>
                 </div>
@@ -28885,7 +28954,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz6">
                     <h2>Newroz</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz6">0:00 / 0:00</div>
                 </div>
@@ -28929,7 +28998,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz7">
                     <h2>Zimanê Kurdi</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz7">0:00 / 0:00</div>
                 </div>
@@ -28975,7 +29044,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz8">
                     <h2>Dilberam Dilber</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz8">0:00 / 0:00</div>
                 </div>
@@ -29022,7 +29091,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz9">
                     <h2>Çiyayê Gabare</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz9">0:00 / 0:00</div>
                 </div>
@@ -29069,7 +29138,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz10">
                     <h2>Şev Çu</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz10">0:00 / 0:00</div>
                 </div>
@@ -29115,7 +29184,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-xzz11">
                     <h2>Halellujah</h2>
-                    <p>Aram Tigran</p>
+                    <p data-content="aram" onclick="openPopup('AramPopup')" class="aramyol">Aram Tigran</p>
                 </div>
                 <div id="time-display-xzz11">0:00 / 0:00</div>
                 </div>
