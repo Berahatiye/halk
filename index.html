@@ -194,8 +194,8 @@
     </div>
   </div>
 
-<div class="filtre" style="display: grid;">
-<label style="cursor: pointer; display: grid; height: 260px; width: 260px; background-color: #f5f5f705; margin-inline: auto; position: relative; border-radius: 50%; margin-top: 10px;" class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading(); openPopup('radyoPopup')">
+<div class="filtre" style="display: grid;">  
+<label id="bulbul" class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading(); openPopup('radyoPopup')">
 <span class="material-symbols-outlined" style="font-size: 8rem; color: #f5f5f7; ">radio</span>
 <span class="material-symbols-outlined" style="font-size: 8rem; color: #f5f5f7; ">raven</span>
 </label>
@@ -241,6 +241,32 @@
 
 <style>
 @media only screen and (min-width: 480px){
+
+    #bulbul{
+        cursor: pointer; 
+        display: grid; 
+        height: 260px; 
+        width: 260px; 
+        background-color: #f5f5f705; 
+        margin-inline: auto; 
+        position: relative; 
+        border-radius: 50%; 
+        margin-top: 10px;
+        transition: all 0.15s;
+    }
+
+    #bulbul:hover{
+        border-style: solid;
+        border-color: #f5f5f7;
+        transition: all 0.15s;
+    }
+
+        #bulbul:active{
+        border-style: solid;
+        border-color: #f5f5f7;
+        transition: all 0.15s;
+        transform: scale(0.9);
+    }
 
     .aramyol:hover{
         text-decoration: underline;
@@ -747,7 +773,7 @@
       justify-content: center;
       align-items: center;
       background-color: #000000b3;
-      z-index: 99999;
+      z-index: 1;
       display: none;
       opacity: 0;
       transition: opacity 0.2s ease;
@@ -12855,6 +12881,31 @@
 
 
 @media only screen and (max-width: 480px){
+
+    #bulbul{
+        cursor: pointer; 
+        display: grid; 
+        height: 260px; 
+        width: 260px; 
+        background-color: #f5f5f705; 
+        margin-inline: auto; 
+        position: relative; 
+        border-radius: 50%; 
+        margin-top: 10px;
+        border-style: solid;
+        border-color: #f5f5f7;
+        border-width: 1px;
+    }
+
+        #bulbul:active{
+        transform: scale(0.9);
+    }
+
+
+
+
+
+
     .popupradyo {
       background-color: #f5f5f70d;
       border: none;
@@ -12866,7 +12917,7 @@
       font-weight: 300;
       transition: all 0.15s;
       overflow-y: scroll;
-      height: 550px;
+      height: 500px;
       scroll-behavior: smooth;
     }
 
@@ -12879,7 +12930,7 @@
       justify-content: center;
       align-items: center;
       background-color: #000000b3;
-      z-index: 99999;
+      z-index: 1;
       display: none;
       opacity: 0;
       transition: opacity 0.2s ease;
@@ -27766,11 +27817,10 @@
   .lomading-container {
             display: none;
             position: fixed;
-            right: -7px;
+            left: 1rem;
             top: 1.2rem;
             transform: translate(-50%, -50%);
             text-align: center;
-
         }
 
         .lomading-spinner {
@@ -35358,6 +35408,11 @@
 
 <script>
 
+
+
+
+    
+
 function closeufak(popupId) {
     var popup = document.getElementById(popupId);
     popup.style.opacity = '0';
@@ -35529,9 +35584,6 @@ function myFunction() {
             
             // Set some content for the new div (you can customize this as needed)
             newDiv.innerHTML = `
-
-<button onclick="simulateLoading()">Button 1</button>
-<button onclick="simulateLoading()">Button 2</button>
 
             <div class="yukaricik">
 <div class="yukaricik">
@@ -41879,9 +41931,9 @@ const lyricsDatazzz = {
     { startTime: 57.9, endTime: 64.9, text: 'Bi çavan bibînim bajarê Diyarbekir' }, 
     { startTime: 64.9, endTime: 71.9, text: 'Di xewnên şeva de min qet bawer nedikir' },
     { startTime: 71.9, endTime: 78.9, text: 'Bi çavan bibînim bajarê Diyarbekir' },
-    { startTime: 78.9, endTime: 86.8, text: 'Roj baş Diyarbekir, me pir bîriya te kir' },
+    { startTime: 78.9, endTime: 86.8, text: 'Rojbaş Diyarbekir, me pir bîriya te kir' },
     { startTime: 86.8, endTime: 93.5, text: 'Em hatin te bibînin, te derî li me vekir' },
-    { startTime: 93.5, endTime: 100.5, text: 'Roj baş Diyarbekir, me pir bîriya te kir' },
+    { startTime: 93.5, endTime: 100.5, text: 'Rojbaş Diyarbekir, me pir bîriya te kir' },
     { startTime: 100.5, endTime: 107.9, text: 'Em hatin te bibînin, te derî li me vekir' },
     { startTime: 107.9, endTime: 135.8, text: '♪' },
     { startTime: 107.9, endTime: 142.9, text: 'Cîyê warê bav û kalan pir şêrîn e' },
@@ -41935,6 +41987,7 @@ const lyricsDatazzz = {
     { startTime: 256.9, endTime: 263, text: 'Sizi görmeye geldik, bize kapıyı siz açtınız' },
     { startTime: 263, endTime: 270, text: 'Günaydın Diyarbekir, sizleri çok özledik' },
     { startTime: 270, endTime: 276.9, text: 'Sizi görmeye geldik, bize kapıyı siz açtınız' },
+    { startTime: 276.9, endTime: 280, text: 'Kurmanci aslından çeviren="Can Kurmamiyan"' },
 
     ]
 };
