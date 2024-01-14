@@ -71,7 +71,10 @@
               <li><span><small>Hakkında - Harita - İletisim - ?</small></span></li>
             </ul>
           </li>
-          <li><span>ROOM</span></li>
+          <li><span><label style="display: flex; justify-content: start;"><span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">radio</span> <span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">raven</span></label></span>
+          <li><span><label style="display: flex; justify-content: start;"><span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">book_2</span> <span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">ink_pen</span></label></span>
+          <li><span><label style="display: flex; justify-content: start;"><span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">palette</span> <span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">wall_art</span></label></span></li>
+          <li><span><label style="display: flex; justify-content: start;"><span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">movie</span> <span class="material-symbols-outlined" style="font-size: 1.6rem; color: #f5f5f7;">theaters</span></label></span></li>
           <li><span>ROOM2</span>
             <ul>
               <li><span>ROOM3</span>
@@ -157,12 +160,12 @@
 <hr class="ll"/>
 
 <div class="aramam">
-  <input class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Ne görmek istersin?" value="">
+  <input id="yaz" class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Ara..." value="">
   <button class="wex" disabled=""><i class="fa fa-search"></i></button>
-  <div class="listing" id="listing">
-    <!-- Dynamically populated listing items will go here -->
+  <div class="eheTAQ">
+  <div class="fisting"><button type="button" class="hCsSUF" id="cene">ç</button><div class="bosver"></div><button type="button" class="hCsSUF" id="yumusak">ğ</button><div class="bosver"></div><button type="button" class="hCsSUF" id="sinif">ı</button><div class="bosver"></div><button type="button" class="hCsSUF" id="onem">ö</button><div class="bosver"></div><button type="button" class="hCsSUF" id="semle">ş</button><div class="bosver"></div><button type="button" class="hCsSUF" id="urk">ü</button><div class="bosver"></div></div>
+  <div class="misting"><svg style=" height: 2rem; width: auto;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m-6 8a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4"></path></svg><div style="text-align: center;">Filtreler</div></div>
   </div>
-
 </div>
 
 <div class="lplp">
@@ -241,6 +244,7 @@
 
 <style>
 @media only screen and (min-width: 480px){
+
 
     #bulbul{
         cursor: pointer; 
@@ -459,6 +463,13 @@
         }
 
 
+    .bosver{
+    width: 2px;
+    background-color: #666666;
+    border-radius: 2px;
+    transition: all 0.15s;
+    display: grid
+   }
 
   .hakkınız{
     overflow-y: hidden;
@@ -488,7 +499,6 @@
     display: none;
   }
 
-
   .listing {
       background-color: #f5f5f7;
       border: none;
@@ -496,7 +506,7 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       display: none; /* Initially hide the listing */
-      width: 25rem;
+      width: 20.9rem;
       transition: all 0.15s;
     }
 
@@ -505,7 +515,85 @@
       cursor: pointer;
     }
 
+    .hCsSUF:hover {
+    background-color: rgb(230, 230, 230);
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    }
 
+    .hCsSUF:active {
+    background-color: rgb(210, 210, 210);
+    box-shadow: rgb(210, 210, 210) 3px 0px 0px inset;
+    }
+
+    .hCsSUF:first-child {
+    box-shadow: rgb(230, 230, 230) -1.5px 0px 0px inset;
+    border-bottom-left-radius: 1.125rem;
+}
+
+    .hCsSUF {
+    font-family: Jost, Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #666666;
+    font-weight: 500;
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0.7rem 0.5rem;
+    width: 2.25rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    box-shadow: #e6e6e6 -1.5px 0px 0px inset, #e6e6e6 1.5px 0px 0px inset;
+    border: 0px;
+}
+
+    .eheTAQ {
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(240, 240, 240);
+    border-bottom-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+}
+
+    .fisting{
+        grid-column: 1 / 2;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center start;
+    -webkit-box-pack: start;
+    }
+
+    .misting {
+grid-column: 2 / 3;
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 0.3rem;
+    place-items: center;
+    padding: 0.5rem 0.8rem;
+    border-bottom-right-radius: 1.125rem;
+    background-color: rgb(240, 240, 240);
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease 0s;
+    box-shadow: rgb(230, 230, 230) 3px 0px 0px inset;
+    }
+
+    .misting:hover {
+    background-color: rgb(230, 230, 230);
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    }
+
+    .misting:active {
+    background-color: rgb(210, 210, 210);
+    box-shadow: rgb(210, 210, 210) 3px 0px 0px inset;
+    }
 
   .xwe{
     background-color: #f5f5f7;
@@ -530,7 +618,7 @@
     background-color: #666666;
     outline: none;
     border: none; 
-    border-radius: 0rem 1.125rem 0.3rem 0rem;
+    border-radius: 0rem 1.125rem 0rem 0rem;
     color: #f5f5f7;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.15s ease 0s;
@@ -541,12 +629,10 @@
 
   .wex:hover{
     background-color: #494949;
-    transition: all ease 0.15s
   }
 
   .wex:active {
     background-color: #000000;
-    transition: all ease 0.15s;
 }
 
 .aramam{
@@ -20273,7 +20359,7 @@
     color: #f5f5f7;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3); 
     transition: all 0.15s ease 0s;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .wex:active {
@@ -20306,7 +20392,7 @@
     border-radius: 1.125rem 0rem 0rem;
     padding: 0.75rem 1rem;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3); 
-    font-size: 16px;
+    font-size: 18px;
     transition: all 0.15s;
   }
 
@@ -28000,7 +28086,7 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       display: none; /* Initially hide the listing */
-      width: 25rem;
+      width: 20.9rem;
       transition: all 0.15s;
     }
 
@@ -28034,7 +28120,7 @@
     background-color: #666666;
     outline: none;
     border: none; 
-    border-radius: 0rem 1.125rem 0.3rem 0rem;
+    border-radius: 0rem 1.125rem 0rem 0rem;
     color: #f5f5f7;
     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.15s ease 0s;
@@ -28045,12 +28131,10 @@
 
   .wex:hover{
     background-color: #494949;
-    transition: all ease 0.15s
   }
 
   .wex:active {
     background-color: #000000;
-    transition: all ease 0.15s;
 }
 
 .aramam{
@@ -35411,9 +35495,30 @@
 <script>
 
 
+document.getElementById('yumusak').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ğ';
+});
 
+document.getElementById('cene').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ç';
+});
 
-    
+document.getElementById('sinif').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ı';
+});
+
+document.getElementById('onem').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ö';
+});
+
+document.getElementById('semle').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ş';
+});
+
+document.getElementById('urk').addEventListener('click', function() {
+      document.getElementById('yaz').value += 'ü';
+});
+
 
 function closeufak(popupId) {
     var popup = document.getElementById(popupId);
