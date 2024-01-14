@@ -164,13 +164,13 @@
   <button class="wex" onclick="simulateLoading();"><i class="fa fa-search"></i></button>
   <div class="eheTAQ">
   <div class="fisting"><button type="button" class="hCsSUF" id="cene">ç</button><div class="bosver"></div><button type="button" class="hCsSUF" id="yumusak">ğ</button><div class="bosver"></div><button type="button" class="hCsSUF" id="sinif">ı</button><div class="bosver"></div><button type="button" class="hCsSUF" id="onem">ö</button><div class="bosver"></div><button type="button" class="hCsSUF" id="semle">ş</button><div class="bosver"></div><button type="button" class="hCsSUF" id="urk">ü</button><div class="bosver"></div></div>
-  <button class="misting"><svg style=" height: 2rem; width: auto;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m-6 8a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4"></path></svg><div style="text-align: center;">Filtreler</div></button>
+  <button class="misting" id="misting"><svg style=" height: 2rem; width: auto;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m-6 8a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4"></path></svg><div style="text-align: center;">Filtreler</div></button>
   </div>
 </div>
 
 <div class="lplp">
 
-    <div class="gFUDYB">
+    <div class="gFUDYB" id="gFUDYB">
       <div class="hniGU"><span>FILTRELER <span>(Örnek Olarak)</span></span></div>
       <div class="gqhs"><span class="gHjYLB">Müzik</span><span class="ewWseY">Görsel</span><span class="gHjYLB">Tiyatro/Sinema</span><span class="ewWseY">Edebiyat</span></div>
     </div>
@@ -425,7 +425,7 @@
 
   .gFUDYB {
     grid-column: 1 / -1;
-    display: grid;
+    display: none;
     width: 25rem;
     grid-template-columns: auto;
     border-radius: 1.125rem;
@@ -18089,7 +18089,7 @@ grid-column: 2 / 3;
 
   .gFUDYB {
     grid-column: 1 / -1;
-    display: grid;
+    display: none;
     width: 90vw;
     grid-template-columns: auto;
     border-radius: 1.125rem;
@@ -27989,7 +27989,7 @@ grid-column: 2 / 3;
   .lomading-container {
             display: none;
             position: fixed;
-            left: 1rem;
+            right: -7px;
             top: 1.2rem;
             transform: translate(-50%, -50%);
             text-align: center;
@@ -28095,7 +28095,7 @@ grid-column: 2 / 3;
 
   .gFUDYB {
     grid-column: 1 / -1;
-    display: grid;
+    display: none;
     width: 25rem;
     grid-template-columns: auto;
     border-radius: 1.125rem;
@@ -35580,6 +35580,27 @@ grid-column: 2 / 3;
 
 <script>
 
+const lyricsContainerfiltre = document.getElementById('gFUDYB');
+const toggleLyricsButtonfiltre = document.getElementById('misting');
+toggleLyricsButtonfiltre.addEventListener('click', () => {
+    if (lyricsContainerfiltre.style.display === 'none') {
+        lyricsContainerfiltre.style.display = 'grid';
+        displayLyricfiltre(0);
+    } else {
+        lyricsContainerfiltre.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 
 document.getElementById('yumusak').addEventListener('click', function() {
       document.getElementById('yaz').value += 'ğ';
@@ -42931,9 +42952,6 @@ function formatTime(time) {
     const seconds = Math.floor(time % 60);
     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
-
-
-
 
 
 
