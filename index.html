@@ -161,7 +161,7 @@
 
 <div class="aramam">
   <input id="yaz" class="xwe" type="search" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" placeholder="Ara..." value="">
-  <button class="wex" disabled=""><i class="fa fa-search"></i></button>
+  <button class="wex" onclick="simulateLoading();"><i class="fa fa-search"></i></button>
   <div class="eheTAQ">
   <div class="fisting"><button type="button" class="hCsSUF" id="cene">ç</button><div class="bosver"></div><button type="button" class="hCsSUF" id="yumusak">ğ</button><div class="bosver"></div><button type="button" class="hCsSUF" id="sinif">ı</button><div class="bosver"></div><button type="button" class="hCsSUF" id="onem">ö</button><div class="bosver"></div><button type="button" class="hCsSUF" id="semle">ş</button><div class="bosver"></div><button type="button" class="hCsSUF" id="urk">ü</button><div class="bosver"></div></div>
   <button class="misting"><svg style=" height: 2rem; width: auto;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 1 0 0 4m0-4a2 2 0 1 1 0 4m-6 8a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 1 0 0-4m0 4a2 2 0 1 1 0-4m0 4v2m0-6V4"></path></svg><div style="text-align: center;">Filtreler</div></button>
@@ -193,6 +193,7 @@
       <video controls class="aramvide" id="aramvideo">
         <source src="https://github.com/Berahatiye/kl/raw/main/aramtigran.mp4" type="video/mp4">
       </video>
+      <p style="color: #FFBF00; position: relative; margin-inline: auto; width: 250px; font-weight: 500;">Video sahibi;<br>Hozan Elind’e teşekkürler.</p>
       </div>
     </div>
   </div>
@@ -615,6 +616,7 @@ grid-column: 2 / 3;
   .xwe::placeholder{
     color: #666666;
   }
+
 
   .wex{
     padding: 0.75rem 1rem;
@@ -37784,7 +37786,7 @@ function myFunction() {
                   </div>
                   <div id="lyrics-zzz3" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
-              <audio id="audio-player-zzz3" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+              <audio id="audio-player-zzz3" src="https://github.com/Berahatiye/kl/raw/main/Aram%20Tigran%20-%20Penaber%20(Official%20Audio).mp3"></audio>
               </div>
             </li>
   
@@ -38103,7 +38105,7 @@ function myFunction() {
                   </div>
                   <div id="lyrics-zzz10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
-              <audio id="audio-player-zzz10" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+              <audio id="audio-player-zzz10" src="https://github.com/Berahatiye/kl/raw/main/%C5%9Eev%20%C3%87u.mp3"></audio>
               </div>
             </li>
   
@@ -38721,7 +38723,7 @@ function myFunction() {
                   </div>
                   <div id="lyrics-xxx10" style="width: max-content; margin: 0 auto; color: #F5F5DC; font-size: 19px; font-weight: 600; font-family: sans-serif;"></div>
               </div>
-              <audio id="audio-player-xxx10" src="https://github.com/Berahatiye/kl/raw/main/Hallelujah%20(HQ)%20-%20Hymns%20from%20the%20Syriac%20Orthodox%20Church%20of%20Antioch.mp3"></audio>
+              <audio id="audio-player-xxx10" src="https://github.com/Berahatiye/kl/raw/main/%C5%9Eev%20%C3%87u.mp3"></audio>
               </div>
             </li>
   
@@ -42621,6 +42623,1365 @@ function formatTime(time) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz3 = document.getElementById('audio-player-zzz3');
+const playButtonzzz3 = document.getElementById('play-zzz3');
+const pauseButtonzzz3 = document.getElementById('pause-zzz3');
+const timeDisplayzzz3 = document.getElementById('time-display-zzz3');
+const lyricsContainerzzz3 = document.querySelector('.lyrics-container-zzz3');
+const toggleLyricsButtonzzz3 = document.getElementById('toggle-lyrics-zzz3');
+const lyricsLanguageSelectorzzz3 = document.getElementById('language-select-zzz3');
+const lyricsTextzzz3 = document.getElementById('lyrics-zzz3');
+
+const lyricsDatazzz3 = {
+    suryanicezzz3: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz3: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz3: [
+
+    ]
+};
+
+let currentLyricIndexzzz3 = -1;
+
+playButtonzzz3.addEventListener('click', () => {
+    audioPlayerzzz3.play();
+    playButtonzzz3.style.display = 'none';
+    pauseButtonzzz3.style.display = 'inline';
+});
+
+pauseButtonzzz3.addEventListener('click', () => {
+    audioPlayerzzz3.pause();
+    pauseButtonzzz3.style.display = 'none';
+    playButtonzzz3.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz3.addEventListener('click', () => {
+    if (lyricsContainerzzz3.style.display === 'none') {
+        lyricsContainerzzz3.style.display = 'block';
+        displayLyriczzz3(0);
+    } else {
+        lyricsContainerzzz3.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz3.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz3.value;
+    displayLyriczzz3(0, selectedLanguage);
+});
+
+audioPlayerzzz3.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz3.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz3.value;
+    const lyricszzz3 = lyricsDatazzz3[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz3.length; i++) {
+        const lyric = lyricszzz3[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz3) {
+                displayLyriczzz3(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz3(-1, selectedLanguage);
+
+
+    timeDisplayzzz3.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz3.duration)}`;
+});
+
+function displayLyriczzz3(index, language) {
+    const lyricszzz3 = lyricsDatazzz3[language];
+    if (index >= 0 && index < lyricszzz3.length) {
+        lyricsTextzzz3.textContent = lyricszzz3[index].text;
+        currentLyricIndexzzz3 = index;
+        lyricsTextzzz3.style.color = '#f5f5f7';
+        lyricsTextzzz3.style.fontSize = '20px';
+        lyricsTextzzz3.style.fontWeight = '500';
+        lyricsTextzzz3.style.marginTop = '20px';
+        lyricsTextzzz3.style.width = '242px';
+        lyricsTextzzz3.style.textAlign = 'center';
+        lyricsTextzzz3.style.borderRadius = '15px';
+        lyricsTextzzz3.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz3.textContent = '';
+        currentLyricIndexzzz3 = -1;
+    }
+}
+
+
+const seekBarzzz3 = document.querySelector('.seek-bar-zzz3');
+const seekBarFillzzz3 = document.querySelector('.seek-bar-fill-zzz3');
+const seekBarThumbzzz3 = document.querySelector('.seek-bar-thumb-zzz3');
+
+seekBarzzz3.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz3.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz3.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz3.duration;
+
+    audioPlayerzzz3.currentTime = seekTime;
+});
+
+audioPlayerzzz3.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz3.currentTime;
+    const duration = audioPlayerzzz3.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz3.style.width = progress + '%';
+    seekBarThumbzzz3.style.left = progress + '%';
+
+
+    timeDisplayzzz3.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz3.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz3);
+    document.addEventListener('mouseup', onMouseUpzzz3);
+});
+
+function onMouseMovezzz3(e) {
+    const clickX = e.clientX - seekBarzzz3.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz3.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz3.duration;
+
+    audioPlayerzzz3.currentTime = seekTime;
+}
+
+function onMouseUpzzz3() {
+    document.removeEventListener('mousemove', onMouseMovezzz3);
+    document.removeEventListener('mouseup', onMouseUpzzz3);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz4 = document.getElementById('audio-player-zzz4');
+const playButtonzzz4 = document.getElementById('play-zzz4');
+const pauseButtonzzz4 = document.getElementById('pause-zzz4');
+const timeDisplayzzz4 = document.getElementById('time-display-zzz4');
+const lyricsContainerzzz4 = document.querySelector('.lyrics-container-zzz4');
+const toggleLyricsButtonzzz4 = document.getElementById('toggle-lyrics-zzz4');
+const lyricsLanguageSelectorzzz4 = document.getElementById('language-select-zzz4');
+const lyricsTextzzz4 = document.getElementById('lyrics-zzz4');
+
+const lyricsDatazzz4 = {
+    suryanicezzz4: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz4: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz4: [
+
+    ]
+};
+
+let currentLyricIndexzzz4 = -1;
+
+playButtonzzz4.addEventListener('click', () => {
+    audioPlayerzzz4.play();
+    playButtonzzz4.style.display = 'none';
+    pauseButtonzzz4.style.display = 'inline';
+});
+
+pauseButtonzzz4.addEventListener('click', () => {
+    audioPlayerzzz4.pause();
+    pauseButtonzzz4.style.display = 'none';
+    playButtonzzz4.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz4.addEventListener('click', () => {
+    if (lyricsContainerzzz4.style.display === 'none') {
+        lyricsContainerzzz4.style.display = 'block';
+        displayLyriczzz4(0);
+    } else {
+        lyricsContainerzzz4.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz4.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz4.value;
+    displayLyriczzz4(0, selectedLanguage);
+});
+
+audioPlayerzzz4.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz4.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz4.value;
+    const lyricszzz4 = lyricsDatazzz4[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz4.length; i++) {
+        const lyric = lyricszzz4[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz4) {
+                displayLyriczzz4(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz4(-1, selectedLanguage);
+
+
+    timeDisplayzzz4.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz4.duration)}`;
+});
+
+function displayLyriczzz4(index, language) {
+    const lyricszzz4 = lyricsDatazzz4[language];
+    if (index >= 0 && index < lyricszzz4.length) {
+        lyricsTextzzz4.textContent = lyricszzz4[index].text;
+        currentLyricIndexzzz4 = index;
+        lyricsTextzzz4.style.color = '#f5f5f7';
+        lyricsTextzzz4.style.fontSize = '20px';
+        lyricsTextzzz4.style.fontWeight = '500';
+        lyricsTextzzz4.style.marginTop = '20px';
+        lyricsTextzzz4.style.width = '242px';
+        lyricsTextzzz4.style.textAlign = 'center';
+        lyricsTextzzz4.style.borderRadius = '15px';
+        lyricsTextzzz4.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz4.textContent = '';
+        currentLyricIndexzzz4 = -1;
+    }
+}
+
+
+const seekBarzzz4 = document.querySelector('.seek-bar-zzz4');
+const seekBarFillzzz4 = document.querySelector('.seek-bar-fill-zzz4');
+const seekBarThumbzzz4 = document.querySelector('.seek-bar-thumb-zzz4');
+
+seekBarzzz4.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz4.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz4.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz4.duration;
+
+    audioPlayerzzz4.currentTime = seekTime;
+});
+
+audioPlayerzzz4.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz4.currentTime;
+    const duration = audioPlayerzzz4.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz4.style.width = progress + '%';
+    seekBarThumbzzz4.style.left = progress + '%';
+
+
+    timeDisplayzzz4.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz4.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz4);
+    document.addEventListener('mouseup', onMouseUpzzz4);
+});
+
+function onMouseMovezzz4(e) {
+    const clickX = e.clientX - seekBarzzz4.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz4.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz4.duration;
+
+    audioPlayerzzz4.currentTime = seekTime;
+}
+
+function onMouseUpzzz4() {
+    document.removeEventListener('mousemove', onMouseMovezzz4);
+    document.removeEventListener('mouseup', onMouseUpzzz4);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz5 = document.getElementById('audio-player-zzz5');
+const playButtonzzz5 = document.getElementById('play-zzz5');
+const pauseButtonzzz5 = document.getElementById('pause-zzz5');
+const timeDisplayzzz5 = document.getElementById('time-display-zzz5');
+const lyricsContainerzzz5 = document.querySelector('.lyrics-container-zzz5');
+const toggleLyricsButtonzzz5 = document.getElementById('toggle-lyrics-zzz5');
+const lyricsLanguageSelectorzzz5 = document.getElementById('language-select-zzz5');
+const lyricsTextzzz5 = document.getElementById('lyrics-zzz5');
+
+const lyricsDatazzz5 = {
+    suryanicezzz5: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz5: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz5: [
+
+    ]
+};
+
+let currentLyricIndexzzz5 = -1;
+
+playButtonzzz5.addEventListener('click', () => {
+    audioPlayerzzz5.play();
+    playButtonzzz5.style.display = 'none';
+    pauseButtonzzz5.style.display = 'inline';
+});
+
+pauseButtonzzz5.addEventListener('click', () => {
+    audioPlayerzzz5.pause();
+    pauseButtonzzz5.style.display = 'none';
+    playButtonzzz5.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz5.addEventListener('click', () => {
+    if (lyricsContainerzzz5.style.display === 'none') {
+        lyricsContainerzzz5.style.display = 'block';
+        displayLyriczzz5(0);
+    } else {
+        lyricsContainerzzz5.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz5.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz5.value;
+    displayLyriczzz5(0, selectedLanguage);
+});
+
+audioPlayerzzz5.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz5.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz5.value;
+    const lyricszzz5 = lyricsDatazzz5[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz5.length; i++) {
+        const lyric = lyricszzz5[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz5) {
+                displayLyriczzz5(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz5(-1, selectedLanguage);
+
+
+    timeDisplayzzz5.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz5.duration)}`;
+});
+
+function displayLyriczzz5(index, language) {
+    const lyricszzz5 = lyricsDatazzz5[language];
+    if (index >= 0 && index < lyricszzz5.length) {
+        lyricsTextzzz5.textContent = lyricszzz5[index].text;
+        currentLyricIndexzzz5 = index;
+        lyricsTextzzz5.style.color = '#f5f5f7';
+        lyricsTextzzz5.style.fontSize = '20px';
+        lyricsTextzzz5.style.fontWeight = '500';
+        lyricsTextzzz5.style.marginTop = '20px';
+        lyricsTextzzz5.style.width = '242px';
+        lyricsTextzzz5.style.textAlign = 'center';
+        lyricsTextzzz5.style.borderRadius = '15px';
+        lyricsTextzzz5.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz5.textContent = '';
+        currentLyricIndexzzz5 = -1;
+    }
+}
+
+
+const seekBarzzz5 = document.querySelector('.seek-bar-zzz5');
+const seekBarFillzzz5 = document.querySelector('.seek-bar-fill-zzz5');
+const seekBarThumbzzz5 = document.querySelector('.seek-bar-thumb-zzz5');
+
+seekBarzzz5.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz5.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz5.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz5.duration;
+
+    audioPlayerzzz5.currentTime = seekTime;
+});
+
+audioPlayerzzz5.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz5.currentTime;
+    const duration = audioPlayerzzz5.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz5.style.width = progress + '%';
+    seekBarThumbzzz5.style.left = progress + '%';
+
+
+    timeDisplayzzz5.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz5.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz5);
+    document.addEventListener('mouseup', onMouseUpzzz5);
+});
+
+function onMouseMovezzz5(e) {
+    const clickX = e.clientX - seekBarzzz5.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz5.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz5.duration;
+
+    audioPlayerzzz5.currentTime = seekTime;
+}
+
+function onMouseUpzzz5() {
+    document.removeEventListener('mousemove', onMouseMovezzz5);
+    document.removeEventListener('mouseup', onMouseUpzzz5);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz6 = document.getElementById('audio-player-zzz6');
+const playButtonzzz6 = document.getElementById('play-zzz6');
+const pauseButtonzzz6 = document.getElementById('pause-zzz6');
+const timeDisplayzzz6 = document.getElementById('time-display-zzz6');
+const lyricsContainerzzz6 = document.querySelector('.lyrics-container-zzz6');
+const toggleLyricsButtonzzz6 = document.getElementById('toggle-lyrics-zzz6');
+const lyricsLanguageSelectorzzz6 = document.getElementById('language-select-zzz6');
+const lyricsTextzzz6 = document.getElementById('lyrics-zzz6');
+
+const lyricsDatazzz6 = {
+    suryanicezzz6: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz6: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz6: [
+
+    ]
+};
+
+let currentLyricIndexzzz6 = -1;
+
+playButtonzzz6.addEventListener('click', () => {
+    audioPlayerzzz6.play();
+    playButtonzzz6.style.display = 'none';
+    pauseButtonzzz6.style.display = 'inline';
+});
+
+pauseButtonzzz6.addEventListener('click', () => {
+    audioPlayerzzz6.pause();
+    pauseButtonzzz6.style.display = 'none';
+    playButtonzzz6.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz6.addEventListener('click', () => {
+    if (lyricsContainerzzz6.style.display === 'none') {
+        lyricsContainerzzz6.style.display = 'block';
+        displayLyriczzz6(0);
+    } else {
+        lyricsContainerzzz6.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz6.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz6.value;
+    displayLyriczzz6(0, selectedLanguage);
+});
+
+audioPlayerzzz6.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz6.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz6.value;
+    const lyricszzz6 = lyricsDatazzz6[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz6.length; i++) {
+        const lyric = lyricszzz6[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz6) {
+                displayLyriczzz6(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz6(-1, selectedLanguage);
+
+
+    timeDisplayzzz6.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz6.duration)}`;
+});
+
+function displayLyriczzz6(index, language) {
+    const lyricszzz6 = lyricsDatazzz6[language];
+    if (index >= 0 && index < lyricszzz6.length) {
+        lyricsTextzzz6.textContent = lyricszzz6[index].text;
+        currentLyricIndexzzz6 = index;
+        lyricsTextzzz6.style.color = '#f5f5f7';
+        lyricsTextzzz6.style.fontSize = '20px';
+        lyricsTextzzz6.style.fontWeight = '500';
+        lyricsTextzzz6.style.marginTop = '20px';
+        lyricsTextzzz6.style.width = '242px';
+        lyricsTextzzz6.style.textAlign = 'center';
+        lyricsTextzzz6.style.borderRadius = '15px';
+        lyricsTextzzz6.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz6.textContent = '';
+        currentLyricIndexzzz6 = -1;
+    }
+}
+
+
+const seekBarzzz6 = document.querySelector('.seek-bar-zzz6');
+const seekBarFillzzz6 = document.querySelector('.seek-bar-fill-zzz6');
+const seekBarThumbzzz6 = document.querySelector('.seek-bar-thumb-zzz6');
+
+seekBarzzz6.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz6.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz6.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz6.duration;
+
+    audioPlayerzzz6.currentTime = seekTime;
+});
+
+audioPlayerzzz6.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz6.currentTime;
+    const duration = audioPlayerzzz6.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz6.style.width = progress + '%';
+    seekBarThumbzzz6.style.left = progress + '%';
+
+
+    timeDisplayzzz6.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz6.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz6);
+    document.addEventListener('mouseup', onMouseUpzzz6);
+});
+
+function onMouseMovezzz6(e) {
+    const clickX = e.clientX - seekBarzzz6.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz6.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz6.duration;
+
+    audioPlayerzzz6.currentTime = seekTime;
+}
+
+function onMouseUpzzz6() {
+    document.removeEventListener('mousemove', onMouseMovezzz6);
+    document.removeEventListener('mouseup', onMouseUpzzz6);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz7 = document.getElementById('audio-player-zzz7');
+const playButtonzzz7 = document.getElementById('play-zzz7');
+const pauseButtonzzz7 = document.getElementById('pause-zzz7');
+const timeDisplayzzz7 = document.getElementById('time-display-zzz7');
+const lyricsContainerzzz7 = document.querySelector('.lyrics-container-zzz7');
+const toggleLyricsButtonzzz7 = document.getElementById('toggle-lyrics-zzz7');
+const lyricsLanguageSelectorzzz7 = document.getElementById('language-select-zzz7');
+const lyricsTextzzz7 = document.getElementById('lyrics-zzz7');
+
+const lyricsDatazzz7 = {
+    suryanicezzz7: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz7: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz7: [
+
+    ]
+};
+
+let currentLyricIndexzzz7 = -1;
+
+playButtonzzz7.addEventListener('click', () => {
+    audioPlayerzzz7.play();
+    playButtonzzz7.style.display = 'none';
+    pauseButtonzzz7.style.display = 'inline';
+});
+
+pauseButtonzzz7.addEventListener('click', () => {
+    audioPlayerzzz7.pause();
+    pauseButtonzzz7.style.display = 'none';
+    playButtonzzz7.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz7.addEventListener('click', () => {
+    if (lyricsContainerzzz7.style.display === 'none') {
+        lyricsContainerzzz7.style.display = 'block';
+        displayLyriczzz7(0);
+    } else {
+        lyricsContainerzzz7.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz7.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz7.value;
+    displayLyriczzz7(0, selectedLanguage);
+});
+
+audioPlayerzzz7.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz7.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz7.value;
+    const lyricszzz7 = lyricsDatazzz7[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz7.length; i++) {
+        const lyric = lyricszzz7[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz7) {
+                displayLyriczzz7(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz7(-1, selectedLanguage);
+
+
+    timeDisplayzzz7.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz7.duration)}`;
+});
+
+function displayLyriczzz7(index, language) {
+    const lyricszzz7 = lyricsDatazzz7[language];
+    if (index >= 0 && index < lyricszzz7.length) {
+        lyricsTextzzz7.textContent = lyricszzz7[index].text;
+        currentLyricIndexzzz7 = index;
+        lyricsTextzzz7.style.color = '#f5f5f7';
+        lyricsTextzzz7.style.fontSize = '20px';
+        lyricsTextzzz7.style.fontWeight = '500';
+        lyricsTextzzz7.style.marginTop = '20px';
+        lyricsTextzzz7.style.width = '242px';
+        lyricsTextzzz7.style.textAlign = 'center';
+        lyricsTextzzz7.style.borderRadius = '15px';
+        lyricsTextzzz7.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz7.textContent = '';
+        currentLyricIndexzzz7 = -1;
+    }
+}
+
+
+const seekBarzzz7 = document.querySelector('.seek-bar-zzz7');
+const seekBarFillzzz7 = document.querySelector('.seek-bar-fill-zzz7');
+const seekBarThumbzzz7 = document.querySelector('.seek-bar-thumb-zzz7');
+
+seekBarzzz7.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz7.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz7.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz7.duration;
+
+    audioPlayerzzz7.currentTime = seekTime;
+});
+
+audioPlayerzzz7.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz7.currentTime;
+    const duration = audioPlayerzzz7.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz7.style.width = progress + '%';
+    seekBarThumbzzz7.style.left = progress + '%';
+
+
+    timeDisplayzzz7.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz7.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz7);
+    document.addEventListener('mouseup', onMouseUpzzz7);
+});
+
+function onMouseMovezzz7(e) {
+    const clickX = e.clientX - seekBarzzz7.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz7.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz7.duration;
+
+    audioPlayerzzz7.currentTime = seekTime;
+}
+
+function onMouseUpzzz7() {
+    document.removeEventListener('mousemove', onMouseMovezzz7);
+    document.removeEventListener('mouseup', onMouseUpzzz7);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+const audioPlayerzzz8 = document.getElementById('audio-player-zzz8');
+const playButtonzzz8 = document.getElementById('play-zzz8');
+const pauseButtonzzz8 = document.getElementById('pause-zzz8');
+const timeDisplayzzz8 = document.getElementById('time-display-zzz8');
+const lyricsContainerzzz8 = document.querySelector('.lyrics-container-zzz8');
+const toggleLyricsButtonzzz8 = document.getElementById('toggle-lyrics-zzz8');
+const lyricsLanguageSelectorzzz8 = document.getElementById('language-select-zzz8');
+const lyricsTextzzz8 = document.getElementById('lyrics-zzz8');
+
+const lyricsDatazzz8 = {
+    suryanicezzz8: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz8: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz8: [
+
+    ]
+};
+
+let currentLyricIndexzzz8 = -1;
+
+playButtonzzz8.addEventListener('click', () => {
+    audioPlayerzzz8.play();
+    playButtonzzz8.style.display = 'none';
+    pauseButtonzzz8.style.display = 'inline';
+});
+
+pauseButtonzzz8.addEventListener('click', () => {
+    audioPlayerzzz8.pause();
+    pauseButtonzzz8.style.display = 'none';
+    playButtonzzz8.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz8.addEventListener('click', () => {
+    if (lyricsContainerzzz8.style.display === 'none') {
+        lyricsContainerzzz8.style.display = 'block';
+        displayLyriczzz8(0);
+    } else {
+        lyricsContainerzzz8.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz8.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz8.value;
+    displayLyriczzz8(0, selectedLanguage);
+});
+
+audioPlayerzzz8.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz8.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz8.value;
+    const lyricszzz8 = lyricsDatazzz8[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz8.length; i++) {
+        const lyric = lyricszzz8[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz8) {
+                displayLyriczzz8(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz8(-1, selectedLanguage);
+
+
+    timeDisplayzzz8.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz8.duration)}`;
+});
+
+function displayLyriczzz8(index, language) {
+    const lyricszzz8 = lyricsDatazzz8[language];
+    if (index >= 0 && index < lyricszzz8.length) {
+        lyricsTextzzz8.textContent = lyricszzz8[index].text;
+        currentLyricIndexzzz8 = index;
+        lyricsTextzzz8.style.color = '#f5f5f7';
+        lyricsTextzzz8.style.fontSize = '20px';
+        lyricsTextzzz8.style.fontWeight = '500';
+        lyricsTextzzz8.style.marginTop = '20px';
+        lyricsTextzzz8.style.width = '242px';
+        lyricsTextzzz8.style.textAlign = 'center';
+        lyricsTextzzz8.style.borderRadius = '15px';
+        lyricsTextzzz8.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz8.textContent = '';
+        currentLyricIndexzzz8 = -1;
+    }
+}
+
+
+const seekBarzzz8 = document.querySelector('.seek-bar-zzz8');
+const seekBarFillzzz8 = document.querySelector('.seek-bar-fill-zzz8');
+const seekBarThumbzzz8 = document.querySelector('.seek-bar-thumb-zzz8');
+
+seekBarzzz8.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz8.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz8.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz8.duration;
+
+    audioPlayerzzz8.currentTime = seekTime;
+});
+
+audioPlayerzzz8.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz8.currentTime;
+    const duration = audioPlayerzzz8.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz8.style.width = progress + '%';
+    seekBarThumbzzz8.style.left = progress + '%';
+
+
+    timeDisplayzzz8.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz8.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz8);
+    document.addEventListener('mouseup', onMouseUpzzz8);
+});
+
+function onMouseMovezzz8(e) {
+    const clickX = e.clientX - seekBarzzz8.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz8.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz8.duration;
+
+    audioPlayerzzz8.currentTime = seekTime;
+}
+
+function onMouseUpzzz8() {
+    document.removeEventListener('mousemove', onMouseMovezzz8);
+    document.removeEventListener('mouseup', onMouseUpzzz8);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+const audioPlayerzzz9 = document.getElementById('audio-player-zzz9');
+const playButtonzzz9 = document.getElementById('play-zzz9');
+const pauseButtonzzz9 = document.getElementById('pause-zzz9');
+const timeDisplayzzz9 = document.getElementById('time-display-zzz9');
+const lyricsContainerzzz9 = document.querySelector('.lyrics-container-zzz9');
+const toggleLyricsButtonzzz9 = document.getElementById('toggle-lyrics-zzz9');
+const lyricsLanguageSelectorzzz9 = document.getElementById('language-select-zzz9');
+const lyricsTextzzz9 = document.getElementById('lyrics-zzz9');
+
+const lyricsDatazzz9 = {
+    suryanicezzz9: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz9: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz9: [
+
+    ]
+};
+
+let currentLyricIndexzzz9 = -1;
+
+playButtonzzz9.addEventListener('click', () => {
+    audioPlayerzzz9.play();
+    playButtonzzz9.style.display = 'none';
+    pauseButtonzzz9.style.display = 'inline';
+});
+
+pauseButtonzzz9.addEventListener('click', () => {
+    audioPlayerzzz9.pause();
+    pauseButtonzzz9.style.display = 'none';
+    playButtonzzz9.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz9.addEventListener('click', () => {
+    if (lyricsContainerzzz9.style.display === 'none') {
+        lyricsContainerzzz9.style.display = 'block';
+        displayLyriczzz9(0);
+    } else {
+        lyricsContainerzzz9.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz9.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz9.value;
+    displayLyriczzz9(0, selectedLanguage);
+});
+
+audioPlayerzzz9.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz9.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz9.value;
+    const lyricszzz9 = lyricsDatazzz9[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz9.length; i++) {
+        const lyric = lyricszzz9[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz9) {
+                displayLyriczzz9(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz9(-1, selectedLanguage);
+
+
+    timeDisplayzzz9.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz9.duration)}`;
+});
+
+function displayLyriczzz9(index, language) {
+    const lyricszzz9 = lyricsDatazzz9[language];
+    if (index >= 0 && index < lyricszzz9.length) {
+        lyricsTextzzz9.textContent = lyricszzz9[index].text;
+        currentLyricIndexzzz9 = index;
+        lyricsTextzzz9.style.color = '#f5f5f7';
+        lyricsTextzzz9.style.fontSize = '20px';
+        lyricsTextzzz9.style.fontWeight = '500';
+        lyricsTextzzz9.style.marginTop = '20px';
+        lyricsTextzzz9.style.width = '242px';
+        lyricsTextzzz9.style.textAlign = 'center';
+        lyricsTextzzz9.style.borderRadius = '15px';
+        lyricsTextzzz9.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz9.textContent = '';
+        currentLyricIndexzzz9 = -1;
+    }
+}
+
+
+const seekBarzzz9 = document.querySelector('.seek-bar-zzz9');
+const seekBarFillzzz9 = document.querySelector('.seek-bar-fill-zzz9');
+const seekBarThumbzzz9 = document.querySelector('.seek-bar-thumb-zzz9');
+
+seekBarzzz9.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz9.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz9.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz9.duration;
+
+    audioPlayerzzz9.currentTime = seekTime;
+});
+
+audioPlayerzzz9.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz9.currentTime;
+    const duration = audioPlayerzzz9.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz9.style.width = progress + '%';
+    seekBarThumbzzz9.style.left = progress + '%';
+
+
+    timeDisplayzzz9.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz9.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz9);
+    document.addEventListener('mouseup', onMouseUpzzz9);
+});
+
+function onMouseMovezzz9(e) {
+    const clickX = e.clientX - seekBarzzz9.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz9.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz9.duration;
+
+    audioPlayerzzz9.currentTime = seekTime;
+}
+
+function onMouseUpzzz9() {
+    document.removeEventListener('mousemove', onMouseMovezzz9);
+    document.removeEventListener('mouseup', onMouseUpzzz9);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz10 = document.getElementById('audio-player-zzz10');
+const playButtonzzz10 = document.getElementById('play-zzz10');
+const pauseButtonzzz10 = document.getElementById('pause-zzz10');
+const timeDisplayzzz10 = document.getElementById('time-display-zzz10');
+const lyricsContainerzzz10 = document.querySelector('.lyrics-container-zzz10');
+const toggleLyricsButtonzzz10 = document.getElementById('toggle-lyrics-zzz10');
+const lyricsLanguageSelectorzzz10 = document.getElementById('language-select-zzz10');
+const lyricsTextzzz10 = document.getElementById('lyrics-zzz10');
+
+const lyricsDatazzz10 = {
+    suryanicezzz10: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz10: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz10: [
+
+    ]
+};
+
+let currentLyricIndexzzz10 = -1;
+
+playButtonzzz10.addEventListener('click', () => {
+    audioPlayerzzz10.play();
+    playButtonzzz10.style.display = 'none';
+    pauseButtonzzz10.style.display = 'inline';
+});
+
+pauseButtonzzz10.addEventListener('click', () => {
+    audioPlayerzzz10.pause();
+    pauseButtonzzz10.style.display = 'none';
+    playButtonzzz10.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz10.addEventListener('click', () => {
+    if (lyricsContainerzzz10.style.display === 'none') {
+        lyricsContainerzzz10.style.display = 'block';
+        displayLyriczzz10(0);
+    } else {
+        lyricsContainerzzz10.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz10.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz10.value;
+    displayLyriczzz10(0, selectedLanguage);
+});
+
+audioPlayerzzz10.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz10.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz10.value;
+    const lyricszzz10 = lyricsDatazzz10[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz10.length; i++) {
+        const lyric = lyricszzz10[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz10) {
+                displayLyriczzz10(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz10(-1, selectedLanguage);
+
+
+    timeDisplayzzz10.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz10.duration)}`;
+});
+
+function displayLyriczzz10(index, language) {
+    const lyricszzz10 = lyricsDatazzz10[language];
+    if (index >= 0 && index < lyricszzz10.length) {
+        lyricsTextzzz10.textContent = lyricszzz10[index].text;
+        currentLyricIndexzzz10 = index;
+        lyricsTextzzz10.style.color = '#f5f5f7';
+        lyricsTextzzz10.style.fontSize = '20px';
+        lyricsTextzzz10.style.fontWeight = '500';
+        lyricsTextzzz10.style.marginTop = '20px';
+        lyricsTextzzz10.style.width = '242px';
+        lyricsTextzzz10.style.textAlign = 'center';
+        lyricsTextzzz10.style.borderRadius = '15px';
+        lyricsTextzzz10.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz10.textContent = '';
+        currentLyricIndexzzz10 = -1;
+    }
+}
+
+
+const seekBarzzz10 = document.querySelector('.seek-bar-zzz10');
+const seekBarFillzzz10 = document.querySelector('.seek-bar-fill-zzz10');
+const seekBarThumbzzz10 = document.querySelector('.seek-bar-thumb-zzz10');
+
+seekBarzzz10.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz10.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz10.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz10.duration;
+
+    audioPlayerzzz10.currentTime = seekTime;
+});
+
+audioPlayerzzz10.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz10.currentTime;
+    const duration = audioPlayerzzz10.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz10.style.width = progress + '%';
+    seekBarThumbzzz10.style.left = progress + '%';
+
+
+    timeDisplayzzz10.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz10.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz10);
+    document.addEventListener('mouseup', onMouseUpzzz10);
+});
+
+function onMouseMovezzz10(e) {
+    const clickX = e.clientX - seekBarzzz10.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz10.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz10.duration;
+
+    audioPlayerzzz10.currentTime = seekTime;
+}
+
+function onMouseUpzzz10() {
+    document.removeEventListener('mousemove', onMouseMovezzz10);
+    document.removeEventListener('mouseup', onMouseUpzzz10);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+const audioPlayerzzz11 = document.getElementById('audio-player-zzz11');
+const playButtonzzz11 = document.getElementById('play-zzz11');
+const pauseButtonzzz11 = document.getElementById('pause-zzz11');
+const timeDisplayzzz11 = document.getElementById('time-display-zzz11');
+const lyricsContainerzzz11 = document.querySelector('.lyrics-container-zzz11');
+const toggleLyricsButtonzzz11 = document.getElementById('toggle-lyrics-zzz11');
+const lyricsLanguageSelectorzzz11 = document.getElementById('language-select-zzz11');
+const lyricsTextzzz11 = document.getElementById('lyrics-zzz11');
+
+const lyricsDatazzz11 = {
+    suryanicezzz11: [
+    { startTime: 1, endTime: 21.9, text: '♪' },  
+    ],
+    latinsuryanicezzz11: [
+    { startTime: 1, endTime: 21.9, text: '♪' },
+    { startTime: 21.9, endTime: 31.7, text: 'Ya baba haqqouta  mrahmana halan men adi qourbana,' },
+    ],
+    turkcezzz11: [
+
+    ]
+};
+
+let currentLyricIndexzzz11 = -1;
+
+playButtonzzz11.addEventListener('click', () => {
+    audioPlayerzzz11.play();
+    playButtonzzz11.style.display = 'none';
+    pauseButtonzzz11.style.display = 'inline';
+});
+
+pauseButtonzzz11.addEventListener('click', () => {
+    audioPlayerzzz11.pause();
+    pauseButtonzzz11.style.display = 'none';
+    playButtonzzz11.style.display = 'inline';
+});
+
+toggleLyricsButtonzzz11.addEventListener('click', () => {
+    if (lyricsContainerzzz11.style.display === 'none') {
+        lyricsContainerzzz11.style.display = 'block';
+        displayLyriczzz11(0);
+    } else {
+        lyricsContainerzzz11.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelectorzzz11.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelectorzzz11.value;
+    displayLyriczzz11(0, selectedLanguage);
+});
+
+audioPlayerzzz11.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz11.currentTime;
+    const selectedLanguage = lyricsLanguageSelectorzzz11.value;
+    const lyricszzz11 = lyricsDatazzz11[selectedLanguage];
+
+    for (let i = 0; i < lyricszzz11.length; i++) {
+        const lyric = lyricszzz11[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndexzzz11) {
+                displayLyriczzz11(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyriczzz11(-1, selectedLanguage);
+
+
+    timeDisplayzzz11.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayerzzz11.duration)}`;
+});
+
+function displayLyriczzz11(index, language) {
+    const lyricszzz11 = lyricsDatazzz11[language];
+    if (index >= 0 && index < lyricszzz11.length) {
+        lyricsTextzzz11.textContent = lyricszzz11[index].text;
+        currentLyricIndexzzz11 = index;
+        lyricsTextzzz11.style.color = '#f5f5f7';
+        lyricsTextzzz11.style.fontSize = '20px';
+        lyricsTextzzz11.style.fontWeight = '500';
+        lyricsTextzzz11.style.marginTop = '20px';
+        lyricsTextzzz11.style.width = '242px';
+        lyricsTextzzz11.style.textAlign = 'center';
+        lyricsTextzzz11.style.borderRadius = '15px';
+        lyricsTextzzz11.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsTextzzz11.textContent = '';
+        currentLyricIndexzzz11 = -1;
+    }
+}
+
+
+const seekBarzzz11 = document.querySelector('.seek-bar-zzz11');
+const seekBarFillzzz11 = document.querySelector('.seek-bar-fill-zzz11');
+const seekBarThumbzzz11 = document.querySelector('.seek-bar-thumb-zzz11');
+
+seekBarzzz11.addEventListener('click', (e) => {
+    const clickX = e.clientX - seekBarzzz11.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz11.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz11.duration;
+
+    audioPlayerzzz11.currentTime = seekTime;
+});
+
+audioPlayerzzz11.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayerzzz11.currentTime;
+    const duration = audioPlayerzzz11.duration;
+    const progress = (currentTime / duration) * 100;
+
+    seekBarFillzzz11.style.width = progress + '%';
+    seekBarThumbzzz11.style.left = progress + '%';
+
+
+    timeDisplayzzz11.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+});
+
+seekBarThumbzzz11.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMovezzz11);
+    document.addEventListener('mouseup', onMouseUpzzz11);
+});
+
+function onMouseMovezzz11(e) {
+    const clickX = e.clientX - seekBarzzz11.getBoundingClientRect().left;
+    const seekBarWidth = seekBarzzz11.clientWidth;
+    const seekTime = (clickX / seekBarWidth) * audioPlayerzzz11.duration;
+
+    audioPlayerzzz11.currentTime = seekTime;
+}
+
+function onMouseUpzzz11() {
+    document.removeEventListener('mousemove', onMouseMovezzz11);
+    document.removeEventListener('mouseup', onMouseUpzzz11);
+}
+
+
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
 
 
 
