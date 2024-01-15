@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -198,6 +199,24 @@
     </div>
   </div>
 
+  <div id="OnnikPopup" class="popup-container">
+    <div class="popup">
+      <label class="close-button" onclick="closePopup('OnnikPopup')">
+          <span class="line-top">
+          </span>
+          <span class="line-bottom">
+          </span>
+        </label>
+      <div style="overflow-y: scroll; height: 500px; transition: all 0.15s;">
+      <h2>ONNİK DİNKJİAN</h2>
+      <img class="onnik" src="https://armenianweekly.b-cdn.net/wp-content/uploads/2012/11/IMG_6548.jpg" alt="tigran">
+      <p class="onnikbio"> Onnig Dinkciyan 1929’da Paris’te gözlerini dünyaya açar. Anne-babası Garabed ve Zora Milliyanlar Osmanlı İmparatorluğu vilayeti Diyarbakır’da doğar ve Onnig henüz genç bir erkekken ölürler. Vaftiz anne-babası Nişan ile Oğida Dinkciyanlar tarafından evlat edinilir. Delikanlı Onnig Fransızcanın yanı sıra Ermenice dinler ve konuşur ama yalnızca, bir eşi daha bulunmayan renkli Dikranagerd lehçesiyle. Tabii bütün eş-dost Dikranagerdtsidir; öyle ki Onnig, Amerika’ya varana kadar, bütün Ermenilerin bu şekilde konuştuklarını düşünür. Mutluluk ve huzuru başlarda Paris’teki Ermeni kilisesinde şarkı söylemekte bulur. 1940’ların sonlarında Amerika’ya geldiğinde dünyevi faaliyetlerde icraata başlar ve çabucak Amerikalı Ermeni cemaatinin en sevilen şarkıcısı olur. Dinleyicilerinin taleplerini karşılamak için Ermeni halk ve pop müziğinin çeşitli kayıtlarını gerçekleştirir. Bununla beraber, yetkili bir papaz yardımcısı [sargavak] sıfatıyla Baron Dinkciyan, Ermeni kilise müziğine karşı beslediği büyük sevgiyi asla kaybetmez ve Ermeni Kilisesinin coşkuyla icra edilmiş kutsal ilahilerinin toplu bir CD’sini (Havadamk) yayınlar. Ermeni şarkısının büyük bir yorumcusu olarak saldığı ün onu bir uçtan diğerine Avrupa, Birleşik Devletler, Orta Doğu ve Güney Amerika konser salonlarına götürür. “Voice of Armenians [Ermenilerin Sesi]” CD’si Kutsal Şehir Kudüs’te biletleri yok satan bir konserde kaydedilmişti. Onnig Dinkciyan, Ermeni Soykırımının yüzüncü yılının anıldığı 2015’te Diyarbakır/Dikranagerd, İstanbul, Almanya ve Washington D.C.’deki anma konserlerine katıldı. Baron Dinkciyan, şarkı söylemesine ek olarak birçok şarkı besteledi ve bunlardan bazıları memleketi Dikranagerd’in lehçesiyle icra edildi. Ermeni müziğine karşı beslediği sevgi ve tutkuyu udi ve besteci oğlu Ara Dinkciyan’a aşıladı. Birlikte Onnig’in en son CD’si “Diyarbekiri Hokin (Diyarbakır’ın Ruhu)”i kaydettiler. Onnig ile Ara “Garod (Hasret)” adlı belgesel filmin konusunu oluşturmaktadırlar. Aralık 2019’da, Kilikya Katolikosu Kadasetli I. Aram, Ermeni geleneksel müziğinde uzun soluklu kariyerinin bir nişanesi olarak Onnig Dingciyan’ı Mesrob Maşdots madalyasıyla taltif etmiştir.</p>
+
+      <p style="color: #FFBF00; position: relative; margin-inline: auto; width: 250px; font-weight: 500;">HOUSHAMADYAN'A<br>TEŞEKKÜRLER</p>
+      </div>
+    </div>
+  </div>
+
 <div class="filtre" style="display: grid;">  
 <label id="bulbul" class="list-item" data-content="radyo" onclick="myFunction(); simulateLoading(); openPopup('radyoPopup')">
 <span class="material-symbols-outlined" style="font-size: 8rem; color: #f5f5f7; ">radio</span>
@@ -305,6 +324,46 @@
         border-radius: 15px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .onnikyol:hover{
+        text-decoration: underline;
+        transform: scale(1.35);
+        transition: all 0.15s;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .onnikbio{
+      font-size: 17.6px;
+      font-weight: 500;
+      letter-spacing: 0.9px;
+      text-indent: 12px;
+      line-height: 1.7;
+      transition: all 0.15s;
+    }
+
+    .onnik{
+    width: 250px;
+    border-radius: 20px;
+    object-fit: contain;
+    transition: all 0.15s;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
+    }
+
+
 
 
 
@@ -13115,18 +13174,6 @@ grid-column: 2 / 3;
 
 
 
-    .aramyol:active{
-        text-decoration: underline;
-        transform: scale(1.2);
-        transition: all 0.15s;
-        cursor: pointer;
-        opacity: 1;
-    }
-
-
-
-
-
     .formyy{
     position: relative;
     display: block;
@@ -17954,6 +18001,32 @@ grid-column: 2 / 3;
 
 
 
+  .onnikyol:active{
+        text-decoration: underline;
+        transform: scale(1.2);
+        transition: all 0.15s;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    
+    .onnik{
+    width: 250px;
+    border-radius: 20px;
+    object-fit: contain;
+    transition: all 0.15s;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
+    }
+
+
+    .onnikbio{
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-indent: 12px;
+      line-height: 1.5;
+      transition: all 0.15s;
+    }
 
 
 
@@ -17974,7 +18047,13 @@ grid-column: 2 / 3;
 
 
 
-
+  .aramyol:active{
+        text-decoration: underline;
+        transform: scale(1.2);
+        transition: all 0.15s;
+        cursor: pointer;
+        opacity: 1;
+    }
 
     
     .tigran{
@@ -35863,7 +35942,7 @@ function myFunction() {
                 </div>
                 <div class="song-details">
                     <h2>Siranuş</h2>
-                    <p>Onnik Dinkjian</p>
+                    <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                 </div>
                 <div id="time-display">0:00 / 0:00</div>
             </div>
@@ -35905,7 +35984,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-2">
                     <h2>Vay Babo</h2>
-                    <p>Onnik Dinkjian</p>
+                    <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                 </div>
                 <div id="time-display-2">0:00 / 0:00</div>
             </div>
@@ -35946,7 +36025,7 @@ function myFunction() {
         </div>
         <div class="song-details-3">
             <h2>Şeg Mazerov Er</h2>
-            <p>Onnik Dinkjian</p>
+            <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
         </div>
         <div id="time-display-3">0:00 / 0:00</div>
     </div>
@@ -35988,7 +36067,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-4">
                     <h2>Mamis</h2>
-                    <p>Onnik Dinkjian</p>
+                    <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                 </div>
                 <div id="time-display-4">0:00 / 0:00</div>
             </div>
@@ -36033,7 +36112,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-5">
                     <h2>Diyarbekir Peşrevi</h2>
-                    <p>Onnik Dinkjian</p>
+                    <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                 </div>
                 <div id="time-display-5">0:00 / 0:00</div>
             </div>
@@ -36078,7 +36157,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-6">
                       <h2>Diyarbekiri Hokin</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-6">0:00 / 0:00</div>
               </div>
@@ -36122,7 +36201,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-7">
                       <h2>Kale Kale</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-7">0:00 / 0:00</div>
               </div>
@@ -36166,7 +36245,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-8">
                       <h2>Nare</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-8">0:00 / 0:00</div>
               </div>
@@ -36210,7 +36289,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-9">
                       <h2>Tsarvisi</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-9">0:00 / 0:00</div>
               </div>
@@ -36254,7 +36333,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-10">
                       <h2>Nanay</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-10">0:00 / 0:00</div>
               </div>
@@ -36298,7 +36377,7 @@ function myFunction() {
                   </div>
                   <div class="song-details-11">
                       <h2>Oy Canım</h2>
-                      <p>Onnik Dinkjian</p>
+                      <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                   </div>
                   <div id="time-display-11">0:00 / 0:00</div>
               </div>
@@ -36409,7 +36488,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz">0:00 / 0:00</div>
               </div>
@@ -36497,7 +36576,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz2">
                   <h2>Ya Mar Gewargees</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz2">0:00 / 0:00</div>
               </div>
@@ -36541,7 +36620,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz3">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz3">0:00 / 0:00</div>
               </div>
@@ -36585,7 +36664,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz4">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz4">0:00 / 0:00</div>
               </div>
@@ -36631,7 +36710,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz5">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz5">0:00 / 0:00</div>
               </div>
@@ -36676,7 +36755,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz6">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz6">0:00 / 0:00</div>
               </div>
@@ -36720,7 +36799,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz7">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz7">0:00 / 0:00</div>
               </div>
@@ -36766,7 +36845,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz8">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz8">0:00 / 0:00</div>
               </div>
@@ -36813,7 +36892,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz9">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz9">0:00 / 0:00</div>
               </div>
@@ -36860,7 +36939,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz10">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz10">0:00 / 0:00</div>
               </div>
@@ -36906,7 +36985,7 @@ function myFunction() {
                 </div>
                 <div class="song-details-xyz11">
                   <h2>Halellujah</h2>
-                  <p>Onnik Dinkjian</p>
+                  <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
               </div>
               <div id="time-display-xyz11">0:00 / 0:00</div>
               </div>
@@ -44913,6 +44992,7 @@ const loading = document.getElementById('lomading');
     });
 }
 </script>
+
 
 </body>
 </html>
