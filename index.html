@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -258,12 +259,36 @@
     </div>
   </div>
 
-
+  <a data-tip="YouTube" href="https://youtu.be/Be5i1vQdjnA?si=tCO5k0sbBE-Y4NEg" rel="noreferrer" target="_blank" currentitem="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.5 85" xml:space="preserve" class="eVLMDW"><path class="icon_youtube_svg__st0" d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z"></path><path class="icon_youtube_svg__st1" d="m48.6 60.7 31.6-18.2-31.6-18.2z"></path></svg></a>
 
 
 
 <style>
 @media only screen and (min-width: 480px){
+
+    a {
+    color: rgb(0, 122, 255) !important;
+    text-decoration: none !important;
+    transition: all 0.15s ease 0s !important;
+}
+
+
+.eVLMDW {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.eVLMDW > path:last-child {
+    fill: rgb(230, 230, 230);
+}
+
+.eVLMDW > path:first-child {
+    fill: rgb(124, 124, 124);
+    transition: all 0.15s ease 0s;
+}
+
+
 
 
     #bulbul{
@@ -35876,7 +35901,9 @@ function myFunction() {
             var newDiv = document.createElement('div');
             
             // Set some content for the new div (you can customize this as needed)
-            newDiv.innerHTML = `
+            newDiv.innerHTML = ` <h2>ETNOKÜLTÜREL RADYO</h2>
+
+            <p class="tigranbio"> Bu bölüm, proje için daha önceden belirlenmiş şarkı eserlerinin çevirilerini barındırır. Var olan yasalar çeerçevesinde eserlerin paylaşımı bu site içerisinde yapılamadığından sadece sözler ve çeviriler buradan görülebilir.</p>
 
             <div class="yukaricik">
 <div class="yukaricik">
@@ -35938,7 +35965,7 @@ function myFunction() {
             <div class="music-player">
 
                 <div class="album-cover">
-                    <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/onnik.jpg" alt="Album Cover">
+                    <a data-tip="YouTube" href="https://youtu.be/Be5i1vQdjnA?si=tCO5k0sbBE-Y4NEg" rel="noreferrer" target="_blank" currentitem="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.5 85" xml:space="preserve" class="sc-2c630c8b-11 eVLMDW"><path class="icon_youtube_svg__st0" d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z"></path><path class="icon_youtube_svg__st1" d="m48.6 60.7 31.6-18.2-31.6-18.2z"></path></svg></a>
                 </div>
                 <div class="song-details">
                     <h2>Siranuş</h2>
@@ -35980,32 +36007,22 @@ function myFunction() {
           <div class="form">
             <div class="music-player-2">
                 <div class="album-cover-2">
-                    <img src="https://raw.githubusercontent.com/Berahatiye/kl/main/onnik.jpg" alt="Album Cover">
+                    <img src="https://data.opus3a.com/product_photo/b2/b24bcb9d00ae394f2ea8ec8dba9ffa30/MAX/c5ca62389eedd0e229b7952fb99b75f2.jpg" alt="Album Cover">
                 </div>
                 <div class="song-details-2">
                     <h2>Vay Babo</h2>
                     <p data-content="onnik" onclick="openPopup('OnnikPopup')" class="onnikyol">Onnik Dinkjian<span class="material-symbols-outlined">contacts</span></p>
                 </div>
-                <div id="time-display-2">0:00 / 0:00</div>
-            </div>
-        
-            <div class="seek-bar-container-2">
-                <div class="seek-bar-2">
-                    <div class="seek-bar-fill-2"></div>
-                    <div class="seek-bar-thumb-2"></div>
-                </div>
             </div>
         
             <div class="controls-2">
-                <button id="play-2"><i class="fas fa-play"></i></button>
-                <button id="pause-2"><i class="fas fa-pause"></i></button>
                 <button id="toggle-lyrics-2"><i class="fas fa-music"></i> Sözler</button>
             </div>
         
             <div class="lyrics-container-2" style="display: none; text-align: center;">
                 <div id="lyrics-language-selector-2" style="justify-content: center;">
-                    <select id="language-select-2">
-                        <option value disabled selected>Dil Seç.</option>
+                    <select id="language-select-2" >
+                        <option onclick="showFunction()" value disabled selected id="ermen">Dil Seç.</option>
                         <option value="ermenice2">հայերեն</option>
                         <option value="latinermeni2">հայերեն (Latinize)</option>
                         <option value="turkce2">Türkçe</option>
@@ -39496,14 +39513,34 @@ function myFunction() {
 
 
 
-
-
-
   `;
 
             // Append the new div to the ufakdenemeler div
             ufakdenemelerDiv.appendChild(newDiv);
         }
+
+    function showFunction() {
+        
+    
+        var button = document.querySelector('.list-item');
+        button.style.display = 'none';
+        
+              var ufakdenemelerDiv = document.querySelector('.ufakdenemeler');
+      
+              // Check if content is already present
+              if (ufakdenemelerDiv.innerHTML.trim() === '') {
+                  // Create a new div element
+                  var newDiv = document.createElement('div');
+                  
+                  // Set some content for the new div (you can customize this as needed)
+                  newDiv.innerHTML = `<p>Շըբթօր բաղնիքի օր է</p>`
+                  ufakdenemelerDiv.appendChild(newDiv);
+        }
+    }
+
+
+
+
 
         setTimeout(function() {
                 ufakdenemelerDiv.style.opacity = 1;
@@ -39516,21 +39553,192 @@ function myFunction() {
               ufakdenemelerDiv.style.display = "block";
             }, 20);
 
-            
-
-
-
-
-
-
-
-
-
-
-
 
             
-    const audioPlayer = document.getElementById('audio-player');
+
+const lyricsshow7 = document.querySelector('.lyrics-container-2');
+const showLyricsButton7 = document.getElementById('toggle-lyrics-2');
+
+
+
+    showLyricsButton7.addEventListener('click', () => {
+    if (lyricsshow7.style.display === 'none') {
+        lyricsshow7.style.display = 'block';
+        displayLyric7(0);
+    } else {
+        lyricsshow7.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+const lyricsContainer2 = document.querySelector('.lyrics-container-2');
+const toggleLyricsButton2 = document.getElementById('toggle-lyrics-2');
+const lyricsLanguageSelector2 = document.getElementById('language-select-2');
+const lyricsText2 = document.getElementById('lyrics-2');
+
+
+const lyricsData2 = {
+    ermenice2: [
+    { startTime: 0, endTime: 34, text: '♪' },
+            { startTime: 34, endTime: 36.4, text: 'Շըբթօր բաղնիքի օր է' },
+            { startTime: 36.4, endTime: 38.7, text: 'Քապքապ ֆութան ձեռքիս է' },
+            { startTime: 38.7, endTime: 41.3, text: 'Տաք տաք ճուոռւնի դէմէ' },
+            { startTime: 41.3, endTime: 43.5, text: 'Մամիս քիսան կը քսէ' },
+            { startTime: 43.5, endTime: 48.5, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
+            { startTime: 48.5, endTime: 58.29, text: '♪' },
+            { startTime: 58.29, endTime: 60.37, text: 'Կը քսէ նանց կը քսէ' },
+            { startTime: 60.37, endTime: 63, text: 'Մարմինսի եառա կ՚էնէ' },
+            { startTime: 63, endTime: 65.5, text: 'Կ՚էլլամ պսսուն պրուխթուն' },
+            { startTime: 65.5, endTime: 68, text: 'Էրիսսի կարմիր թթուն' },
+            { startTime: 68, endTime: 72.8, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
+            { startTime: 72.8, endTime: 153.1, text: '♪...' },
+            { startTime: 153.1, endTime: 155.5, text: 'Աչքս էսդէն էնդէն է' },
+            { startTime: 155.5, endTime: 158, text: 'Մամիս աչքիս կը գոցէ' },
+            { startTime: 158, endTime: 160.5, text: 'Կ՚ըսէ տղաս հոն մ՚իյա' },
+            { startTime: 160.5, endTime: 163, text: 'Աչքիդ գոցէ ամօթ է' },
+            { startTime: 163, endTime: 167.7, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
+            { startTime: 167.7, endTime: 177.2, text: '♪' },
+            { startTime: 177.2, endTime: 179.6, text: 'Գինամ կ՚ուզիս հոս կանիս' },
+            { startTime: 179.6, endTime: 182.4, text: 'Ճնճղուկնիրէ նայիս' },
+            { startTime: 182.4, endTime: 184.7, text: 'Հոսցէն սոնա բաղնիքը' },
+            { startTime: 184.7, endTime: 187, text: 'Մըն իգաս պապուդ հիտէ' },
+            { startTime: 187, endTime: 203, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
+    ],
+    latinermeni2: [
+            { startTime: 0, endTime: 34, text: '♪' },
+            { startTime: 34, endTime: 36.4, text: 'Shuhptor paghniki or e' },
+            { startTime: 36.4, endTime: 38.7, text: 'Kakab footan tserkis e' },
+            { startTime: 38.7, endTime: 41.3, text: 'Dak dak joorooni tem e' },
+            { startTime: 41.3, endTime: 43.5, text: 'Mamis kisan guh kuhse' },
+            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 48.5, endTime: 58.29, text: '♪' },
+            { startTime: 58.29, endTime: 60.37, text: 'Guh kuhse nants guh kuhse' },
+            { startTime: 60.37, endTime: 63, text: 'Marminuhs yara guhne' },
+            { startTime: 63, endTime: 65.5, text: 'Guhllam buhssoon puhruhkhtoon' },
+            { startTime: 65.5, endTime: 68, text: 'Erisuhs garmir tuhtoom' },
+            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 72.8, endTime: 153.1, text: '♪...' },
+            { startTime: 153.1, endTime: 155.5, text: 'Achkis esten enten e' },
+            { startTime: 155.5, endTime: 158, text: 'Mamis achkis guh kotse' },
+            { startTime: 158, endTime: 160.5, text: 'Guhse duhghas hon miya' },
+            { startTime: 160.5, endTime: 163, text: 'Achkit kotse amot e' },
+            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+            { startTime: 167.7, endTime: 177.2, text: '♪' },
+            { startTime: 177.2, endTime: 179.6, text: 'Kinam goozis hos ganis' },
+            { startTime: 179.6, endTime: 182.4, text: 'Juhnjuhghoognire nayis' },
+            { startTime: 182.4, endTime: 184.7, text: 'Hostsen sona paghnikuh' },
+            { startTime: 184.7, endTime: 187, text: 'Muhnni kas baboot hide' },
+            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
+    ],   
+    turkce2: [
+            { startTime: 0, endTime: 1, text: '♪' },
+            { startTime: 1, endTime: 34, text: '♪="Ay Cemo Ay Cemile-Urfalı Cemil Cankat" Sözler="Onnik Dinkjian"' },
+            { startTime: 34, endTime: 36.4, text: 'Cumartesi duş günüdür' },
+            { startTime: 36.4, endTime: 38.7, text: 'Takunyam ve havlum elimdedir' },
+            { startTime: 38.7, endTime: 41.3, text: 'Musluktan buhar vurur' },
+            { startTime: 41.3, endTime: 43.5, text: 'Annem eldivenini sürter' },
+            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
+            { startTime: 48.5, endTime: 58.29, text: '♪' },
+            { startTime: 58.29, endTime: 60.37, text: 'Annem beni ovalar' },
+            { startTime: 60.37, endTime: 63, text: 'Vücudumu çiğner' },
+            { startTime: 63, endTime: 65.5, text: 'Olurum gıcır gıcır' },
+            { startTime: 65.5, endTime: 68, text: 'Yüzümden de görülür' },
+            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
+            { startTime: 72.8, endTime: 153.1, text: '♪...' },
+            { startTime: 153.1, endTime: 155.5, text: 'Gözlerim ortalıkta dolanır' },
+            { startTime: 155.5, endTime: 158, text: 'Annem onları durdurur' },
+            { startTime: 158, endTime: 160.5, text: 'Bakma oralara der:' },
+            { startTime: 160.5, endTime: 163, text: '"Kapa gözlerini, ayıptır"' },
+            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
+            { startTime: 167.7, endTime: 177.2, text: '♪' },
+            { startTime: 177.2, endTime: 179.6, text: 'Biliyorum burada olmak istiyorsun' },
+            { startTime: 179.6, endTime: 182.4, text: 'Buradan minik serçelere bakarsın' },
+            { startTime: 182.4, endTime: 184.7, text: 'Artık bu hamama gelirsin' },
+            { startTime: 184.7, endTime: 187, text: 'Yanında da olsun baban' },
+            { startTime: 187, endTime: 203.9, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
+            { startTime: 203.9, endTime: 210, text: 'Ermenice aslından çeviren: Can Kurmamiyan' },
+    ],
+};
+
+let currentLyricIndex2 = -1;
+
+toggleLyricsButton2.addEventListener('click', () => {
+    if (lyricsContainer2.style.display === 'none') {
+        lyricsContainer2.style.display = 'block';
+        displayLyric2(0);
+    } else {
+        lyricsContainer2.style.display = 'none';
+    }
+});
+
+lyricsLanguageSelector2.addEventListener('change', () => {
+    const selectedLanguage = lyricsLanguageSelector2.value;
+    displayLyric2(0, selectedLanguage);
+});
+
+audioPlayer2.addEventListener('timeupdate', () => {
+    const currentTime = audioPlayer2.currentTime;
+    const selectedLanguage = lyricsLanguageSelector2.value;
+    const lyrics2 = lyricsData2[selectedLanguage];
+
+    for (let i = 0; i < lyrics2.length; i++) {
+        const lyric = lyrics2[i];
+        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
+            if (i !== currentLyricIndex2) {
+                displayLyric2(i, selectedLanguage);
+            }
+            return;
+        }
+    }
+
+
+    displayLyric2(-1, selectedLanguage);
+
+
+    timeDisplay2.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer2.duration)}`;
+});
+
+function displayLyric2(index, language) {
+    const lyrics2 = lyricsData2[language];
+    if (index >= 0 && index < lyrics2.length) {
+        lyricsText2.textContent = lyrics2[index].text;
+        currentLyricIndex2 = index;
+        lyricsText2.style.color = '#f5f5f7';
+        lyricsText2.style.fontSize = '20px';
+        lyricsText2.style.fontWeight = '500';
+        lyricsText2.style.marginTop = '20px';
+        lyricsText2.style.width = '242px';
+        lyricsText2.style.textAlign = 'center';
+        lyricsText2.style.borderRadius = '15px';
+        lyricsText2.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
+    } else {
+        lyricsText2.textContent = '';
+        currentLyricIndex2 = -1;
+        lyricsText2.style.color = 'white'; 
+    }
+}
+
+
+
+
+const audioPlayer = document.getElementById('audio-player');
     const playButton = document.getElementById('play');
     const pauseButton = document.getElementById('pause');
     const timeDisplay = document.getElementById('time-display');
@@ -39736,219 +39944,6 @@ function myFunction() {
 
 
 
-const audioPlayer2 = document.getElementById('audio-player-2');
-const playButton2 = document.getElementById('play-2');
-const pauseButton2 = document.getElementById('pause-2');
-const timeDisplay2 = document.getElementById('time-display-2');
-const lyricsContainer2 = document.querySelector('.lyrics-container-2');
-const toggleLyricsButton2 = document.getElementById('toggle-lyrics-2');
-const lyricsLanguageSelector2 = document.getElementById('language-select-2');
-const lyricsText2 = document.getElementById('lyrics-2');
-
-
-const lyricsData2 = {
-    ermenice2: [
-    { startTime: 0, endTime: 34, text: '♪' },
-            { startTime: 34, endTime: 36.4, text: 'Շըբթօր բաղնիքի օր է' },
-            { startTime: 36.4, endTime: 38.7, text: 'Քապքապ ֆութան ձեռքիս է' },
-            { startTime: 38.7, endTime: 41.3, text: 'Տաք տաք ճուոռւնի դէմէ' },
-            { startTime: 41.3, endTime: 43.5, text: 'Մամիս քիսան կը քսէ' },
-            { startTime: 43.5, endTime: 48.5, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
-            { startTime: 48.5, endTime: 58.29, text: '♪' },
-            { startTime: 58.29, endTime: 60.37, text: 'Կը քսէ նանց կը քսէ' },
-            { startTime: 60.37, endTime: 63, text: 'Մարմինսի եառա կ՚էնէ' },
-            { startTime: 63, endTime: 65.5, text: 'Կ՚էլլամ պսսուն պրուխթուն' },
-            { startTime: 65.5, endTime: 68, text: 'Էրիսսի կարմիր թթուն' },
-            { startTime: 68, endTime: 72.8, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
-            { startTime: 72.8, endTime: 153.1, text: '♪...' },
-            { startTime: 153.1, endTime: 155.5, text: 'Աչքս էսդէն էնդէն է' },
-            { startTime: 155.5, endTime: 158, text: 'Մամիս աչքիս կը գոցէ' },
-            { startTime: 158, endTime: 160.5, text: 'Կ՚ըսէ տղաս հոն մ՚իյա' },
-            { startTime: 160.5, endTime: 163, text: 'Աչքիդ գոցէ ամօթ է' },
-            { startTime: 163, endTime: 167.7, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
-            { startTime: 167.7, endTime: 177.2, text: '♪' },
-            { startTime: 177.2, endTime: 179.6, text: 'Գինամ կ՚ուզիս հոս կանիս' },
-            { startTime: 179.6, endTime: 182.4, text: 'Ճնճղուկնիրէ նայիս' },
-            { startTime: 182.4, endTime: 184.7, text: 'Հոսցէն սոնա բաղնիքը' },
-            { startTime: 184.7, endTime: 187, text: 'Մըն իգաս պապուդ հիտէ' },
-            { startTime: 187, endTime: 203, text: 'Վայ պապօ, վայ պապօ, վայ պապօ էս բաղնիքը' },
-    ],
-    latinermeni2: [
-            { startTime: 0, endTime: 34, text: '♪' },
-            { startTime: 34, endTime: 36.4, text: 'Shuhptor paghniki or e' },
-            { startTime: 36.4, endTime: 38.7, text: 'Kakab footan tserkis e' },
-            { startTime: 38.7, endTime: 41.3, text: 'Dak dak joorooni tem e' },
-            { startTime: 41.3, endTime: 43.5, text: 'Mamis kisan guh kuhse' },
-            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-            { startTime: 48.5, endTime: 58.29, text: '♪' },
-            { startTime: 58.29, endTime: 60.37, text: 'Guh kuhse nants guh kuhse' },
-            { startTime: 60.37, endTime: 63, text: 'Marminuhs yara guhne' },
-            { startTime: 63, endTime: 65.5, text: 'Guhllam buhssoon puhruhkhtoon' },
-            { startTime: 65.5, endTime: 68, text: 'Erisuhs garmir tuhtoom' },
-            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-            { startTime: 72.8, endTime: 153.1, text: '♪...' },
-            { startTime: 153.1, endTime: 155.5, text: 'Achkis esten enten e' },
-            { startTime: 155.5, endTime: 158, text: 'Mamis achkis guh kotse' },
-            { startTime: 158, endTime: 160.5, text: 'Guhse duhghas hon miya' },
-            { startTime: 160.5, endTime: 163, text: 'Achkit kotse amot e' },
-            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-            { startTime: 167.7, endTime: 177.2, text: '♪' },
-            { startTime: 177.2, endTime: 179.6, text: 'Kinam goozis hos ganis' },
-            { startTime: 179.6, endTime: 182.4, text: 'Juhnjuhghoognire nayis' },
-            { startTime: 182.4, endTime: 184.7, text: 'Hostsen sona paghnikuh' },
-            { startTime: 184.7, endTime: 187, text: 'Muhnni kas baboot hide' },
-            { startTime: 187, endTime: 203, text: 'Vay babo, vay babo, vay babo es paghnikuh' },
-    ],   
-    turkce2: [
-            { startTime: 0, endTime: 1, text: '♪' },
-            { startTime: 1, endTime: 34, text: '♪="Ay Cemo Ay Cemile-Urfalı Cemil Cankat" Sözler="Onnik Dinkjian"' },
-            { startTime: 34, endTime: 36.4, text: 'Cumartesi duş günüdür' },
-            { startTime: 36.4, endTime: 38.7, text: 'Takunyam ve havlum elimdedir' },
-            { startTime: 38.7, endTime: 41.3, text: 'Musluktan buhar vurur' },
-            { startTime: 41.3, endTime: 43.5, text: 'Annem eldivenini sürter' },
-            { startTime: 43.5, endTime: 48.5, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
-            { startTime: 48.5, endTime: 58.29, text: '♪' },
-            { startTime: 58.29, endTime: 60.37, text: 'Annem beni ovalar' },
-            { startTime: 60.37, endTime: 63, text: 'Vücudumu çiğner' },
-            { startTime: 63, endTime: 65.5, text: 'Olurum gıcır gıcır' },
-            { startTime: 65.5, endTime: 68, text: 'Yüzümden de görülür' },
-            { startTime: 68, endTime: 72.8, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
-            { startTime: 72.8, endTime: 153.1, text: '♪...' },
-            { startTime: 153.1, endTime: 155.5, text: 'Gözlerim ortalıkta dolanır' },
-            { startTime: 155.5, endTime: 158, text: 'Annem onları durdurur' },
-            { startTime: 158, endTime: 160.5, text: 'Bakma oralara der:' },
-            { startTime: 160.5, endTime: 163, text: '"Kapa gözlerini, ayıptır"' },
-            { startTime: 163, endTime: 167.7, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
-            { startTime: 167.7, endTime: 177.2, text: '♪' },
-            { startTime: 177.2, endTime: 179.6, text: 'Biliyorum burada olmak istiyorsun' },
-            { startTime: 179.6, endTime: 182.4, text: 'Buradan minik serçelere bakarsın' },
-            { startTime: 182.4, endTime: 184.7, text: 'Artık bu hamama gelirsin' },
-            { startTime: 184.7, endTime: 187, text: 'Yanında da olsun baban' },
-            { startTime: 187, endTime: 203.9, text: 'Vay babo, vay babo, vay babo bak bu hamamdır' },
-            { startTime: 203.9, endTime: 210, text: 'Ermenice aslından çeviren: Can Kurmamiyan' },
-    ],
-};
-
-let currentLyricIndex2 = -1;
-
-playButton2.addEventListener('click', () => {
-    audioPlayer2.play();
-    playButton2.style.display = 'none';
-    pauseButton2.style.display = 'inline';
-});
-
-pauseButton2.addEventListener('click', () => {
-    audioPlayer2.pause();
-    pauseButton2.style.display = 'none';
-    playButton2.style.display = 'inline';
-});
-
-toggleLyricsButton2.addEventListener('click', () => {
-    if (lyricsContainer2.style.display === 'none') {
-        lyricsContainer2.style.display = 'block';
-        displayLyric2(0);
-    } else {
-        lyricsContainer2.style.display = 'none';
-    }
-});
-
-lyricsLanguageSelector2.addEventListener('change', () => {
-    const selectedLanguage = lyricsLanguageSelector2.value;
-    displayLyric2(0, selectedLanguage);
-});
-
-audioPlayer2.addEventListener('timeupdate', () => {
-    const currentTime = audioPlayer2.currentTime;
-    const selectedLanguage = lyricsLanguageSelector2.value;
-    const lyrics2 = lyricsData2[selectedLanguage];
-
-    for (let i = 0; i < lyrics2.length; i++) {
-        const lyric = lyrics2[i];
-        if (currentTime >= lyric.startTime && currentTime < lyric.endTime) {
-            if (i !== currentLyricIndex2) {
-                displayLyric2(i, selectedLanguage);
-            }
-            return;
-        }
-    }
-
-
-    displayLyric2(-1, selectedLanguage);
-
-
-    timeDisplay2.textContent = `${formatTime(currentTime)} / ${formatTime(audioPlayer2.duration)}`;
-});
-
-function displayLyric2(index, language) {
-    const lyrics2 = lyricsData2[language];
-    if (index >= 0 && index < lyrics2.length) {
-        lyricsText2.textContent = lyrics2[index].text;
-        currentLyricIndex2 = index;
-        lyricsText2.style.color = '#f5f5f7';
-        lyricsText2.style.fontSize = '20px';
-        lyricsText2.style.fontWeight = '500';
-        lyricsText2.style.marginTop = '20px';
-        lyricsText2.style.width = '242px';
-        lyricsText2.style.textAlign = 'center';
-        lyricsText2.style.borderRadius = '15px';
-        lyricsText2.style.fontFamily = 'Verdana, Geneva, Tahoma, sans-serif';
-    } else {
-        lyricsText2.textContent = '';
-        currentLyricIndex2 = -1;
-        lyricsText2.style.color = 'white'; 
-    }
-}
-
-
-const seekBar2 = document.querySelector('.seek-bar-2');
-const seekBarFill2 = document.querySelector('.seek-bar-fill-2');
-const seekBarThumb2 = document.querySelector('.seek-bar-thumb-2');
-
-seekBar2.addEventListener('click', (e) => {
-    const clickX = e.clientX - seekBar2.getBoundingClientRect().left;
-    const seekBarWidth = seekBar2.clientWidth;
-    const seekTime = (clickX / seekBarWidth) * audioPlayer2.duration;
-
-    audioPlayer2.currentTime = seekTime;
-});
-
-audioPlayer2.addEventListener('timeupdate', () => {
-    const currentTime = audioPlayer2.currentTime;
-    const duration = audioPlayer2.duration;
-    const progress = (currentTime / duration) * 100;
-
-    seekBarFill2.style.width = progress + '%';
-    seekBarThumb2.style.left = progress + '%';
-
-
-    timeDisplay2.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-});
-
-seekBarThumb2.addEventListener('mousedown', (e) => {
-    e.preventDefault();
-    document.addEventListener('mousemove', onMouseMove2);
-    document.addEventListener('mouseup', onMouseUp2);
-});
-
-function onMouseMove2(e) {
-    const clickX = e.clientX - seekBar2.getBoundingClientRect().left;
-    const seekBarWidth = seekBar2.clientWidth;
-    const seekTime = (clickX / seekBarWidth) * audioPlayer2.duration;
-
-    audioPlayer2.currentTime = seekTime;
-}
-
-function onMouseUp2() {
-    document.removeEventListener('mousemove', onMouseMove2);
-    document.removeEventListener('mouseup', onMouseUp2);
-}
-
-
-function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}
 
 
 
@@ -44990,7 +44985,6 @@ const loading = document.getElementById('lomading');
     audioPlayeryyy4.addEventListener('waiting', () => {
         loading.style.display = 'block';
     });
-}
 </script>
 
 
